@@ -3,13 +3,13 @@
   "pack": "PACK10",
   "timing": {
   "started": "2026-05-16T23:25:58Z",
-  "finished": "2026-05-16T23:26:02Z",
-  "total_ms": 3289,
-  "versions_completed": 7,
-  "average_phase_ms": 469,
+  "finished": "2026-05-16T23:26:03Z",
+  "total_ms": 4491,
+  "versions_completed": 10,
+  "average_phase_ms": 449,
   "slowest_phase": {"version": "v18.6.0", "title": "Repo Registry Writer", "ms": 451},
   "fastest_phase": {"version": "v18.5.0", "title": "Bridge Hub Runtime CLI", "ms": 259},
-  "estimated_next_20_version_pack_ms": 9380
+  "estimated_next_20_version_pack_ms": 8980
 },
   "precision": "milliseconds",
   "note": "Timing report is generated before final lock to avoid dirty-tree after final tag."
