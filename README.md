@@ -175,3 +175,7 @@ PACK10 prepares AndyAI Second Brain to provide Bridge Hub-ready registry and sta
 ## PACK11 — Operator Registry / Tool Launcher / External Service Readiness Layer
 
 PACK11 prepares operator registry and external-service launcher readiness for Bridge Hub. It registers guided operator patterns such as GitHub Operator, Vercel Operator, Supabase Operator, Stripe Operator, DNS Doctor and Recovery Doctor.
+
+## BIG PLOTUN 01 — Operator → Bridge Hub → Learning Loop
+
+BIG PLOTUN 01 runs PACK12, PACK13 and PACK14 as a 60-version cycle. It connects operator execution evidence, Bridge Hub control panels and Second Brain learning memory.

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Operator Run","type":"object","required":["operator","status","evidence"],"properties":{"operator":{"type":"string"},"status":{"type":"string"},"evidence":{"type":"array"}}}

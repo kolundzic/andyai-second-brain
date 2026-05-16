@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Pack Learning","type":"object","required":["pack","lesson","reuse"],"properties":{"pack":{"type":"string"},"lesson":{"type":"string"},"reuse":{"type":"string"}}}
