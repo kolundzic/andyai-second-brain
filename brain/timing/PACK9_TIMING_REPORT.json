@@ -1,0 +1,22 @@
+{
+  "pack": "PACK9",
+  "range": "v16.1.0 -> v18.0.0",
+  "title": "Timing Precision / Pack Intelligence / Bridge Hub Readiness Layer",
+  "started": "2026-05-16T23:21:55Z",
+  "finished": "2026-05-16T23:22:02Z",
+  "total_ms": 6776,
+  "versions_completed": 18,
+  "average_phase_ms": 376,
+  "slowest_phase": {
+    "version": "v16.1.0",
+    "title": "Timing Precision Scaffold",
+    "ms": 336
+  },
+  "fastest_phase": {
+    "version": "v16.7.0",
+    "title": "Timing Evidence Writer",
+    "ms": 209
+  },
+  "estimated_next_20_version_pack_ms": 7520,
+  "note": "PACK9 upgrades timing from whole seconds to milliseconds because PACK8 completed too fast for useful second-level estimates."
+}
