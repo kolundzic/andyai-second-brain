@@ -1,0 +1,11 @@
+{
+  "type": "audit_event",
+  "id": "20260516T224640Z-policy-breach-note-recorded-for-silent-execution",
+  "actor": "system",
+  "target": "silent execution",
+  "action": "policy breach note recorded for silent execution",
+  "status": "review-needed",
+  "created_at": "20260516T224640Z",
+  "evidence_required": true,
+  "human_review_visible": true
+}
