@@ -1,11 +1,11 @@
 # PACK4 Context Assembly Report
 
-Created: `20260516T153546Z`
+Created: `20260516T153547Z`
 
 ## Counts
 
-- Context bundles: 8
-- Retrieval result files: 2
+- Context bundles: 9
+- Retrieval result files: 3
 - Agent handoffs: 1
 
 ## Status

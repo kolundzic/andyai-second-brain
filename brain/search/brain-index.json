@@ -1,5 +1,5 @@
 {
-  "created_at": "20260516T153536Z",
+  "created_at": "20260516T153547Z",
   "records": [
     {
       "path": "ANDYAI_CONTEXT.md",
@@ -26,6 +26,114 @@
       "chars": 175
     },
     {
+      "path": "brain/context/MULTI_PROJECT_CONTEXT_MAP.md",
+      "kind": "resource",
+      "tokens": 56,
+      "chars": 490
+    },
+    {
+      "path": "brain/context/handoffs/20260516T153541Z-prepare-pack5-for-andyai-second-brain-agent-handoff.md",
+      "kind": "resource",
+      "tokens": 583,
+      "chars": 6050
+    },
+    {
+      "path": "brain/context/bundles/20260516T153544Z-source-priority-evidence-decision-project.json",
+      "kind": "resource",
+      "tokens": 461,
+      "chars": 5818
+    },
+    {
+      "path": "brain/context/bundles/20260516T153546Z-tap-tap-canonizer-knowledge-factory-director-memory-runtime-agent-discipline.json",
+      "kind": "resource",
+      "tokens": 713,
+      "chars": 7941
+    },
+    {
+      "path": "brain/context/bundles/20260516T153541Z-query-brain-assemble-context-answer-with-evidence-skills.json",
+      "kind": "resource",
+      "tokens": 716,
+      "chars": 8341
+    },
+    {
+      "path": "brain/context/bundles/20260516T153539Z-pack3-evidence-decision-runtime-operations.json",
+      "kind": "resource",
+      "tokens": 666,
+      "chars": 6632
+    },
+    {
+      "path": "brain/context/bundles/20260516T153545Z-staleness-archive-deprecated-warning.md",
+      "kind": "resource",
+      "tokens": 430,
+      "chars": 4705
+    },
+    {
+      "path": "brain/context/bundles/20260516T153537Z-pack4-context-bundle-schema.json",
+      "kind": "resource",
+      "tokens": 530,
+      "chars": 5354
+    },
+    {
+      "path": "brain/context/bundles/20260516T153541Z-query-brain-assemble-context-answer-with-evidence-skills.md",
+      "kind": "resource",
+      "tokens": 684,
+      "chars": 6836
+    },
+    {
+      "path": "brain/context/bundles/20260516T153539Z-pack3-evidence-decision-runtime-operations.md",
+      "kind": "resource",
+      "tokens": 550,
+      "chars": 4748
+    },
+    {
+      "path": "brain/context/bundles/20260516T153540Z-andyai-second-brain-current-project-status.json",
+      "kind": "resource",
+      "tokens": 773,
+      "chars": 8268
+    },
+    {
+      "path": "brain/context/bundles/20260516T153544Z-context-budget-progressive-disclosure-policy.json",
+      "kind": "resource",
+      "tokens": 493,
+      "chars": 5868
+    },
+    {
+      "path": "brain/context/bundles/20260516T153545Z-staleness-archive-deprecated-warning.json",
+      "kind": "resource",
+      "tokens": 453,
+      "chars": 5829
+    },
+    {
+      "path": "brain/context/bundles/20260516T153544Z-source-priority-evidence-decision-project.md",
+      "kind": "resource",
+      "tokens": 438,
+      "chars": 4791
+    },
+    {
+      "path": "brain/context/bundles/20260516T153544Z-context-budget-progressive-disclosure-policy.md",
+      "kind": "resource",
+      "tokens": 470,
+      "chars": 4911
+    },
+    {
+      "path": "brain/context/bundles/20260516T153546Z-tap-tap-canonizer-knowledge-factory-director-memory-runtime-agent-discipline.md",
+      "kind": "resource",
+      "tokens": 681,
+      "chars": 6550
+    },
+    {
+      "path": "brain/context/bundles/20260516T153537Z-pack4-context-bundle-schema.md",
+      "kind": "resource",
+      "tokens": 506,
+      "chars": 4439
+    },
+    {
+      "path": "brain/context/bundles/20260516T153540Z-andyai-second-brain-current-project-status.md",
+      "kind": "resource",
+      "tokens": 740,
+      "chars": 6799
+    },
+    {
       "path": "brain/inbox/20260516T143358Z-pack3-sample-inbox-signal.md",
       "kind": "resource",
       "tokens": 21,
@@ -42,6 +150,12 @@
       "kind": "evidence",
       "tokens": 21,
       "chars": 164
+    },
+    {
+      "path": "brain/answers/20260516T153542Z-what-changed-in-pack4-answer-draft.md",
+      "kind": "resource",
+      "tokens": 84,
+      "chars": 879
     },
     {
       "path": "brain/projects/andyai-second-brain/PROJECT_SNAPSHOT.md",
@@ -94,8 +208,32 @@
     {
       "path": "brain/search/brain-index.json",
       "kind": "resource",
-      "tokens": 1008,
-      "chars": 12007
+      "tokens": 1541,
+      "chars": 17969
+    },
+    {
+      "path": "brain/retrieval/20260516T153538Z-evidence-decision-project-context.json",
+      "kind": "resource",
+      "tokens": 774,
+      "chars": 7782
+    },
+    {
+      "path": "brain/retrieval/scoring-v1-sample.txt",
+      "kind": "resource",
+      "tokens": 73,
+      "chars": 794
+    },
+    {
+      "path": "brain/retrieval/20260516T153537Z-pack4-retrieval-result-schema.json",
+      "kind": "resource",
+      "tokens": 535,
+      "chars": 5192
+    },
+    {
+      "path": "brain/retrieval/sample-search-output.txt",
+      "kind": "resource",
+      "tokens": 56,
+      "chars": 543
     },
     {
       "path": "brain/meetings/20260516T143625Z-pack3-planning-meeting.md",
@@ -108,6 +246,12 @@
       "kind": "resource",
       "tokens": 22,
       "chars": 174
+    },
+    {
+      "path": "brain/query/QUERY_LOG.md",
+      "kind": "resource",
+      "tokens": 33,
+      "chars": 249
     },
     {
       "path": "brain/routes/20260516T143358Z-pack3-sample-inbox-signal.route.json",
@@ -128,6 +272,12 @@
       "chars": 180
     },
     {
+      "path": "brain/reports/PACK4_RETRIEVAL_QA.md",
+      "kind": "report",
+      "tokens": 40,
+      "chars": 324
+    },
+    {
       "path": "brain/reports/PACK3_DIRTY_TREE_REPAIR_STATUS.md",
       "kind": "report",
       "tokens": 59,
@@ -144,6 +294,12 @@
       "kind": "report",
       "tokens": 23,
       "chars": 186
+    },
+    {
+      "path": "brain/reports/PACK4_CONTEXT_ASSEMBLY_REPORT.md",
+      "kind": "report",
+      "tokens": 41,
+      "chars": 339
     },
     {
       "path": "brain/reports/pack2/v3.4.0.md",
@@ -566,6 +722,24 @@
       "chars": 1346
     },
     {
+      "path": "docs/pack4/RETRIEVAL_SCORING_V1.md",
+      "kind": "resource",
+      "tokens": 35,
+      "chars": 257
+    },
+    {
+      "path": "docs/pack4/EVIDENCE_AWARE_RETRIEVAL.md",
+      "kind": "resource",
+      "tokens": 28,
+      "chars": 219
+    },
+    {
+      "path": "docs/pack4/SKILL_CONTEXT_ASSEMBLY.md",
+      "kind": "resource",
+      "tokens": 24,
+      "chars": 187
+    },
+    {
       "path": "docs/pack4/CONTEXT_BUDGET_POLICY.md",
       "kind": "resource",
       "tokens": 49,
@@ -576,6 +750,12 @@
       "kind": "resource",
       "tokens": 37,
       "chars": 303
+    },
+    {
+      "path": "docs/pack4/BRAIN_QUERY_CLI.md",
+      "kind": "resource",
+      "tokens": 42,
+      "chars": 336
     },
     {
       "path": "docs/pack4/QUERY_RETRIEVAL_CONTEXT_ARCHITECTURE.md",
@@ -590,10 +770,124 @@
       "chars": 354
     },
     {
+      "path": "docs/pack4/PROJECT_CONTEXT_ASSEMBLY.md",
+      "kind": "resource",
+      "tokens": 21,
+      "chars": 183
+    },
+    {
+      "path": "docs/pack4/releases/v6.7.0.md",
+      "kind": "resource",
+      "tokens": 52,
+      "chars": 423
+    },
+    {
+      "path": "docs/pack4/releases/v7.3.0.md",
+      "kind": "resource",
+      "tokens": 52,
+      "chars": 403
+    },
+    {
+      "path": "docs/pack4/releases/v7.2.0.md",
+      "kind": "resource",
+      "tokens": 54,
+      "chars": 416
+    },
+    {
+      "path": "docs/pack4/releases/v6.6.0.md",
+      "kind": "resource",
+      "tokens": 56,
+      "chars": 439
+    },
+    {
+      "path": "docs/pack4/releases/v7.9.0.md",
+      "kind": "resource",
+      "tokens": 50,
+      "chars": 381
+    },
+    {
       "path": "docs/pack4/releases/v6.1.0.md",
       "kind": "resource",
       "tokens": 54,
       "chars": 425
+    },
+    {
+      "path": "docs/pack4/releases/v7.5.0.md",
+      "kind": "resource",
+      "tokens": 52,
+      "chars": 410
+    },
+    {
+      "path": "docs/pack4/releases/v7.4.0.md",
+      "kind": "resource",
+      "tokens": 52,
+      "chars": 413
+    },
+    {
+      "path": "docs/pack4/releases/v7.8.0.md",
+      "kind": "resource",
+      "tokens": 52,
+      "chars": 414
+    },
+    {
+      "path": "docs/pack4/releases/v7.7.0.md",
+      "kind": "resource",
+      "tokens": 51,
+      "chars": 408
+    },
+    {
+      "path": "docs/pack4/releases/v6.3.0.md",
+      "kind": "resource",
+      "tokens": 56,
+      "chars": 432
+    },
+    {
+      "path": "docs/pack4/releases/v6.2.0.md",
+      "kind": "resource",
+      "tokens": 55,
+      "chars": 429
+    },
+    {
+      "path": "docs/pack4/releases/v7.6.0.md",
+      "kind": "resource",
+      "tokens": 53,
+      "chars": 424
+    },
+    {
+      "path": "docs/pack4/releases/v7.1.0.md",
+      "kind": "resource",
+      "tokens": 55,
+      "chars": 430
+    },
+    {
+      "path": "docs/pack4/releases/v6.5.0.md",
+      "kind": "resource",
+      "tokens": 52,
+      "chars": 398
+    },
+    {
+      "path": "docs/pack4/releases/v6.9.0.md",
+      "kind": "resource",
+      "tokens": 50,
+      "chars": 404
+    },
+    {
+      "path": "docs/pack4/releases/v6.8.0.md",
+      "kind": "resource",
+      "tokens": 50,
+      "chars": 406
+    },
+    {
+      "path": "docs/pack4/releases/v6.4.0.md",
+      "kind": "resource",
+      "tokens": 53,
+      "chars": 422
+    },
+    {
+      "path": "docs/pack4/releases/v7.0.0.md",
+      "kind": "resource",
+      "tokens": 53,
+      "chars": 421
     },
     {
       "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
@@ -852,6 +1146,12 @@
       "kind": "resource",
       "tokens": 30,
       "chars": 242
+    },
+    {
+      "path": "examples/pack4/sample-query-request.json",
+      "kind": "resource",
+      "tokens": 18,
+      "chars": 202
     }
   ]
 }
