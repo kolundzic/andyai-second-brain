@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Pack Intelligence",
+  "type": "object",
+  "required": ["pack", "range", "final_tag", "status", "semafor", "timing"],
+  "properties": {
+    "pack": {"type": "string"},
+    "range": {"type": "string"},
+    "final_tag": {"type": "string"},
+    "status": {"type": "string"},
+    "semafor": {"type": "object"},
+    "timing": {"type": "object"}
+  }
+}

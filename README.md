@@ -163,3 +163,7 @@ PACK8 adds governed lifecycle operations for Second Brain memory:
 - timing evidence
 
 Canonical rule: memory must have a lifecycle. Not every note deserves canon, not every stale item deserves deletion, and destructive cleanup requires human approval.
+
+## PACK9 — Timing Precision / Pack Intelligence / Bridge Hub Readiness Layer
+
+PACK9 upgrades TAP-TAP timing from whole-second summaries to millisecond-precision pack intelligence. It prepares timing reports, pack estimates, Bridge Hub handoff notes, and reusable timing QA for future MASTER-UDARAC scripts.

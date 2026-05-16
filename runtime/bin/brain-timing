@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+REPORT="${ROOT}/brain/timing/PACK9_TIMING_REPORT.json"
+
+case "${1:-help}" in
+  help)
+    cat <<'HELP'
+brain-timing commands:
+  report    Show PACK9 timing report path and summary
+  bridge    Show Bridge Hub timing handoff note
+  estimate  Show estimated next pack duration if report exists
+HELP
+    ;;
+  report)
+    if [[ -f "$REPORT" ]]; then
+      echo "Timing report: $REPORT"
+      python3 - <<PY
+import json
+from pathlib import Path
+p=Path("$REPORT")
+d=json.loads(p.read_text())
+print("Pack:", d.get("pack"))
+print("Total ms:", d.get("total_ms"))
+print("Average phase ms:", d.get("average_phase_ms"))
+print("Estimated next 20-version pack ms:", d.get("estimated_next_20_version_pack_ms"))
+PY
+    else
+      echo "Timing report not found yet: $REPORT"
+    fi
+    ;;
+  bridge)
+    echo "Bridge Hub should ingest timing report, semafor summary, final tag, duration, slowest phase, and push status."
+    ;;
+  estimate)
+    if [[ -f "$REPORT" ]]; then
+      python3 - <<PY
+import json
+d=json.load(open("$REPORT"))
+ms=d.get("estimated_next_20_version_pack_ms",0)
+print(f"Estimated next pack: {ms}ms ({ms/1000:.2f}s)")
+PY
+    else
+      echo "No estimate available."
+    fi
+    ;;
+  *)
+    echo "Unknown command: $1"
+    exit 1
+    ;;
+esac
