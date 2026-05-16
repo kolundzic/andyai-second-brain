@@ -19,3 +19,4 @@
 - v5.7.0 — Ops Dashboard Operation
 - v5.8.0 — Export Bundle Operation
 - v5.9.0 — Pack3 QA Report
+- v6.0.0 — Real Brain Operations Lock
