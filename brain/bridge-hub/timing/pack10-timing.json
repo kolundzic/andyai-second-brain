@@ -3,9 +3,9 @@
   "pack": "PACK10",
   "timing": {
   "started": "2026-05-16T23:25:58Z",
-  "finished": "2026-05-16T23:26:01Z",
-  "total_ms": 2816,
-  "versions_completed": 6,
+  "finished": "2026-05-16T23:26:02Z",
+  "total_ms": 3289,
+  "versions_completed": 7,
   "average_phase_ms": 469,
   "slowest_phase": {"version": "v18.6.0", "title": "Repo Registry Writer", "ms": 451},
   "fastest_phase": {"version": "v18.5.0", "title": "Bridge Hub Runtime CLI", "ms": 259},

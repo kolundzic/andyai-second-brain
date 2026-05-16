@@ -4,7 +4,7 @@
   "purpose": "Governed AI work-memory layer",
   "current_pack": "PACK10",
   "current_range": "v18.1.0 -> v20.0.0",
-  "latest_known_tag": "v18.6.0",
-  "head_short": "bb80ec4",
+  "latest_known_tag": "v18.7.0",
+  "head_short": "6c99f95",
   "bridge_hub_ready": true
 }
