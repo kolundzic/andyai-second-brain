@@ -7,3 +7,4 @@
 {"type": "audit_event", "id": "20260516T224640Z-policy-breach-note-recorded-for-silent-execution", "actor": "system", "target": "silent execution", "action": "policy breach note recorded for silent execution", "status": "review-needed", "created_at": "20260516T224640Z", "evidence_required": true, "human_review_visible": true}
 {"type": "lifecycle_audit_event", "action": "inbox_intake", "subject": "PACK8 lifecycle signal", "status": "recorded", "created_at": "20260516T231241Z", "human_visible": true}
 {"type": "lifecycle_audit_event", "action": "memory_activated", "subject": "PACK8 lifecycle signal", "status": "recorded", "created_at": "20260516T231241Z", "human_visible": true}
+{"type": "lifecycle_audit_event", "action": "memory_promoted_to_canon", "subject": "PACK8 lifecycle standard", "status": "recorded", "created_at": "20260516T231241Z", "human_visible": true}

@@ -1,0 +1,8 @@
+{
+  "type": "lifecycle_audit_event",
+  "action": "memory_promoted_to_canon",
+  "subject": "PACK8 lifecycle standard",
+  "status": "recorded",
+  "created_at": "20260516T231241Z",
+  "human_visible": true
+}
