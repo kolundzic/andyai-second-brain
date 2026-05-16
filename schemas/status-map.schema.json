@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Bridge Hub Status Map",
+  "type": "object",
+  "required": ["repo", "pack", "final_tag", "build_verify_result", "push_result", "final_alignment", "semafor"],
+  "properties": {
+    "repo": {"type": "string"},
+    "pack": {"type": "string"},
+    "final_tag": {"type": "string"},
+    "build_verify_result": {"type": "string"},
+    "push_result": {"type": "string"},
+    "final_alignment": {"type": "string"},
+    "semafor": {"type": "object"},
+    "timing": {"type": "object"}
+  }
+}

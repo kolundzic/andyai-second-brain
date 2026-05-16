@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Bridge Hub Repo Registry",
+  "type": "object",
+  "required": ["repo", "local_path", "purpose", "latest_known_tag"],
+  "properties": {
+    "repo": {"type": "string"},
+    "local_path": {"type": "string"},
+    "purpose": {"type": "string"},
+    "latest_known_tag": {"type": "string"},
+    "bridge_hub_ready": {"type": "boolean"}
+  }
+}

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+case "${1:-help}" in
+  help)
+    cat <<'HELP'
+brain-bridge commands:
+  repo       Show repo registry path
+  pack       Show pack registry path
+  status     Show status map path
+  timing     Show timing payload path
+  report     Show Bridge Hub status report path
+  export     Show export bundle path
+HELP
+    ;;
+  repo) echo "$ROOT/brain/bridge-hub/registry/repo-registry.json" ;;
+  pack) echo "$ROOT/brain/bridge-hub/registry/pack-registry.json" ;;
+  status) echo "$ROOT/brain/bridge-hub/status/status-map.json" ;;
+  timing) echo "$ROOT/brain/bridge-hub/timing/pack10-timing.json" ;;
+  report) echo "$ROOT/brain/reports/bridge-hub-status-report.md" ;;
+  export) echo "$ROOT/brain/bridge-hub/exports/pack10-bridge-hub-export.zip" ;;
+  *) echo "Unknown command: $1"; exit 1 ;;
+esac

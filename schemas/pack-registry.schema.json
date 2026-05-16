@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Bridge Hub Pack Registry",
+  "type": "object",
+  "required": ["repo", "pack", "range", "base_tag", "final_tag", "status"],
+  "properties": {
+    "repo": {"type": "string"},
+    "pack": {"type": "string"},
+    "range": {"type": "string"},
+    "base_tag": {"type": "string"},
+    "final_tag": {"type": "string"},
+    "status": {"type": "string"}
+  }
+}

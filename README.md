@@ -167,3 +167,7 @@ Canonical rule: memory must have a lifecycle. Not every note deserves canon, not
 ## PACK9 — Timing Precision / Pack Intelligence / Bridge Hub Readiness Layer
 
 PACK9 upgrades TAP-TAP timing from whole-second summaries to millisecond-precision pack intelligence. It prepares timing reports, pack estimates, Bridge Hub handoff notes, and reusable timing QA for future MASTER-UDARAC scripts.
+
+## PACK10 — Bridge Hub / Pack Registry / Status Map Integration Layer
+
+PACK10 prepares AndyAI Second Brain to provide Bridge Hub-ready registry and status payloads: repo registry, pack registry, status map, timing payload, evidence map, repair history and next action.
