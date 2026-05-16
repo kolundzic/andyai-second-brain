@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-16T14:36:20Z",
-  "count": 82,
+  "generated_at": "2026-05-16T14:36:21Z",
+  "count": 84,
   "records": [
     {
       "path": "brain/decisions/adopt-local-runtime-layer.md",
@@ -130,12 +130,17 @@
     {
       "path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md",
       "type": "markdown",
-      "size": 198
+      "size": 229
     },
     {
       "path": "brain/resources/pack2-runtime-memory.md",
       "type": "markdown",
       "size": 218
+    },
+    {
+      "path": "brain/queries/second-brain.json",
+      "type": "json",
+      "size": 1201
     },
     {
       "path": "brain/routes/20260516T143358Z-pack3-sample-inbox-signal.route.json",
@@ -145,7 +150,7 @@
     {
       "path": "brain/search/brain-index.json",
       "type": "json",
-      "size": 8533
+      "size": 8631
     },
     {
       "path": "skills/book-material-capture.md",
@@ -356,6 +361,11 @@
       "path": "docs/releases/v4.5.0.md",
       "type": "markdown",
       "size": 190
+    },
+    {
+      "path": "docs/releases/v4.6.0.md",
+      "type": "markdown",
+      "size": 180
     },
     {
       "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
