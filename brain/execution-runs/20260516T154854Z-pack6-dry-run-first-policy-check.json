@@ -1,0 +1,9 @@
+{
+  "type": "execution_dry_run",
+  "id": "20260516T154854Z-pack6-dry-run-first-policy-check",
+  "goal": "PACK6 dry-run-first policy check",
+  "result": "safe-dry-run-only",
+  "side_effects": "none",
+  "status": "passed",
+  "created_at": "20260516T154854Z"
+}
