@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Second Brain Retrieval Result",
+  "type": "object",
+  "required": ["path", "score", "snippet", "reason"],
+  "properties": {
+    "path": { "type": "string" },
+    "score": { "type": "number" },
+    "snippet": { "type": "string" },
+    "reason": { "type": "string" },
+    "kind": { "type": "string" },
+    "staleness_warning": { "type": "string" }
+  }
+}

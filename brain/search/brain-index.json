@@ -1,571 +1,857 @@
 {
-  "generated_at": "2026-05-16T14:37:51Z",
-  "count": 113,
+  "created_at": "20260516T153536Z",
   "records": [
     {
-      "path": "brain/approvals/20260516T143623Z-approve-pack3-push.md",
-      "type": "markdown",
-      "size": 176
+      "path": "ANDYAI_CONTEXT.md",
+      "kind": "resource",
+      "tokens": 122,
+      "chars": 945
+    },
+    {
+      "path": "SECOND_BRAIN_CANON.md",
+      "kind": "resource",
+      "tokens": 167,
+      "chars": 1234
+    },
+    {
+      "path": "README.md",
+      "kind": "resource",
+      "tokens": 420,
+      "chars": 3259
     },
     {
       "path": "brain/clients/sample-client-brief.md",
-      "type": "markdown",
-      "size": 177
-    },
-    {
-      "path": "brain/decisions/20260516T143623Z-pack3-remains-local-first.md",
-      "type": "markdown",
-      "size": 175
-    },
-    {
-      "path": "brain/decisions/adopt-local-runtime-layer.md",
-      "type": "markdown",
-      "size": 166
-    },
-    {
-      "path": "brain/evidence/20260516T143622Z-pack3-runtime-operations-exist.md",
-      "type": "markdown",
-      "size": 248
-    },
-    {
-      "path": "brain/evidence/pack2-runtime-exists.md",
-      "type": "markdown",
-      "size": 164
+      "kind": "resource",
+      "tokens": 23,
+      "chars": 175
     },
     {
       "path": "brain/inbox/20260516T143358Z-pack3-sample-inbox-signal.md",
-      "type": "markdown",
-      "size": 156
+      "kind": "resource",
+      "tokens": 21,
+      "chars": 154
     },
     {
-      "path": "brain/meetings/20260516T143625Z-pack3-planning-meeting.md",
-      "type": "markdown",
-      "size": 205
+      "path": "brain/evidence/20260516T143622Z-pack3-runtime-operations-exist.md",
+      "kind": "evidence",
+      "tokens": 31,
+      "chars": 246
+    },
+    {
+      "path": "brain/evidence/pack2-runtime-exists.md",
+      "kind": "evidence",
+      "tokens": 21,
+      "chars": 164
     },
     {
       "path": "brain/projects/andyai-second-brain/PROJECT_SNAPSHOT.md",
-      "type": "markdown",
-      "size": 159
-    },
-    {
-      "path": "brain/reports/OPS_DASHBOARD.md",
-      "type": "markdown",
-      "size": 282
-    },
-    {
-      "path": "brain/reports/PACK3_DIRTY_TREE_REPAIR_STATUS.md",
-      "type": "markdown",
-      "size": 478
-    },
-    {
-      "path": "brain/reports/brain-report.md",
-      "type": "markdown",
-      "size": 247
-    },
-    {
-      "path": "brain/reports/pack2/v2.1.0.md",
-      "type": "markdown",
-      "size": 379
-    },
-    {
-      "path": "brain/reports/pack2/v2.2.0.md",
-      "type": "markdown",
-      "size": 375
-    },
-    {
-      "path": "brain/reports/pack2/v2.3.0.md",
-      "type": "markdown",
-      "size": 373
-    },
-    {
-      "path": "brain/reports/pack2/v2.4.0.md",
-      "type": "markdown",
-      "size": 379
-    },
-    {
-      "path": "brain/reports/pack2/v2.5.0.md",
-      "type": "markdown",
-      "size": 471
-    },
-    {
-      "path": "brain/reports/pack2/v2.6.0.md",
-      "type": "markdown",
-      "size": 475
-    },
-    {
-      "path": "brain/reports/pack2/v2.7.0.md",
-      "type": "markdown",
-      "size": 483
-    },
-    {
-      "path": "brain/reports/pack2/v2.8.0.md",
-      "type": "markdown",
-      "size": 481
-    },
-    {
-      "path": "brain/reports/pack2/v2.9.0.md",
-      "type": "markdown",
-      "size": 485
-    },
-    {
-      "path": "brain/reports/pack2/v3.0.0.md",
-      "type": "markdown",
-      "size": 485
-    },
-    {
-      "path": "brain/reports/pack2/v3.1.0.md",
-      "type": "markdown",
-      "size": 479
-    },
-    {
-      "path": "brain/reports/pack2/v3.2.0.md",
-      "type": "markdown",
-      "size": 481
-    },
-    {
-      "path": "brain/reports/pack2/v3.3.0.md",
-      "type": "markdown",
-      "size": 487
-    },
-    {
-      "path": "brain/reports/pack2/v3.4.0.md",
-      "type": "markdown",
-      "size": 491
-    },
-    {
-      "path": "brain/reports/pack2/v3.5.0.md",
-      "type": "markdown",
-      "size": 495
-    },
-    {
-      "path": "brain/reports/pack2/v3.6.0.md",
-      "type": "markdown",
-      "size": 479
-    },
-    {
-      "path": "brain/reports/pack2/v3.7.0.md",
-      "type": "markdown",
-      "size": 495
-    },
-    {
-      "path": "brain/reports/pack2/v3.8.0.md",
-      "type": "markdown",
-      "size": 481
-    },
-    {
-      "path": "brain/reports/pack2/v3.9.0.md",
-      "type": "markdown",
-      "size": 473
-    },
-    {
-      "path": "brain/reports/pack2/v4.0.0.md",
-      "type": "markdown",
-      "size": 493
-    },
-    {
-      "path": "brain/reports/pack3/PACK3_LOCK.md",
-      "type": "markdown",
-      "size": 240
-    },
-    {
-      "path": "brain/reports/pack3/PACK3_QA_REPORT.md",
-      "type": "markdown",
-      "size": 184
-    },
-    {
-      "path": "brain/reports/pack3/PACK3_REPAIR_NOTE.md",
-      "type": "markdown",
-      "size": 325
-    },
-    {
-      "path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md",
-      "type": "markdown",
-      "size": 747
-    },
-    {
-      "path": "brain/reports/pack3-progress-card.md",
-      "type": "markdown",
-      "size": 182
-    },
-    {
-      "path": "brain/reports/repo-status.md",
-      "type": "markdown",
-      "size": 186
-    },
-    {
-      "path": "brain/resources/pack2-runtime-memory.md",
-      "type": "markdown",
-      "size": 218
+      "kind": "project",
+      "tokens": 19,
+      "chars": 157
     },
     {
       "path": "brain/signals/20260516T143624Z-second-brain-runtime.md",
-      "type": "markdown",
-      "size": 265
+      "kind": "resource",
+      "tokens": 36,
+      "chars": 263
     },
     {
-      "path": "brain/lifecycle/pack3-runtime-layer.json",
-      "type": "json",
-      "size": 132
+      "path": "brain/resources/pack2-runtime-memory.md",
+      "kind": "resource",
+      "tokens": 26,
+      "chars": 218
     },
     {
       "path": "brain/queries/second-brain.json",
-      "type": "json",
-      "size": 1201
+      "kind": "resource",
+      "tokens": 147,
+      "chars": 1201
     },
     {
-      "path": "brain/routes/20260516T143358Z-pack3-sample-inbox-signal.route.json",
-      "type": "json",
-      "size": 174
+      "path": "brain/queries/sample-second-brain-search.txt",
+      "kind": "resource",
+      "tokens": 103,
+      "chars": 644
+    },
+    {
+      "path": "brain/lifecycle/pack3-runtime-layer.json",
+      "kind": "resource",
+      "tokens": 16,
+      "chars": 132
+    },
+    {
+      "path": "brain/decisions/20260516T143623Z-pack3-remains-local-first.md",
+      "kind": "decision",
+      "tokens": 20,
+      "chars": 173
+    },
+    {
+      "path": "brain/decisions/adopt-local-runtime-layer.md",
+      "kind": "decision",
+      "tokens": 20,
+      "chars": 166
     },
     {
       "path": "brain/search/brain-index.json",
-      "type": "json",
-      "size": 11763
+      "kind": "resource",
+      "tokens": 1008,
+      "chars": 12007
     },
     {
-      "path": "skills/book-material-capture.md",
-      "type": "markdown",
-      "size": 292
+      "path": "brain/meetings/20260516T143625Z-pack3-planning-meeting.md",
+      "kind": "resource",
+      "tokens": 26,
+      "chars": 203
     },
     {
-      "path": "skills/canonize-signal.md",
-      "type": "markdown",
-      "size": 452
+      "path": "brain/approvals/20260516T143623Z-approve-pack3-push.md",
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 174
     },
     {
-      "path": "skills/client-brief.md",
-      "type": "markdown",
-      "size": 398
+      "path": "brain/routes/20260516T143358Z-pack3-sample-inbox-signal.route.json",
+      "kind": "resource",
+      "tokens": 15,
+      "chars": 174
     },
     {
-      "path": "skills/client-follow-up.md",
-      "type": "markdown",
-      "size": 263
+      "path": "brain/reports/brain-report.md",
+      "kind": "report",
+      "tokens": 21,
+      "chars": 247
     },
     {
-      "path": "skills/context-router.md",
-      "type": "markdown",
-      "size": 313
+      "path": "brain/reports/pack3-progress-card.md",
+      "kind": "report",
+      "tokens": 24,
+      "chars": 180
     },
     {
-      "path": "skills/evidence-memory-update.md",
-      "type": "markdown",
-      "size": 238
+      "path": "brain/reports/PACK3_DIRTY_TREE_REPAIR_STATUS.md",
+      "kind": "report",
+      "tokens": 59,
+      "chars": 478
     },
     {
-      "path": "skills/meeting-debrief.md",
-      "type": "markdown",
-      "size": 422
+      "path": "brain/reports/OPS_DASHBOARD.md",
+      "kind": "report",
+      "tokens": 36,
+      "chars": 282
     },
     {
-      "path": "skills/real-brain-operations.md",
-      "type": "markdown",
-      "size": 391
+      "path": "brain/reports/repo-status.md",
+      "kind": "report",
+      "tokens": 23,
+      "chars": 186
     },
     {
-      "path": "skills/repo-status.md",
-      "type": "markdown",
-      "size": 380
+      "path": "brain/reports/pack2/v3.4.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 487
     },
     {
-      "path": "skills/runtime-brain-index.md",
-      "type": "markdown",
-      "size": 241
+      "path": "brain/reports/pack2/v3.8.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 477
     },
     {
-      "path": "skills/runtime-memory-create.md",
-      "type": "markdown",
-      "size": 179
+      "path": "brain/reports/pack2/v3.9.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 469
     },
     {
-      "path": "skills/runtime-report.md",
-      "type": "markdown",
-      "size": 132
+      "path": "brain/reports/pack2/v3.5.0.md",
+      "kind": "report",
+      "tokens": 69,
+      "chars": 491
     },
     {
-      "path": "skills/start-project.md",
-      "type": "markdown",
-      "size": 483
+      "path": "brain/reports/pack2/v2.1.0.md",
+      "kind": "report",
+      "tokens": 51,
+      "chars": 375
     },
     {
-      "path": "skills/taptap-pack-summary.md",
-      "type": "markdown",
-      "size": 393
+      "path": "brain/reports/pack2/v4.0.0.md",
+      "kind": "report",
+      "tokens": 69,
+      "chars": 489
     },
     {
-      "path": "docs/ARCHITECTURE.md",
-      "type": "markdown",
-      "size": 782
+      "path": "brain/reports/pack2/v2.6.0.md",
+      "kind": "report",
+      "tokens": 65,
+      "chars": 471
     },
     {
-      "path": "docs/CLIENT_MEMORY_BRIDGE.md",
-      "type": "markdown",
-      "size": 308
+      "path": "brain/reports/pack2/v3.2.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 477
     },
     {
-      "path": "docs/CONTEXT_ROUTER_SPEC.md",
-      "type": "markdown",
-      "size": 385
+      "path": "brain/reports/pack2/v3.3.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 483
     },
     {
-      "path": "docs/DECISION_LOG_STANDARD.md",
-      "type": "markdown",
-      "size": 283
+      "path": "brain/reports/pack2/v2.7.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 479
     },
     {
-      "path": "docs/EVIDENCE_BACKED_MEMORY.md",
-      "type": "markdown",
-      "size": 325
+      "path": "brain/reports/pack2/v2.8.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 477
+    },
+    {
+      "path": "brain/reports/pack2/v3.0.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 481
+    },
+    {
+      "path": "brain/reports/pack2/v2.4.0.md",
+      "kind": "report",
+      "tokens": 51,
+      "chars": 375
+    },
+    {
+      "path": "brain/reports/pack2/v2.5.0.md",
+      "kind": "report",
+      "tokens": 65,
+      "chars": 467
+    },
+    {
+      "path": "brain/reports/pack2/v3.1.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 475
+    },
+    {
+      "path": "brain/reports/pack2/v2.9.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 481
+    },
+    {
+      "path": "brain/reports/pack2/v3.6.0.md",
+      "kind": "report",
+      "tokens": 67,
+      "chars": 475
+    },
+    {
+      "path": "brain/reports/pack2/v2.2.0.md",
+      "kind": "report",
+      "tokens": 51,
+      "chars": 371
+    },
+    {
+      "path": "brain/reports/pack2/v2.3.0.md",
+      "kind": "report",
+      "tokens": 51,
+      "chars": 369
+    },
+    {
+      "path": "brain/reports/pack2/v3.7.0.md",
+      "kind": "report",
+      "tokens": 69,
+      "chars": 491
+    },
+    {
+      "path": "brain/reports/pack3/v4.1.0-toc-lock.txt",
+      "kind": "report",
+      "tokens": 3,
+      "chars": 15
+    },
+    {
+      "path": "brain/reports/pack3/PACK3_QA_REPORT.md",
+      "kind": "report",
+      "tokens": 23,
+      "chars": 184
+    },
+    {
+      "path": "brain/reports/pack3/PACK3_LOCK.md",
+      "kind": "report",
+      "tokens": 31,
+      "chars": 238
+    },
+    {
+      "path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md",
+      "kind": "report",
+      "tokens": 84,
+      "chars": 707
+    },
+    {
+      "path": "brain/reports/pack3/PACK3_REPAIR_NOTE.md",
+      "kind": "report",
+      "tokens": 42,
+      "chars": 321
     },
     {
       "path": "docs/EXPORT_DELETE_INSPECT.md",
-      "type": "markdown",
-      "size": 273
-    },
-    {
-      "path": "docs/GOVERNANCE_MODEL.md",
-      "type": "markdown",
-      "size": 543
-    },
-    {
-      "path": "docs/HUMAN_APPROVAL_GATE.md",
-      "type": "markdown",
-      "size": 354
-    },
-    {
-      "path": "docs/MASTER_TOC.md",
-      "type": "markdown",
-      "size": 2168
-    },
-    {
-      "path": "docs/MEETING_MEMORY_BRIDGE.md",
-      "type": "markdown",
-      "size": 254
-    },
-    {
-      "path": "docs/MEMORY_POLICY.md",
-      "type": "markdown",
-      "size": 374
-    },
-    {
-      "path": "docs/PACK3_TOC.md",
-      "type": "markdown",
-      "size": 1007
-    },
-    {
-      "path": "docs/PACK_v0.2_to_v2.0_TOC.md",
-      "type": "markdown",
-      "size": 520
-    },
-    {
-      "path": "docs/PARA_WORKSPACE.md",
-      "type": "markdown",
-      "size": 634
-    },
-    {
-      "path": "docs/PRACTICAL_USE_CASES.md",
-      "type": "markdown",
-      "size": 643
-    },
-    {
-      "path": "docs/PROJECT_CONTEXT_STANDARD.md",
-      "type": "markdown",
-      "size": 403
-    },
-    {
-      "path": "docs/PUBLIC_WEBSITE_BLUEPRINT.md",
-      "type": "markdown",
-      "size": 522
-    },
-    {
-      "path": "docs/REAL_BRAIN_OPERATIONS_MODEL.md",
-      "type": "markdown",
-      "size": 320
-    },
-    {
-      "path": "docs/REPO_MEMORY_BRIDGE.md",
-      "type": "markdown",
-      "size": 313
-    },
-    {
-      "path": "docs/ROADMAP.md",
-      "type": "markdown",
-      "size": 1256
+      "kind": "resource",
+      "tokens": 40,
+      "chars": 273
     },
     {
       "path": "docs/SIGNAL_CANONIZER.md",
-      "type": "markdown",
-      "size": 280
+      "kind": "resource",
+      "tokens": 37,
+      "chars": 280
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "kind": "resource",
+      "tokens": 90,
+      "chars": 764
     },
     {
       "path": "docs/SKILLS_STANDARD.md",
-      "type": "markdown",
-      "size": 345
+      "kind": "resource",
+      "tokens": 45,
+      "chars": 345
+    },
+    {
+      "path": "docs/PRACTICAL_USE_CASES.md",
+      "kind": "resource",
+      "tokens": 72,
+      "chars": 643
+    },
+    {
+      "path": "docs/PROJECT_CONTEXT_STANDARD.md",
+      "kind": "resource",
+      "tokens": 55,
+      "chars": 403
+    },
+    {
+      "path": "docs/PACK_v0.2_to_v2.0_TOC.md",
+      "kind": "resource",
+      "tokens": 65,
+      "chars": 503
+    },
+    {
+      "path": "docs/GOVERNANCE_MODEL.md",
+      "kind": "resource",
+      "tokens": 62,
+      "chars": 543
+    },
+    {
+      "path": "docs/MASTER_TOC.md",
+      "kind": "resource",
+      "tokens": 250,
+      "chars": 2118
+    },
+    {
+      "path": "docs/PARA_WORKSPACE.md",
+      "kind": "resource",
+      "tokens": 87,
+      "chars": 626
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "kind": "resource",
+      "tokens": 147,
+      "chars": 1236
+    },
+    {
+      "path": "docs/CONTEXT_ROUTER_SPEC.md",
+      "kind": "resource",
+      "tokens": 53,
+      "chars": 385
+    },
+    {
+      "path": "docs/EVIDENCE_BACKED_MEMORY.md",
+      "kind": "resource",
+      "tokens": 40,
+      "chars": 325
+    },
+    {
+      "path": "docs/REPO_MEMORY_BRIDGE.md",
+      "kind": "resource",
+      "tokens": 43,
+      "chars": 309
+    },
+    {
+      "path": "docs/CLIENT_MEMORY_BRIDGE.md",
+      "kind": "resource",
+      "tokens": 37,
+      "chars": 308
+    },
+    {
+      "path": "docs/HUMAN_APPROVAL_GATE.md",
+      "kind": "resource",
+      "tokens": 41,
+      "chars": 354
+    },
+    {
+      "path": "docs/REAL_BRAIN_OPERATIONS_MODEL.md",
+      "kind": "resource",
+      "tokens": 41,
+      "chars": 304
+    },
+    {
+      "path": "docs/MEETING_MEMORY_BRIDGE.md",
+      "kind": "resource",
+      "tokens": 31,
+      "chars": 254
+    },
+    {
+      "path": "docs/PUBLIC_WEBSITE_BLUEPRINT.md",
+      "kind": "resource",
+      "tokens": 66,
+      "chars": 514
     },
     {
       "path": "docs/TEAM_BRAIN_MODEL.md",
-      "type": "markdown",
-      "size": 284
+      "kind": "resource",
+      "tokens": 36,
+      "chars": 284
     },
     {
-      "path": "docs/releases/v4.1.0.md",
-      "type": "markdown",
-      "size": 207
+      "path": "docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md",
+      "kind": "resource",
+      "tokens": 250,
+      "chars": 2019
     },
     {
-      "path": "docs/releases/v4.2.0.md",
-      "type": "markdown",
-      "size": 180
+      "path": "docs/DECISION_LOG_STANDARD.md",
+      "kind": "resource",
+      "tokens": 37,
+      "chars": 283
     },
     {
-      "path": "docs/releases/v4.3.0.md",
-      "type": "markdown",
-      "size": 196
+      "path": "docs/PACK3_TOC.md",
+      "kind": "resource",
+      "tokens": 118,
+      "chars": 957
     },
     {
-      "path": "docs/releases/v4.4.0.md",
-      "type": "markdown",
-      "size": 190
-    },
-    {
-      "path": "docs/releases/v4.5.0.md",
-      "type": "markdown",
-      "size": 190
+      "path": "docs/MEMORY_POLICY.md",
+      "kind": "resource",
+      "tokens": 46,
+      "chars": 374
     },
     {
       "path": "docs/releases/v4.6.0.md",
-      "type": "markdown",
-      "size": 180
-    },
-    {
-      "path": "docs/releases/v4.7.0.md",
-      "type": "markdown",
-      "size": 192
-    },
-    {
-      "path": "docs/releases/v4.8.0.md",
-      "type": "markdown",
-      "size": 202
-    },
-    {
-      "path": "docs/releases/v4.9.0.md",
-      "type": "markdown",
-      "size": 177
-    },
-    {
-      "path": "docs/releases/v5.0.0.md",
-      "type": "markdown",
-      "size": 177
-    },
-    {
-      "path": "docs/releases/v5.1.0.md",
-      "type": "markdown",
-      "size": 193
+      "kind": "resource",
+      "tokens": 24,
+      "chars": 176
     },
     {
       "path": "docs/releases/v5.2.0.md",
-      "type": "markdown",
-      "size": 190
+      "kind": "resource",
+      "tokens": 23,
+      "chars": 186
     },
     {
       "path": "docs/releases/v5.3.0.md",
-      "type": "markdown",
-      "size": 175
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 171
     },
     {
-      "path": "docs/releases/v5.4.0.md",
-      "type": "markdown",
-      "size": 175
-    },
-    {
-      "path": "docs/releases/v5.5.0.md",
-      "type": "markdown",
-      "size": 181
-    },
-    {
-      "path": "docs/releases/v5.6.0.md",
-      "type": "markdown",
-      "size": 173
-    },
-    {
-      "path": "docs/releases/v5.7.0.md",
-      "type": "markdown",
-      "size": 177
+      "path": "docs/releases/v4.7.0.md",
+      "kind": "resource",
+      "tokens": 23,
+      "chars": 188
     },
     {
       "path": "docs/releases/v5.8.0.md",
-      "type": "markdown",
-      "size": 177
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 173
     },
     {
-      "path": "docs/releases/v5.9.0.md",
-      "type": "markdown",
-      "size": 185
+      "path": "docs/releases/v5.4.0.md",
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 171
     },
     {
       "path": "docs/releases/v6.0.0.md",
-      "type": "markdown",
-      "size": 191
+      "kind": "resource",
+      "tokens": 25,
+      "chars": 187
     },
     {
-      "path": "docs/repairs/PACK3_DIRTY_TREE_CLEANUP_v6.0.1.md",
-      "type": "markdown",
-      "size": 867
+      "path": "docs/releases/v5.5.0.md",
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 177
     },
     {
-      "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
-      "type": "markdown",
-      "size": 813
+      "path": "docs/releases/v4.1.0.md",
+      "kind": "resource",
+      "tokens": 27,
+      "chars": 203
+    },
+    {
+      "path": "docs/releases/v5.9.0.md",
+      "kind": "resource",
+      "tokens": 25,
+      "chars": 181
+    },
+    {
+      "path": "docs/releases/v5.6.0.md",
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 169
+    },
+    {
+      "path": "docs/releases/v4.2.0.md",
+      "kind": "resource",
+      "tokens": 23,
+      "chars": 176
+    },
+    {
+      "path": "docs/releases/v4.3.0.md",
+      "kind": "resource",
+      "tokens": 24,
+      "chars": 192
+    },
+    {
+      "path": "docs/releases/v5.7.0.md",
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 173
+    },
+    {
+      "path": "docs/releases/v5.0.0.md",
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 173
+    },
+    {
+      "path": "docs/releases/v4.4.0.md",
+      "kind": "resource",
+      "tokens": 26,
+      "chars": 186
+    },
+    {
+      "path": "docs/releases/v4.8.0.md",
+      "kind": "resource",
+      "tokens": 26,
+      "chars": 198
+    },
+    {
+      "path": "docs/releases/v4.9.0.md",
+      "kind": "resource",
+      "tokens": 22,
+      "chars": 173
+    },
+    {
+      "path": "docs/releases/v4.5.0.md",
+      "kind": "resource",
+      "tokens": 25,
+      "chars": 186
+    },
+    {
+      "path": "docs/releases/v5.1.0.md",
+      "kind": "resource",
+      "tokens": 24,
+      "chars": 189
     },
     {
       "path": "docs/toc/PACK2_v2.1_to_v4.0_TOC.md",
-      "type": "markdown",
-      "size": 1357
+      "kind": "resource",
+      "tokens": 168,
+      "chars": 1346
     },
     {
-      "path": "examples/sample-client-memory.md",
-      "type": "markdown",
-      "size": 242
+      "path": "docs/pack4/CONTEXT_BUDGET_POLICY.md",
+      "kind": "resource",
+      "tokens": 49,
+      "chars": 375
     },
     {
-      "path": "examples/sample-decision-log.md",
-      "type": "markdown",
-      "size": 363
+      "path": "docs/pack4/SOURCE_PRIORITY_POLICY.md",
+      "kind": "resource",
+      "tokens": 37,
+      "chars": 303
     },
     {
-      "path": "examples/sample-evidence-report.md",
-      "type": "markdown",
-      "size": 350
+      "path": "docs/pack4/QUERY_RETRIEVAL_CONTEXT_ARCHITECTURE.md",
+      "kind": "resource",
+      "tokens": 85,
+      "chars": 678
     },
     {
-      "path": "examples/sample-memory-entry.md",
-      "type": "markdown",
-      "size": 294
+      "path": "docs/pack4/STALENESS_WARNING_POLICY.md",
+      "kind": "resource",
+      "tokens": 55,
+      "chars": 354
     },
     {
-      "path": "examples/sample-project-context.md",
-      "type": "markdown",
-      "size": 531
+      "path": "docs/pack4/releases/v6.1.0.md",
+      "kind": "resource",
+      "tokens": 54,
+      "chars": 425
+    },
+    {
+      "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
+      "kind": "resource",
+      "tokens": 104,
+      "chars": 798
+    },
+    {
+      "path": "docs/repairs/PACK3_DIRTY_TREE_CLEANUP_v6.0.1.md",
+      "kind": "resource",
+      "tokens": 117,
+      "chars": 861
+    },
+    {
+      "path": "skills/runtime-memory-create.md",
+      "kind": "skill",
+      "tokens": 21,
+      "chars": 177
+    },
+    {
+      "path": "skills/assemble-context.md",
+      "kind": "skill",
+      "tokens": 35,
+      "chars": 287
+    },
+    {
+      "path": "skills/runtime-report.md",
+      "kind": "skill",
+      "tokens": 15,
+      "chars": 130
+    },
+    {
+      "path": "skills/book-material-capture.md",
+      "kind": "skill",
+      "tokens": 39,
+      "chars": 292
+    },
+    {
+      "path": "skills/context-router.md",
+      "kind": "skill",
+      "tokens": 42,
+      "chars": 313
+    },
+    {
+      "path": "skills/canonize-signal.md",
+      "kind": "skill",
+      "tokens": 56,
+      "chars": 452
+    },
+    {
+      "path": "skills/client-follow-up.md",
+      "kind": "skill",
+      "tokens": 31,
+      "chars": 263
+    },
+    {
+      "path": "skills/evidence-memory-update.md",
+      "kind": "skill",
+      "tokens": 30,
+      "chars": 238
+    },
+    {
+      "path": "skills/start-project.md",
+      "kind": "skill",
+      "tokens": 56,
+      "chars": 483
+    },
+    {
+      "path": "skills/query-brain.md",
+      "kind": "skill",
+      "tokens": 44,
+      "chars": 329
+    },
+    {
+      "path": "skills/real-brain-operations.md",
+      "kind": "skill",
+      "tokens": 52,
+      "chars": 389
+    },
+    {
+      "path": "skills/taptap-pack-summary.md",
+      "kind": "skill",
+      "tokens": 46,
+      "chars": 393
+    },
+    {
+      "path": "skills/client-brief.md",
+      "kind": "skill",
+      "tokens": 46,
+      "chars": 398
+    },
+    {
+      "path": "skills/meeting-debrief.md",
+      "kind": "skill",
+      "tokens": 46,
+      "chars": 422
+    },
+    {
+      "path": "skills/repo-status.md",
+      "kind": "skill",
+      "tokens": 44,
+      "chars": 380
+    },
+    {
+      "path": "skills/answer-with-evidence.md",
+      "kind": "skill",
+      "tokens": 32,
+      "chars": 227
+    },
+    {
+      "path": "skills/runtime-brain-index.md",
+      "kind": "skill",
+      "tokens": 30,
+      "chars": 239
+    },
+    {
+      "path": "schemas/query-request.schema.json",
+      "kind": "schema",
+      "tokens": 46,
+      "chars": 554
+    },
+    {
+      "path": "schemas/evidence-link.schema.json",
+      "kind": "schema",
+      "tokens": 29,
+      "chars": 341
+    },
+    {
+      "path": "schemas/retrieval-result.schema.json",
+      "kind": "schema",
+      "tokens": 39,
+      "chars": 434
+    },
+    {
+      "path": "schemas/signal.schema.json",
+      "kind": "schema",
+      "tokens": 45,
+      "chars": 576
+    },
+    {
+      "path": "schemas/repo-memory.schema.json",
+      "kind": "schema",
+      "tokens": 45,
+      "chars": 564
+    },
+    {
+      "path": "schemas/skill.schema.json",
+      "kind": "schema",
+      "tokens": 54,
+      "chars": 646
+    },
+    {
+      "path": "schemas/decision.schema.json",
+      "kind": "schema",
+      "tokens": 44,
+      "chars": 516
+    },
+    {
+      "path": "schemas/runtime-report.schema.json",
+      "kind": "schema",
+      "tokens": 26,
+      "chars": 305
+    },
+    {
+      "path": "schemas/runtime-memory-entry.schema.json",
+      "kind": "schema",
+      "tokens": 40,
+      "chars": 440
+    },
+    {
+      "path": "schemas/runtime-command.schema.json",
+      "kind": "schema",
+      "tokens": 43,
+      "chars": 469
+    },
+    {
+      "path": "schemas/context-bundle.schema.json",
+      "kind": "schema",
+      "tokens": 47,
+      "chars": 554
+    },
+    {
+      "path": "schemas/project-context.schema.json",
+      "kind": "schema",
+      "tokens": 48,
+      "chars": 559
+    },
+    {
+      "path": "schemas/operation-card.schema.json",
+      "kind": "schema",
+      "tokens": 42,
+      "chars": 403
+    },
+    {
+      "path": "schemas/memory-entry.schema.json",
+      "kind": "schema",
+      "tokens": 53,
+      "chars": 603
+    },
+    {
+      "path": "schemas/client-memory.schema.json",
+      "kind": "schema",
+      "tokens": 44,
+      "chars": 529
     },
     {
       "path": "examples/sample-repo-memory.md",
-      "type": "markdown",
-      "size": 294
-    },
-    {
-      "path": "examples/sample-runtime-session.md",
-      "type": "markdown",
-      "size": 378
+      "kind": "resource",
+      "tokens": 32,
+      "chars": 290
     },
     {
       "path": "examples/sample-signal-canon.md",
-      "type": "markdown",
-      "size": 321
+      "kind": "resource",
+      "tokens": 41,
+      "chars": 319
+    },
+    {
+      "path": "examples/sample-evidence-report.md",
+      "kind": "resource",
+      "tokens": 42,
+      "chars": 348
+    },
+    {
+      "path": "examples/sample-project-context.md",
+      "kind": "resource",
+      "tokens": 67,
+      "chars": 527
+    },
+    {
+      "path": "examples/sample-runtime-session.md",
+      "kind": "resource",
+      "tokens": 46,
+      "chars": 378
+    },
+    {
+      "path": "examples/sample-decision-log.md",
+      "kind": "resource",
+      "tokens": 39,
+      "chars": 361
     },
     {
       "path": "examples/sample-operation-card.json",
-      "type": "json",
-      "size": 181
+      "kind": "resource",
+      "tokens": 15,
+      "chars": 181
+    },
+    {
+      "path": "examples/sample-memory-entry.md",
+      "kind": "resource",
+      "tokens": 34,
+      "chars": 294
+    },
+    {
+      "path": "examples/sample-client-memory.md",
+      "kind": "resource",
+      "tokens": 30,
+      "chars": 242
     }
   ]
 }

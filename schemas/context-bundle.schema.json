@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Second Brain Context Bundle",
+  "type": "object",
+  "required": ["query", "created_at", "sources", "next_action"],
+  "properties": {
+    "query": { "type": "string" },
+    "created_at": { "type": "string" },
+    "project": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "./retrieval-result.schema.json" }
+    },
+    "evidence": { "type": "array" },
+    "warnings": { "type": "array" },
+    "next_action": { "type": "string" }
+  }
+}

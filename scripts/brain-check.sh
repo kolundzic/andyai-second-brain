@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
-[[ -f ANDYAI_CONTEXT.md ]] && echo "Root context: OK"
-[[ -f SECOND_BRAIN_CANON.md ]] && echo "Canon: OK"
-[[ -f docs/PACK3_TOC.md ]] && echo "PACK3 TOC: OK"
-[[ -x runtime/bin/brain ]] && echo "Runtime CLI: OK"
-[[ -f brain/search/brain-index.json ]] && echo "Search index: OK"
-[[ -f brain/reports/brain-report.md ]] && echo "Brain report: OK"
-echo "Runtime docs: $(find runtime/docs -type f 2>/dev/null | wc -l | tr -d ' ')"
-echo "Skills: $(find skills -type f 2>/dev/null | wc -l | tr -d ' ')"
+
+echo "🧠 AndyAI Second Brain PACK4 check"
+echo "Root context: $([[ -f ANDYAI_CONTEXT.md ]] && echo OK || echo MISSING)"
+echo "Canon: $([[ -f SECOND_BRAIN_CANON.md ]] && echo OK || echo MISSING)"
+echo "PACK4 TOC: $([[ -f docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md ]] && echo OK || echo MISSING)"
+echo "Brain query CLI: $([[ -x runtime/bin/brain-query ]] && echo OK || echo MISSING)"
+echo "Query docs: $(find docs/pack4 -type f 2>/dev/null | wc -l | tr -d ' ')"
 echo "Schemas: $(find schemas -type f 2>/dev/null | wc -l | tr -d ' ')"
-echo "Examples: $(find examples -type f 2>/dev/null | wc -l | tr -d ' ')"
+echo "Skills: $(find skills -type f 2>/dev/null | wc -l | tr -d ' ')"
+echo "Context bundles: $(find brain/context/bundles -type f 2>/dev/null | wc -l | tr -d ' ')"

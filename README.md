@@ -87,3 +87,22 @@ PACK3 adds practical local operations to AndyAI Second Brain: inbox intake, cont
 ./runtime/bin/brain dashboard
 ./runtime/bin/brain export-bundle
 ```
+
+## 🤜💥 PACK4 — Brain Query / Retrieval / Context Assembly Layer
+
+PACK4 adds a local retrieval and context assembly runtime.
+
+Example commands:
+
+```bash
+runtime/bin/brain-query index
+runtime/bin/brain-query search "second brain runtime"
+runtime/bin/brain-query bundle "what should the agent read before PACK5?"
+runtime/bin/brain-query handoff "prepare next AndyAI Second Brain strike"
+runtime/bin/brain-query answer-draft "what changed in PACK4?"
+runtime/bin/brain-query report
+```
+
+Canon sentence:
+
+> Search finds files. Retrieval finds relevance. Context assembly prepares action.

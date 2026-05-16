@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Second Brain Query Request",
+  "type": "object",
+  "required": ["query", "intent"],
+  "properties": {
+    "query": { "type": "string" },
+    "intent": {
+      "type": "string",
+      "enum": ["find", "retrieve", "assemble-context", "answer-draft", "agent-handoff"]
+    },
+    "project": { "type": "string" },
+    "max_results": { "type": "integer", "minimum": 1, "maximum": 50 },
+    "include_evidence": { "type": "boolean" },
+    "created_at": { "type": "string" }
+  }
+}
