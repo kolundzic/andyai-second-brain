@@ -1,0 +1,11 @@
+{
+  "type": "audit_event",
+  "id": "20260516T224639Z-evidence-hash-recorded-for-pack7-trust-ledger-exists",
+  "actor": "system",
+  "target": "PACK7 trust ledger exists",
+  "action": "evidence hash recorded for PACK7 trust ledger exists",
+  "status": "recorded",
+  "created_at": "20260516T224639Z",
+  "evidence_required": true,
+  "human_review_visible": true
+}

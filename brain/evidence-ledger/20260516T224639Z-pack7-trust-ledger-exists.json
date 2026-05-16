@@ -1,0 +1,9 @@
+{
+  "type": "evidence_hash_record",
+  "id": "20260516T224639Z-pack7-trust-ledger-exists",
+  "claim": "PACK7 trust ledger exists",
+  "detail": "runtime/bin/brain-trust and trust-ledger folders exist",
+  "sha256": "574dce4ab74105103c616a8f9c7d2f651dd4e1beecae35fde4a284ea634ee125",
+  "created_at": "20260516T224639Z",
+  "verification_status": "recorded"
+}
