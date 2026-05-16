@@ -9,3 +9,4 @@
 - v4.7.0 — Project Snapshot Operation
 - v4.8.0 — Repo Snapshot Operation
 - v4.9.0 — Evidence Card Operation
+- v5.0.0 — Decision Card Operation
