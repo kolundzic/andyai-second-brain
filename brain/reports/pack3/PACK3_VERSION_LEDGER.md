@@ -17,3 +17,4 @@
 - v5.5.0 — Meeting Debrief Operation
 - v5.6.0 — Report Card Operation
 - v5.7.0 — Ops Dashboard Operation
+- v5.8.0 — Export Bundle Operation
