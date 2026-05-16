@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": [
+    "mission_id",
+    "steps",
+    "stop_conditions",
+    "rollback_plan"
+  ],
+  "properties": {
+    "mission_id": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stop_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rollback_plan": {
+      "type": "string"
+    }
+  }
+}

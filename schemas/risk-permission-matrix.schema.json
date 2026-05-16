@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": [
+    "mission_id",
+    "risk_level",
+    "permissions",
+    "approval_gate"
+  ],
+  "properties": {
+    "mission_id": {
+      "type": "string"
+    },
+    "risk_level": {
+      "type": "string"
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approval_gate": {
+      "type": "string"
+    }
+  }
+}

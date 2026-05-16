@@ -1,0 +1,141 @@
+#!/usr/bin/env python3
+import sys, json, zipfile
+from pathlib import Path
+from datetime import datetime, timezone
+ROOT=Path(__file__).resolve().parents[2]
+BRAIN=ROOT/'brain'
+
+def ts(): return datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+def slug(s): return ''.join(c.lower() if c.isalnum() else '-' for c in s).strip('-')[:70] or 'mission'
+def write(path, text):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text)
+    return path
+
+def records():
+    out=[]
+    for base in ['brain','docs','skills','schemas','examples']:
+        p=ROOT/base
+        if not p.exists(): continue
+        for f in p.rglob('*'):
+            if f.is_file() and f.suffix.lower() in ['.md','.json','.txt']:
+                try: txt=f.read_text(errors='ignore')[:1200]
+                except Exception: txt=''
+                out.append({'path':str(f.relative_to(ROOT)),'text':txt})
+    return out
+
+def search(q, limit=8):
+    terms=[t.lower() for t in q.split() if t.strip()]
+    scored=[]
+    for r in records():
+        hay=(r['path']+' '+r['text']).lower()
+        score=sum(hay.count(t) for t in terms)
+        if score:
+            scored.append((score,r))
+    scored.sort(key=lambda x:(-x[0], x[1]['path']))
+    return scored[:limit]
+
+def mission_create(goal):
+    mid=f"{ts()}-{slug(goal)}"
+    text=f"# Mission Request\n\nMission ID: {mid}\nGoal: {goal}\nRequester: AndyAI operator\nApproval Required: true\n\n## Success Criteria\n- relevant context selected\n- evidence pack prepared\n- action plan created\n- human approval gate visible\n"
+    path=write(BRAIN/'missions'/f'{mid}.md', text)
+    print(f'🟢 Mission request written: {path.relative_to(ROOT)}')
+    return mid
+
+def context_select(query):
+    found=search(query,10)
+    mid=f"{ts()}-{slug(query)}"
+    lines=[f"# Relevant Context Selection\n\nQuery: {query}\n\n"]
+    for score,r in found:
+        lines.append(f"- score {score}: {r['path']}")
+    path=write(BRAIN/'context-bundles'/f'{mid}-context.md','\n'.join(lines)+"\n")
+    print(f'🟢 Relevant context selected: {path.relative_to(ROOT)}')
+
+def evidence_pack(query):
+    found=search(query,8)
+    mid=f"{ts()}-{slug(query)}"
+    lines=[f"# Evidence Pack\n\nQuery: {query}\n\n"]
+    for score,r in found:
+        lines.append(f"## {r['path']}\n\nScore: {score}\n\nExcerpt:\n{r['text'][:500]}\n")
+    path=write(BRAIN/'evidence'/f'{mid}-evidence-pack.md','\n'.join(lines)+"\n")
+    print(f'🟢 Evidence pack written: {path.relative_to(ROOT)}')
+
+def risk_matrix(mission='pack5-sample'):
+    text=f"# Risk and Permission Matrix\n\nMission: {mission}\nRisk Level: medium\n\n## Allowed\n- read files\n- assemble context\n- draft plan\n- create local reports\n\n## Blocked Without Human Approval\n- publish externally\n- delete canon\n- change production\n- send client material\n- spend money\n\n## Approval Gate\nHuman approval required before high-impact actions.\n"
+    path=write(BRAIN/'risk'/f'{ts()}-{slug(mission)}-risk-permission-matrix.md',text)
+    print(f'🟢 Risk matrix written: {path.relative_to(ROOT)}')
+
+def approval_check(mission='pack5-sample'):
+    text=f"# Human Approval Checklist\n\nMission: {mission}\n\n- [ ] Goal is clear\n- [ ] Evidence is attached\n- [ ] Risk is classified\n- [ ] Blocked actions are visible\n- [ ] Stop conditions are defined\n- [ ] Human approval captured before execution\n"
+    path=write(BRAIN/'approvals'/f'{ts()}-{slug(mission)}-approval-checklist.md',text)
+    print(f'🟢 Approval checklist written: {path.relative_to(ROOT)}')
+
+def action_bundle(goal):
+    mid=f"{ts()}-{slug(goal)}"
+    text=f"# Action Preparation Bundle\n\nMission ID: {mid}\nGoal: {goal}\n\n## Steps\n1. Review context bundle.\n2. Check evidence pack.\n3. Confirm allowed and blocked actions.\n4. Request approval if needed.\n5. Execute only safe local steps.\n6. Verify and report.\n\n## Stop Conditions\n- missing evidence\n- dirty repo\n- failed verifier\n- unclear approval\n- high-impact action requested\n\n## Rollback Plan\nReturn to last clean git state and preserve evidence report.\n"
+    path=write(BRAIN/'action-prep'/f'{mid}-action-bundle.md',text)
+    print(f'🟢 Action preparation bundle written: {path.relative_to(ROOT)}')
+
+def handoff(goal):
+    mid=f"{ts()}-{slug(goal)}"
+    found=search(goal,8)
+    ctx='\n'.join([f"- {r['path']}" for score,r in found]) or '- No strong context found.'
+    text=f"# Agent Handoff\n\nMission ID: {mid}\nGoal: {goal}\n\n## Context Summary\nThis handoff prepares the agent to work on the mission using selected local brain context.\n\n## Relevant Files\n{ctx}\n\n## Allowed Actions\n- read repository files\n- assemble context\n- draft local docs\n- run verifiers\n\n## Blocked Actions\n- publish externally without approval\n- delete canon without approval\n- change production without approval\n\n## Stop Conditions\n- verifier fails\n- tree is dirty unexpectedly\n- required approval is missing\n\n## Next Action\nReview the mission context and proceed only within allowed actions.\n"
+    path=write(BRAIN/'agent-handoffs'/f'{mid}-handoff.md',text)
+    print(f'🟢 Agent handoff written: {path.relative_to(ROOT)}')
+
+def qa():
+    checks=[]
+    for p in ['docs/packs/PACK5_AGENT_HANDOFF_TOC.md','runtime/bin/brain-mission','schemas/mission-request.schema.json','schemas/agent-handoff.schema.json','docs/policies/NO_ACTION_ZONE_POLICY.md']:
+        checks.append((p,(ROOT/p).exists()))
+    lines=['# PACK5 QA Report\n']
+    ok=True
+    for p,exists in checks:
+        lines.append(f"- {'PASS' if exists else 'FAIL'}: {p}")
+        ok=ok and exists
+    path=write(BRAIN/'qa'/'PACK5_QA_REPORT.md','\n'.join(lines)+"\n")
+    print(f"{'🟢' if ok else '🔴'} PACK5 QA report written: {path.relative_to(ROOT)}")
+    return 0 if ok else 1
+
+def report():
+    counts={}
+    for folder in ['missions','agent-handoffs','action-prep','risk','approvals','context-bundles','evidence']:
+        p=BRAIN/folder
+        counts[folder]=len(list(p.rglob('*'))) if p.exists() else 0
+    text='# Mission Context Report\n\n'+'\n'.join([f'- {k}: {v}' for k,v in counts.items()])+"\n"
+    path=write(BRAIN/'reports'/'mission-context-report.md',text)
+    print(f'🟢 Mission context report written: {path.relative_to(ROOT)}')
+
+def export_bundle():
+    out=BRAIN/'exports'/'pack5-mission-handoff-export.zip'
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
+        for folder in ['missions','agent-handoffs','action-prep','risk','approvals','reports','qa']:
+            p=BRAIN/folder
+            if not p.exists(): continue
+            for f in p.rglob('*'):
+                if f.is_file(): z.write(f, f.relative_to(ROOT))
+    print(f'🟢 Mission export bundle written: {out.relative_to(ROOT)}')
+
+def main():
+    args=sys.argv[1:]
+    if not args or args[0] in ['help','--help','-h']:
+        print('brain-mission commands: create, context, evidence, risk, approval, action, handoff, qa, report, export')
+        return 0
+    cmd=args[0]
+    q=' '.join(args[1:]).strip() or 'PACK5 mission context'
+    if cmd=='create': mission_create(q)
+    elif cmd=='context': context_select(q)
+    elif cmd=='evidence': evidence_pack(q)
+    elif cmd=='risk': risk_matrix(q)
+    elif cmd=='approval': approval_check(q)
+    elif cmd=='action': action_bundle(q)
+    elif cmd=='handoff': handoff(q)
+    elif cmd=='qa': return qa()
+    elif cmd=='report': report()
+    elif cmd=='export': export_bundle()
+    else:
+        print(f'Unknown command: {cmd}')
+        return 1
+    return 0
+if __name__=='__main__': raise SystemExit(main())

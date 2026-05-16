@@ -106,3 +106,10 @@ runtime/bin/brain-query report
 Canon sentence:
 
 > Search finds files. Retrieval finds relevance. Context assembly prepares action.
+
+## PACK5 — Agent Handoff / Mission Context / Action Preparation Layer
+
+PACK5 turns retrieval context into mission-ready handoff packages. It adds mission request schemas, agent handoff schemas, action plan schemas, risk and permission policies, human approval checklists, mission QA, and the `runtime/bin/brain-mission` CLI.
+
+Canon: Search finds files. Retrieval finds relevance. Context assembly prepares action. PACK5 prepares a governed mission.
+

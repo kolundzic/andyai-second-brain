@@ -1,0 +1,11 @@
+{
+  "mission_id": "mission-pack5-sample",
+  "goal": "Prepare PACK5 agent handoff layer",
+  "requester": "AndyAI operator",
+  "approval_required": true,
+  "success_criteria": [
+    "mission context exists",
+    "handoff bundle exists",
+    "qa passes"
+  ]
+}

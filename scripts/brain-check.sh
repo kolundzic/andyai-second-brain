@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
-echo "🧠 AndyAI Second Brain PACK4 check"
-echo "Root context: $([[ -f ANDYAI_CONTEXT.md ]] && echo OK || echo MISSING)"
-echo "Canon: $([[ -f SECOND_BRAIN_CANON.md ]] && echo OK || echo MISSING)"
-echo "PACK4 TOC: $([[ -f docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md ]] && echo OK || echo MISSING)"
-echo "Brain query CLI: $([[ -x runtime/bin/brain-query ]] && echo OK || echo MISSING)"
-echo "Query docs: $(find docs/pack4 -type f 2>/dev/null | wc -l | tr -d ' ')"
-echo "Schemas: $(find schemas -type f 2>/dev/null | wc -l | tr -d ' ')"
-echo "Skills: $(find skills -type f 2>/dev/null | wc -l | tr -d ' ')"
-echo "Context bundles: $(find brain/context/bundles -type f 2>/dev/null | wc -l | tr -d ' ')"
+printf "🧠 AndyAI Second Brain PACK5 check\n"
+[ -f ANDYAI_CONTEXT.md ] && printf "Root context: OK\n" || exit 1
+[ -f SECOND_BRAIN_CANON.md ] && printf "Canon: OK\n" || exit 1
+[ -f docs/packs/PACK5_AGENT_HANDOFF_TOC.md ] && printf "PACK5 TOC: OK\n" || exit 1
+[ -x runtime/bin/brain-mission ] && printf "Mission CLI: OK\n" || exit 1
+[ -f schemas/mission-request.schema.json ] && printf "Mission schema: OK\n" || exit 1
+[ -f schemas/agent-handoff.schema.json ] && printf "Handoff schema: OK\n" || exit 1
+printf "Skills: %s\n" "$(find skills -type f | wc -l | tr -d ' ')"
+printf "Schemas: %s\n" "$(find schemas -type f | wc -l | tr -d ' ')"
+printf "Docs: %s\n" "$(find docs -type f | wc -l | tr -d ' ')"
+printf "Examples: %s\n" "$(find examples -type f | wc -l | tr -d ' ')"

@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "mission_id",
+    "goal",
+    "success_criteria",
+    "requester",
+    "approval_required"
+  ],
+  "properties": {
+    "mission_id": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "success_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requester": {
+      "type": "string"
+    },
+    "approval_required": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "mission_id",
+    "context_summary",
+    "allowed_actions",
+    "blocked_actions",
+    "evidence"
+  ],
+  "properties": {
+    "mission_id": {
+      "type": "string"
+    },
+    "context_summary": {
+      "type": "string"
+    },
+    "allowed_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
