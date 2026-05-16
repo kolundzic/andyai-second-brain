@@ -1,0 +1,10 @@
+{
+  "pack": "PACK10",
+  "status": "local-complete-push-later",
+  "next_action": "push main and tags after green semafor",
+  "commands": [
+    "cd ~/Documents/Projects/andyai-second-brain",
+    "git push -u origin main",
+    "git push --tags"
+  ]
+}
