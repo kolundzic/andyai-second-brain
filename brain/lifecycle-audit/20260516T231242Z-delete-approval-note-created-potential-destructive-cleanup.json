@@ -1,0 +1,8 @@
+{
+  "type": "lifecycle_audit_event",
+  "action": "delete_approval_note_created",
+  "subject": "Potential destructive cleanup",
+  "status": "approval-required",
+  "created_at": "20260516T231242Z",
+  "human_visible": true
+}
