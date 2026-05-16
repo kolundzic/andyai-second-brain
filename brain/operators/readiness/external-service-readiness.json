@@ -10,12 +10,12 @@
   ],
   "timing": {
   "started": "2026-05-16T23:33:28Z",
-  "finished": "2026-05-16T23:33:33Z",
-  "total_ms": 5457,
-  "versions_completed": 14,
-  "average_phase_ms": 389,
-  "slowest_phase": {"version": "v20.1.0", "title": "Operator Registry Scaffold", "ms": 327},
+  "finished": "2026-05-16T23:33:35Z",
+  "total_ms": 6725,
+  "versions_completed": 17,
+  "average_phase_ms": 395,
+  "slowest_phase": {"version": "v21.5.0", "title": "Operator Status Payload", "ms": 451},
   "fastest_phase": {"version": "v20.9.0", "title": "Stripe Operator Registration", "ms": 249},
-  "estimated_next_20_version_pack_ms": 7780
+  "estimated_next_20_version_pack_ms": 7900
 }
 }
