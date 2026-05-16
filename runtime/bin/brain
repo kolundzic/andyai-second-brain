@@ -3,6 +3,26 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 source "$ROOT_DIR/runtime/lib/common.sh"
 ensure_runtime_dirs
+
+render_template(){
+  local template="$1" out="$2"
+  shift 2
+  python3 - "$template" "$out" "$@" <<'PY'
+import sys
+from pathlib import Path
+
+template = Path(sys.argv[1])
+out = Path(sys.argv[2])
+pairs = sys.argv[3:]
+text = template.read_text(encoding="utf-8")
+for pair in pairs:
+    key, value = pair.split("=", 1)
+    text = text.replace("{{" + key + "}}", value)
+out.parent.mkdir(parents=True, exist_ok=True)
+out.write_text(text, encoding="utf-8")
+PY
+}
+
 cmd="${1:-help}"
 shift || true
 case "$cmd" in
@@ -29,8 +49,7 @@ case "$cmd" in
     body="${2:-No body provided.}"
     slug="$(slugify "$title")"
     out="$ROOT_DIR/brain/resources/${slug}.md"
-    mkdir -p "$ROOT_DIR/brain/resources"
-    sed -e "s/{{TITLE}}/$title/g" -e "s/{{BODY}}/$body/g" -e "s/{{CREATED_AT}}/$(now_utc)/g" "$ROOT_DIR/runtime/templates/memory-entry.md" > "$out"
+    render_template "$ROOT_DIR/runtime/templates/memory-entry.md" "$out" "TITLE=$title" "BODY=$body" "CREATED_AT=$(now_utc)"
     echo "🟢 Memory entry created: $out"
     ;;
   decision-record)
@@ -38,8 +57,7 @@ case "$cmd" in
     reason="${2:-No reason provided.}"
     slug="$(slugify "$decision")"
     out="$ROOT_DIR/brain/decisions/${slug}.md"
-    mkdir -p "$ROOT_DIR/brain/decisions"
-    sed -e "s/{{DECISION}}/$decision/g" -e "s/{{REASON}}/$reason/g" -e "s/{{CREATED_AT}}/$(now_utc)/g" "$ROOT_DIR/runtime/templates/decision.md" > "$out"
+    render_template "$ROOT_DIR/runtime/templates/decision.md" "$out" "DECISION=$decision" "REASON=$reason" "CREATED_AT=$(now_utc)"
     echo "🟢 Decision recorded: $out"
     ;;
   evidence-link)
@@ -47,8 +65,7 @@ case "$cmd" in
     evidence="${2:-No evidence provided.}"
     slug="$(slugify "$claim")"
     out="$ROOT_DIR/brain/evidence/${slug}.md"
-    mkdir -p "$ROOT_DIR/brain/evidence"
-    sed -e "s/{{CLAIM}}/$claim/g" -e "s/{{EVIDENCE}}/$evidence/g" -e "s/{{CREATED_AT}}/$(now_utc)/g" "$ROOT_DIR/runtime/templates/evidence-link.md" > "$out"
+    render_template "$ROOT_DIR/runtime/templates/evidence-link.md" "$out" "CLAIM=$claim" "EVIDENCE=$evidence" "CREATED_AT=$(now_utc)"
     echo "🟢 Evidence link created: $out"
     ;;
   repo-status)
