@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AndyAI Approval Decision","type":"object","required":["decision","actor","scope","timestamp"],"properties":{"decision":{"enum":["approved","rejected","needs-review","blocked"]},"actor":{"type":"string"},"scope":{"type":"string"},"timestamp":{"type":"string"},"reason":{"type":"string"}}}

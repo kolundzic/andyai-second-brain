@@ -1,0 +1,1 @@
+{"type":"execution_plan","id":"sample-pack6-plan","goal":"Prepare governed execution for next AndyAI Second Brain strike","status":"planned","requires_human_approval":true,"steps":["read mission","dry-run","capture evidence","inspect","report"],"stop_conditions":["missing approval","failed verifier","dirty tree"]}

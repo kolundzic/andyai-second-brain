@@ -113,3 +113,11 @@ PACK5 turns retrieval context into mission-ready handoff packages. It adds missi
 
 Canon: Search finds files. Retrieval finds relevance. Context assembly prepares action. PACK5 prepares a governed mission.
 
+
+## 🤜💥 PACK6 — Governed Agent Execution / Approval Runtime Layer
+
+PACK6 adds a safe local-first governed execution layer: execution plans, approval gates, dry-run-first policy, permission matrix, safe run stub, evidence capture, result inspection, stop conditions, rollback notes, execution reports, and sandbox contract.
+
+Canonical line:
+
+> Mission without approval is danger. Execution without evidence is noise.

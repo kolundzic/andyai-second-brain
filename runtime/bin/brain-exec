@@ -1,0 +1,115 @@
+#!/usr/bin/env python3
+"""AndyAI Second Brain governed execution runtime. Safe local-first scaffold."""
+import json, sys, re, zipfile
+from pathlib import Path
+from datetime import datetime, timezone
+ROOT = Path(__file__).resolve().parents[2]
+BRAIN = ROOT / "brain"
+def ts(): return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+def slug(s): return (re.sub(r"[^a-zA-Z0-9]+", "-", s.lower()).strip("-")[:80] or "execution")
+def ensure(p): p.parent.mkdir(parents=True, exist_ok=True)
+def write(path, content): ensure(path); path.write_text(content, encoding="utf-8"); print(f"🟢 written: {path.relative_to(ROOT)}")
+def write_json(path, data): write(path, json.dumps(data, indent=2, ensure_ascii=False)+"\n")
+def md(title, body): return f"# {title}\n\n{body.strip()}\n"
+def arg(i, default=""): return sys.argv[i] if len(sys.argv)>i else default
+
+def plan(goal):
+    sid=f"{ts()}-{slug(goal)}"
+    data={"type":"execution_plan","id":sid,"goal":goal,"mode":"dry-run-first","status":"planned","requires_human_approval":True,"steps":["confirm mission context","prepare action plan","run safe dry-run","capture evidence","inspect result","request approval before high-impact execution"],"stop_conditions":["missing approval","dirty working tree","failed verification","unclear target","external side effect requested"],"created_at":ts()}
+    write_json(BRAIN/"execution-plans"/f"{sid}.json", data)
+
+def approval(goal):
+    sid=f"{ts()}-{slug(goal)}"
+    body=f"""## Goal
+{goal}
+
+## Approval status
+pending
+
+## Human rule
+AI may prepare, inspect, dry-run, and report. AI must not publish, delete canon, push production, send client material, or execute high-impact actions without explicit human approval.
+
+## Checklist
+- [ ] Goal is clear
+- [ ] Context bundle reviewed
+- [ ] Risk matrix reviewed
+- [ ] Stop conditions accepted
+- [ ] Rollback note prepared
+- [ ] Human approval granted
+"""
+    write(BRAIN/"execution-approvals"/f"{sid}.md", md("Execution Approval Request", body))
+
+def dryrun(goal):
+    sid=f"{ts()}-{slug(goal)}"
+    write_json(BRAIN/"execution-runs"/f"{sid}.json", {"type":"execution_dry_run","id":sid,"goal":goal,"result":"safe-dry-run-only","side_effects":"none","status":"passed","created_at":ts()})
+
+def evidence(claim, detail):
+    sid=f"{ts()}-{slug(claim)}"
+    body=f"## Claim\n{claim}\n\n## Evidence\n{detail}\n\n## Status\ncaptured\n\n## Created\n{ts()}\n"
+    write(BRAIN/"execution-evidence"/f"{sid}.md", md("Execution Evidence Card", body))
+
+def inspect(goal):
+    sid=f"{ts()}-{slug(goal)}"
+    body=f"## Inspection target\n{goal}\n\n## Checks\n- local files only\n- verifier expected\n- brain-check expected\n- clean-tree expected\n\n## Status\ninspection stub completed\n"
+    write(BRAIN/"execution-inspections"/f"{sid}.md", md("Execution Inspection", body))
+
+def stop(goal):
+    sid=f"{ts()}-{slug(goal)}"
+    body=f"## Goal\n{goal}\n\n## Stop conditions\n- no approval\n- unclear target\n- failed verification\n- dirty tree\n- destructive operation requested\n- external side effect without permission\n"
+    write(BRAIN/"execution-stops"/f"{sid}.md", md("Stop Conditions", body))
+
+def rollback(goal):
+    sid=f"{ts()}-{slug(goal)}"
+    body=f"## Goal\n{goal}\n\n## Rollback plan\n1. Stop execution.\n2. Preserve evidence.\n3. Identify last clean tag.\n4. Revert only with human approval.\n5. Record repair note.\n"
+    write(BRAIN/"execution-rollbacks"/f"{sid}.md", md("Rollback Note", body))
+
+def report():
+    counts={}
+    for d in ["execution-plans","execution-runs","execution-evidence","execution-approvals","execution-reports","execution-inspections","execution-stops","execution-rollbacks"]:
+        p=BRAIN/d; counts[d]=len([f for f in p.rglob("*") if f.is_file()]) if p.exists() else 0
+    body="\n".join(f"- {k}: {v}" for k,v in counts.items())
+    write(BRAIN/"execution-reports"/"execution-runtime-report.md", md("Execution Runtime Report", body))
+
+def qa():
+    required=["runtime/bin/brain-exec","schemas/execution-plan.schema.json","schemas/execution-result.schema.json","docs/PACK6_GOVERNED_EXECUTION.md"]
+    missing=[x for x in required if not (ROOT/x).exists()]
+    body=("## Status\nfailed\n\n## Missing\n"+"\n".join(f"- {m}" for m in missing)) if missing else "## Status\npassed\n\nNo missing required files.\n"
+    write(BRAIN/"execution-qa"/"PACK6_EXECUTION_QA.md", md("PACK6 Execution QA", body))
+    if missing: sys.exit(1)
+
+def export():
+    out=BRAIN/"execution-exports"/"pack6-governed-execution-export.zip"; ensure(out)
+    with zipfile.ZipFile(out,"w",zipfile.ZIP_DEFLATED) as z:
+        for folder in ["execution-plans","execution-runs","execution-evidence","execution-approvals","execution-reports","execution-inspections","execution-stops","execution-rollbacks","execution-qa"]:
+            p=BRAIN/folder
+            if p.exists():
+                for f in p.rglob("*"):
+                    if f.is_file(): z.write(f, f.relative_to(ROOT))
+    print(f"🟢 written: {out.relative_to(ROOT)}")
+
+def help_():
+    print("""AndyAI brain-exec commands:
+  plan <goal>
+  approval <goal>
+  dry-run <goal>
+  evidence <claim> <detail>
+  inspect <goal>
+  stop <goal>
+  rollback <goal>
+  report
+  qa
+  export
+""")
+cmd=arg(1,"help")
+if cmd in ["help","-h","--help"]: help_()
+elif cmd=="plan": plan(arg(2,"Prepare governed execution"))
+elif cmd=="approval": approval(arg(2,"Prepare governed execution"))
+elif cmd=="dry-run": dryrun(arg(2,"Prepare governed execution"))
+elif cmd=="evidence": evidence(arg(2,"Execution claim"), arg(3,"Evidence detail"))
+elif cmd=="inspect": inspect(arg(2,"Prepare governed execution"))
+elif cmd=="stop": stop(arg(2,"Prepare governed execution"))
+elif cmd=="rollback": rollback(arg(2,"Prepare governed execution"))
+elif cmd=="report": report()
+elif cmd=="qa": qa()
+elif cmd=="export": export()
+else: print(f"Unknown command: {cmd}"); help_(); sys.exit(2)
