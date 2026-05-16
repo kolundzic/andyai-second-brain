@@ -74,3 +74,16 @@ PACK2 adds the first local runtime layer:
 ```
 
 Rule: runtime outputs are local-first and need human review before becoming canonical truth.
+
+## 🤜💥 PACK3 — Real Brain Operations Layer
+
+PACK3 adds practical local operations to AndyAI Second Brain: inbox intake, context routing, brain search, project snapshots, repo snapshots, evidence cards, decision cards, approval queue, lifecycle status, canon signals, client briefs, meeting debriefs, report cards, ops dashboard and export bundle.
+
+```bash
+./runtime/bin/brain inbox-add "New signal" "Raw note or source text"
+./runtime/bin/brain search "TAP-TAP"
+./runtime/bin/brain project-snapshot "andyai-second-brain" --status active --next "PACK4"
+./runtime/bin/brain approval-request "Publish brief" "Send client-ready brief" --risk medium
+./runtime/bin/brain dashboard
+./runtime/bin/brain export-bundle
+```

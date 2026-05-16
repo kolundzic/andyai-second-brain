@@ -1,143 +1,151 @@
-#!/usr/bin/env bash
-set -euo pipefail
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-source "$ROOT_DIR/runtime/lib/common.sh"
-ensure_runtime_dirs
-
-render_template(){
-  local template="$1" out="$2"
-  shift 2
-  python3 - "$template" "$out" "$@" <<'PY'
-import sys
+#!/usr/bin/env python3
+import argparse, json, re, subprocess, zipfile
+from datetime import datetime, timezone
 from pathlib import Path
 
-template = Path(sys.argv[1])
-out = Path(sys.argv[2])
-pairs = sys.argv[3:]
-text = template.read_text(encoding="utf-8")
-for pair in pairs:
-    key, value = pair.split("=", 1)
-    text = text.replace("{{" + key + "}}", value)
-out.parent.mkdir(parents=True, exist_ok=True)
-out.write_text(text, encoding="utf-8")
-PY
-}
+ROOT = Path(__file__).resolve().parents[2]
+BRAIN = ROOT / "brain"
 
-cmd="${1:-help}"
-shift || true
-case "$cmd" in
-  index)
-    out="$ROOT_DIR/runtime/index/brain-index.md"
-    {
-      echo "# Brain Index"
-      echo
-      echo "Generated: $(now_utc)"
-      echo
-      echo "## Projects"
-      find "$ROOT_DIR/brain/projects" -maxdepth 2 -type f 2>/dev/null | sort | sed "s#^$ROOT_DIR/#- #" || true
-      echo
-      echo "## Evidence"
-      find "$ROOT_DIR/brain/evidence" -maxdepth 2 -type f 2>/dev/null | sort | sed "s#^$ROOT_DIR/#- #" || true
-      echo
-      echo "## Decisions"
-      find "$ROOT_DIR/brain/decisions" -maxdepth 2 -type f 2>/dev/null | sort | sed "s#^$ROOT_DIR/#- #" || true
-    } > "$out"
-    echo "🟢 Brain index written: $out"
-    ;;
-  memory-create)
-    title="${1:-Untitled Memory}"
-    body="${2:-No body provided.}"
-    slug="$(slugify "$title")"
-    out="$ROOT_DIR/brain/resources/${slug}.md"
-    render_template "$ROOT_DIR/runtime/templates/memory-entry.md" "$out" "TITLE=$title" "BODY=$body" "CREATED_AT=$(now_utc)"
-    echo "🟢 Memory entry created: $out"
-    ;;
-  decision-record)
-    decision="${1:-Untitled Decision}"
-    reason="${2:-No reason provided.}"
-    slug="$(slugify "$decision")"
-    out="$ROOT_DIR/brain/decisions/${slug}.md"
-    render_template "$ROOT_DIR/runtime/templates/decision.md" "$out" "DECISION=$decision" "REASON=$reason" "CREATED_AT=$(now_utc)"
-    echo "🟢 Decision recorded: $out"
-    ;;
-  evidence-link)
-    claim="${1:-Untitled Claim}"
-    evidence="${2:-No evidence provided.}"
-    slug="$(slugify "$claim")"
-    out="$ROOT_DIR/brain/evidence/${slug}.md"
-    render_template "$ROOT_DIR/runtime/templates/evidence-link.md" "$out" "CLAIM=$claim" "EVIDENCE=$evidence" "CREATED_AT=$(now_utc)"
-    echo "🟢 Evidence link created: $out"
-    ;;
-  repo-status)
-    out="$ROOT_DIR/runtime/reports/repo-status.md"
-    {
-      echo "# Repo Status Snapshot"
-      echo
-      echo "Generated: $(now_utc)"
-      echo
-      echo "## Git"
-      git -C "$ROOT_DIR" status --short || true
-      echo
-      echo "## Latest Commit"
-      git -C "$ROOT_DIR" log -1 --oneline || true
-      echo
-      echo "## Latest Tags"
-      git -C "$ROOT_DIR" tag --sort=-creatordate | head -20 || true
-    } > "$out"
-    echo "🟢 Repo status snapshot written: $out"
-    ;;
-  report)
-    "$0" index >/dev/null
-    "$0" repo-status >/dev/null
-    out="$ROOT_DIR/runtime/reports/brain-report.md"
-    {
-      echo "# Working Brain Report"
-      echo
-      echo "Generated: $(now_utc)"
-      echo
-      echo "## Counts"
-      echo "- Projects: $(find "$ROOT_DIR/brain/projects" -type f 2>/dev/null | wc -l | tr -d ' ')"
-      echo "- Resources: $(find "$ROOT_DIR/brain/resources" -type f 2>/dev/null | wc -l | tr -d ' ')"
-      echo "- Evidence: $(find "$ROOT_DIR/brain/evidence" -type f 2>/dev/null | wc -l | tr -d ' ')"
-      echo "- Decisions: $(find "$ROOT_DIR/brain/decisions" -type f 2>/dev/null | wc -l | tr -d ' ')"
-      echo
-      echo "## Next Action"
-      echo "Review generated runtime/index/brain-index.md and runtime/reports/repo-status.md."
-    } > "$out"
-    echo "🟢 Brain report written: $out"
-    ;;
-  skill-run)
-    skill="${1:-none}"
-    out="$ROOT_DIR/runtime/reports/skill-run-${skill}.md"
-    {
-      echo "# Skill Runner Skeleton"
-      echo
-      echo "Skill: $skill"
-      echo "Generated: $(now_utc)"
-      echo "Status: stub-only"
-      echo
-      echo "This runtime records that a skill was requested. Later packs may execute structured skill steps."
-    } > "$out"
-    echo "🟢 Skill run skeleton written: $out"
-    ;;
-  inspect)
-    target="${1:-runtime/reports/brain-report.md}"
-    [[ -f "$ROOT_DIR/$target" ]] || { echo "🔴 File not found: $target"; exit 1; }
-    sed -n '1,160p' "$ROOT_DIR/$target"
-    ;;
-  help|*)
-    cat <<HELP
-AndyAI Second Brain Runtime CLI
+def now(): return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+def slugify(text):
+    s = re.sub(r"[^a-zA-Z0-9]+", "-", text.strip().lower()).strip("-")
+    return s[:70] or "item"
+def ensure(path): Path(path).parent.mkdir(parents=True, exist_ok=True)
+def write(path, content):
+    path = Path(path); ensure(path); path.write_text(content, encoding="utf-8"); return path
+def md_card(title, fields):
+    lines=[f"# {title}", "", f"Created: {now()}", ""]
+    for k,v in fields.items(): lines += [f"## {k}", str(v).strip(), ""]
+    return "\n".join(lines)
+def git(cmd):
+    try: return subprocess.check_output(["git"]+cmd, cwd=ROOT, text=True, stderr=subprocess.DEVNULL).strip()
+    except Exception: return "unknown"
 
-Commands:
-  index                                  Generate runtime/index/brain-index.md
-  memory-create "Title" "Body"          Create local memory entry
-  decision-record "Decision" "Reason"   Create local decision entry
-  evidence-link "Claim" "Evidence"      Create local evidence link
-  repo-status                            Create repo status snapshot
-  report                                 Create working brain report
-  skill-run "skill-name"                 Record skill-run skeleton
-  inspect "path"                         Inspect a generated file
-HELP
-    ;;
-esac
+def cmd_index(args):
+    records=[]
+    for base in [BRAIN, ROOT/"skills", ROOT/"docs", ROOT/"examples"]:
+        if base.exists():
+            for p in sorted(base.rglob("*.md")): records.append({"path": str(p.relative_to(ROOT)), "type": "markdown", "size": p.stat().st_size})
+            for p in sorted(base.rglob("*.json")): records.append({"path": str(p.relative_to(ROOT)), "type": "json", "size": p.stat().st_size})
+    out=BRAIN/"search"/"brain-index.json"; write(out, json.dumps({"generated_at": now(), "count": len(records), "records": records}, indent=2))
+    write(BRAIN/"search"/"brain-index.jsonl", "".join(json.dumps(r)+"\n" for r in records))
+    print(f"🟢 Brain index generated: {out.relative_to(ROOT)} ({len(records)} records)")
+
+def cmd_memory_create(args):
+    out=BRAIN/"resources"/"memory"/f"{now().replace(':','').replace('-','')}-{slugify(args.title)}.md"
+    write(out, md_card("Memory Entry — "+args.title, {"Body": args.body, "Status": args.status, "Evidence": args.evidence or "pending"}))
+    print(f"🟢 Memory entry created: {out.relative_to(ROOT)}")
+
+def cmd_decision_record(args):
+    out=BRAIN/"decisions"/f"{now().replace(':','').replace('-','')}-{slugify(args.decision)}.md"
+    write(out, md_card("Decision — "+args.decision, {"Reason": args.reason, "Approval": args.approval, "Status": args.status}))
+    print(f"🟢 Decision recorded: {out.relative_to(ROOT)}")
+
+def cmd_evidence_link(args):
+    out=BRAIN/"evidence"/f"{now().replace(':','').replace('-','')}-{slugify(args.claim)}.md"
+    write(out, md_card("Evidence Link — "+args.claim, {"Claim": args.claim, "Evidence": args.evidence, "Source": args.source or "local", "Confidence": args.confidence}))
+    print(f"🟢 Evidence linked: {out.relative_to(ROOT)}")
+
+def cmd_repo_status(args):
+    fields={"Branch": git(["branch", "--show-current"]), "Head": git(["rev-parse", "--short", "HEAD"]), "Latest Tag": git(["describe", "--tags", "--abbrev=0"]), "Status": git(["status", "--short"]) or "clean", "Remote": git(["remote", "get-url", "origin"])}
+    out=BRAIN/"reports"/"repo-status.md"; write(out, md_card("Repo Status Snapshot", fields)); print(f"🟢 Repo status snapshot written: {out.relative_to(ROOT)}")
+
+def cmd_report(args):
+    counts={}
+    for sub in ["projects","areas","resources","archives","evidence","decisions","skills","reports","inbox","approvals"]:
+        d=BRAIN/sub; counts[sub]=len(list(d.rglob("*"))) if d.exists() else 0
+    out=BRAIN/"reports"/"brain-report.md"; write(out, md_card("Brain Report", {"Counts": json.dumps(counts, indent=2), "Latest Tag": git(["describe","--tags","--abbrev=0"])})); print(f"🟢 Brain report written: {out.relative_to(ROOT)}")
+
+def cmd_inbox_add(args):
+    out=BRAIN/"inbox"/f"{now().replace(':','').replace('-','')}-{slugify(args.title)}.md"
+    write(out, md_card("Inbox Item — "+args.title, {"Content": args.content, "Source": args.source or "manual", "Status": "new"})); print(f"🟢 Inbox item created: {out.relative_to(ROOT)}")
+
+def classify(text):
+    t=text.lower()
+    if any(x in t for x in ["repo", "tag", "commit", "github", "pack", "taptap"]): return "projects"
+    if any(x in t for x in ["client", "kurokawa", "meeting", "follow-up", "proposal"]): return "clients"
+    if any(x in t for x in ["evidence", "proof", "source", "citation"]): return "evidence"
+    if any(x in t for x in ["decision", "decide", "approved", "lock"]): return "decisions"
+    if any(x in t for x in ["quote", "book", "chapter", "canon"]): return "resources"
+    return "resources"
+
+def cmd_route(args):
+    src=Path(args.path); src = src if src.is_absolute() else ROOT/src
+    if not src.exists(): raise SystemExit(f"Missing path: {src}")
+    txt=src.read_text(encoding="utf-8", errors="ignore"); route=classify(txt + " " + src.name)
+    out=BRAIN/"routes"/(src.stem+".route.json"); write(out, json.dumps({"created_at": now(), "source": str(src.relative_to(ROOT)), "route": route, "reason": "keyword heuristic v1"}, indent=2))
+    print(f"🟢 Routed {src.relative_to(ROOT)} → brain/{route}")
+
+def cmd_search(args):
+    q=args.query.lower(); hits=[]
+    for p in list(BRAIN.rglob("*.md"))+list((ROOT/"docs").rglob("*.md")):
+        txt=p.read_text(encoding="utf-8", errors="ignore")
+        if q in txt.lower() or q in p.name.lower(): hits.append(str(p.relative_to(ROOT)))
+    out=BRAIN/"queries"/(slugify(args.query)+".json"); write(out, json.dumps({"query": args.query, "created_at": now(), "hits": hits[:50], "count": len(hits)}, indent=2))
+    for h in hits[:20]: print(h)
+    print(f"🟢 Search complete: {len(hits)} hit(s)")
+
+def cmd_project_snapshot(args):
+    out=BRAIN/"projects"/slugify(args.name)/"PROJECT_SNAPSHOT.md"
+    write(out, md_card("Project Snapshot — "+args.name, {"Status": args.status, "Next Action": args.next, "Evidence": args.evidence or "pending"})); print(f"🟢 Project snapshot written: {out.relative_to(ROOT)}")
+
+def cmd_approval_request(args):
+    out=BRAIN/"approvals"/f"{now().replace(':','').replace('-','')}-{slugify(args.title)}.md"
+    write(out, md_card("Approval Request — "+args.title, {"Request": args.request, "Risk": args.risk, "Status": "needs-human-approval"})); print(f"🟢 Approval request written: {out.relative_to(ROOT)}")
+
+def cmd_lifecycle(args):
+    out=BRAIN/"lifecycle"/(slugify(args.item)+".json"); write(out, json.dumps({"item": args.item, "status": args.status, "updated_at": now(), "note": args.note}, indent=2)); print(f"🟢 Lifecycle status updated: {out.relative_to(ROOT)}")
+
+def cmd_canon_signal(args):
+    out=BRAIN/"signals"/f"{now().replace(':','').replace('-','')}-{slugify(args.title)}.md"
+    write(out, md_card("Canon Signal — "+args.title, {"Source": args.source, "Core Signal": args.signal, "AndyAI Angle": args.angle, "Next Strike": args.next})); print(f"🟢 Canon signal written: {out.relative_to(ROOT)}")
+
+def cmd_client_brief(args):
+    out=BRAIN/"clients"/(slugify(args.client)+"-brief.md"); write(out, md_card("Client Brief — "+args.client, {"Need": args.need, "Language": args.language, "Next Action": args.next})); print(f"🟢 Client brief written: {out.relative_to(ROOT)}")
+
+def cmd_meeting_debrief(args):
+    out=BRAIN/"meetings"/f"{now().replace(':','').replace('-','')}-{slugify(args.title)}.md"
+    write(out, md_card("Meeting Debrief — "+args.title, {"Notes": args.notes, "Decisions": args.decisions, "Action Items": args.actions})); print(f"🟢 Meeting debrief written: {out.relative_to(ROOT)}")
+
+def cmd_report_card(args):
+    out=BRAIN/"reports"/(slugify(args.title)+"-card.md"); write(out, md_card("Report Card — "+args.title, {"Summary": args.summary, "Status": args.status, "Next Action": args.next})); print(f"🟢 Report card written: {out.relative_to(ROOT)}")
+
+def cmd_dashboard(args):
+    cmd_index(argparse.Namespace()); cmd_report(argparse.Namespace())
+    out=BRAIN/"reports"/"OPS_DASHBOARD.md"; write(out, md_card("AndyAI Second Brain Ops Dashboard", {"Current Tag": git(["describe","--tags","--abbrev=0"]), "Working Tree": git(["status","--short"]) or "clean", "Main Reports": "brain/reports/brain-report.md\nbrain/reports/repo-status.md"})); print(f"🟢 Dashboard written: {out.relative_to(ROOT)}")
+
+def cmd_export_bundle(args):
+    out=BRAIN/"exports"/(args.name or f"brain-export-{now().replace(':','').replace('-','')}.zip"); ensure(out)
+    with zipfile.ZipFile(out, "w", compression=zipfile.ZIP_DEFLATED) as z:
+        for base in [BRAIN, ROOT/"docs", ROOT/"skills", ROOT/"schemas"]:
+            if base.exists():
+                for p in base.rglob("*"):
+                    if p.is_file() and p != out: z.write(p, p.relative_to(ROOT))
+    print(f"🟢 Export bundle written: {out.relative_to(ROOT)}")
+
+def build_parser():
+    p=argparse.ArgumentParser(prog="brain", description="AndyAI Second Brain local runtime CLI"); sub=p.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("index").set_defaults(func=cmd_index)
+    m=sub.add_parser("memory-create"); m.add_argument("title"); m.add_argument("body"); m.add_argument("--evidence"); m.add_argument("--status", default="draft"); m.set_defaults(func=cmd_memory_create)
+    d=sub.add_parser("decision-record"); d.add_argument("decision"); d.add_argument("reason"); d.add_argument("--approval", default="human"); d.add_argument("--status", default="approved"); d.set_defaults(func=cmd_decision_record)
+    e=sub.add_parser("evidence-link"); e.add_argument("claim"); e.add_argument("evidence"); e.add_argument("--source"); e.add_argument("--confidence", default="medium"); e.set_defaults(func=cmd_evidence_link)
+    sub.add_parser("repo-status").set_defaults(func=cmd_repo_status); sub.add_parser("report").set_defaults(func=cmd_report)
+    i=sub.add_parser("inbox-add"); i.add_argument("title"); i.add_argument("content"); i.add_argument("--source"); i.set_defaults(func=cmd_inbox_add)
+    r=sub.add_parser("route"); r.add_argument("path"); r.set_defaults(func=cmd_route)
+    s=sub.add_parser("search"); s.add_argument("query"); s.set_defaults(func=cmd_search)
+    ps=sub.add_parser("project-snapshot"); ps.add_argument("name"); ps.add_argument("--status", default="active"); ps.add_argument("--next", default="review"); ps.add_argument("--evidence"); ps.set_defaults(func=cmd_project_snapshot)
+    ec=sub.add_parser("evidence-card"); ec.add_argument("claim"); ec.add_argument("evidence"); ec.add_argument("--source"); ec.add_argument("--confidence", default="medium"); ec.set_defaults(func=cmd_evidence_link)
+    dc=sub.add_parser("decision-card"); dc.add_argument("decision"); dc.add_argument("reason"); dc.add_argument("--approval", default="human"); dc.add_argument("--status", default="approved"); dc.set_defaults(func=cmd_decision_record)
+    ar=sub.add_parser("approval-request"); ar.add_argument("title"); ar.add_argument("request"); ar.add_argument("--risk", default="medium"); ar.set_defaults(func=cmd_approval_request)
+    lc=sub.add_parser("lifecycle"); lc.add_argument("item"); lc.add_argument("status"); lc.add_argument("--note", default=""); lc.set_defaults(func=cmd_lifecycle)
+    cs=sub.add_parser("canon-signal"); cs.add_argument("title"); cs.add_argument("source"); cs.add_argument("signal"); cs.add_argument("--angle", default="AndyAI relevance pending"); cs.add_argument("--next", default="review"); cs.set_defaults(func=cmd_canon_signal)
+    cb=sub.add_parser("client-brief"); cb.add_argument("client"); cb.add_argument("need"); cb.add_argument("--language", default="English"); cb.add_argument("--next", default="follow up"); cb.set_defaults(func=cmd_client_brief)
+    mt=sub.add_parser("meeting-debrief"); mt.add_argument("title"); mt.add_argument("notes"); mt.add_argument("--decisions", default="pending"); mt.add_argument("--actions", default="pending"); mt.set_defaults(func=cmd_meeting_debrief)
+    rc=sub.add_parser("report-card"); rc.add_argument("title"); rc.add_argument("summary"); rc.add_argument("--status", default="draft"); rc.add_argument("--next", default="review"); rc.set_defaults(func=cmd_report_card)
+    sub.add_parser("dashboard").set_defaults(func=cmd_dashboard)
+    eb=sub.add_parser("export-bundle"); eb.add_argument("--name"); eb.set_defaults(func=cmd_export_bundle)
+    return p
+
+def main():
+    args=build_parser().parse_args(); args.func(args)
+if __name__ == "__main__": main()

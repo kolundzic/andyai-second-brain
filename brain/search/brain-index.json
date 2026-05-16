@@ -1,0 +1,371 @@
+{
+  "generated_at": "2026-05-16T14:33:57Z",
+  "count": 73,
+  "records": [
+    {
+      "path": "brain/decisions/adopt-local-runtime-layer.md",
+      "type": "markdown",
+      "size": 166
+    },
+    {
+      "path": "brain/evidence/pack2-runtime-exists.md",
+      "type": "markdown",
+      "size": 164
+    },
+    {
+      "path": "brain/reports/pack2/v2.1.0.md",
+      "type": "markdown",
+      "size": 379
+    },
+    {
+      "path": "brain/reports/pack2/v2.2.0.md",
+      "type": "markdown",
+      "size": 375
+    },
+    {
+      "path": "brain/reports/pack2/v2.3.0.md",
+      "type": "markdown",
+      "size": 373
+    },
+    {
+      "path": "brain/reports/pack2/v2.4.0.md",
+      "type": "markdown",
+      "size": 379
+    },
+    {
+      "path": "brain/reports/pack2/v2.5.0.md",
+      "type": "markdown",
+      "size": 471
+    },
+    {
+      "path": "brain/reports/pack2/v2.6.0.md",
+      "type": "markdown",
+      "size": 475
+    },
+    {
+      "path": "brain/reports/pack2/v2.7.0.md",
+      "type": "markdown",
+      "size": 483
+    },
+    {
+      "path": "brain/reports/pack2/v2.8.0.md",
+      "type": "markdown",
+      "size": 481
+    },
+    {
+      "path": "brain/reports/pack2/v2.9.0.md",
+      "type": "markdown",
+      "size": 485
+    },
+    {
+      "path": "brain/reports/pack2/v3.0.0.md",
+      "type": "markdown",
+      "size": 485
+    },
+    {
+      "path": "brain/reports/pack2/v3.1.0.md",
+      "type": "markdown",
+      "size": 479
+    },
+    {
+      "path": "brain/reports/pack2/v3.2.0.md",
+      "type": "markdown",
+      "size": 481
+    },
+    {
+      "path": "brain/reports/pack2/v3.3.0.md",
+      "type": "markdown",
+      "size": 487
+    },
+    {
+      "path": "brain/reports/pack2/v3.4.0.md",
+      "type": "markdown",
+      "size": 491
+    },
+    {
+      "path": "brain/reports/pack2/v3.5.0.md",
+      "type": "markdown",
+      "size": 495
+    },
+    {
+      "path": "brain/reports/pack2/v3.6.0.md",
+      "type": "markdown",
+      "size": 479
+    },
+    {
+      "path": "brain/reports/pack2/v3.7.0.md",
+      "type": "markdown",
+      "size": 495
+    },
+    {
+      "path": "brain/reports/pack2/v3.8.0.md",
+      "type": "markdown",
+      "size": 481
+    },
+    {
+      "path": "brain/reports/pack2/v3.9.0.md",
+      "type": "markdown",
+      "size": 473
+    },
+    {
+      "path": "brain/reports/pack2/v4.0.0.md",
+      "type": "markdown",
+      "size": 493
+    },
+    {
+      "path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md",
+      "type": "markdown",
+      "size": 58
+    },
+    {
+      "path": "brain/resources/pack2-runtime-memory.md",
+      "type": "markdown",
+      "size": 218
+    },
+    {
+      "path": "skills/book-material-capture.md",
+      "type": "markdown",
+      "size": 292
+    },
+    {
+      "path": "skills/canonize-signal.md",
+      "type": "markdown",
+      "size": 452
+    },
+    {
+      "path": "skills/client-brief.md",
+      "type": "markdown",
+      "size": 398
+    },
+    {
+      "path": "skills/client-follow-up.md",
+      "type": "markdown",
+      "size": 263
+    },
+    {
+      "path": "skills/context-router.md",
+      "type": "markdown",
+      "size": 313
+    },
+    {
+      "path": "skills/evidence-memory-update.md",
+      "type": "markdown",
+      "size": 238
+    },
+    {
+      "path": "skills/meeting-debrief.md",
+      "type": "markdown",
+      "size": 422
+    },
+    {
+      "path": "skills/real-brain-operations.md",
+      "type": "markdown",
+      "size": 391
+    },
+    {
+      "path": "skills/repo-status.md",
+      "type": "markdown",
+      "size": 380
+    },
+    {
+      "path": "skills/runtime-brain-index.md",
+      "type": "markdown",
+      "size": 241
+    },
+    {
+      "path": "skills/runtime-memory-create.md",
+      "type": "markdown",
+      "size": 179
+    },
+    {
+      "path": "skills/runtime-report.md",
+      "type": "markdown",
+      "size": 132
+    },
+    {
+      "path": "skills/start-project.md",
+      "type": "markdown",
+      "size": 483
+    },
+    {
+      "path": "skills/taptap-pack-summary.md",
+      "type": "markdown",
+      "size": 393
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "type": "markdown",
+      "size": 782
+    },
+    {
+      "path": "docs/CLIENT_MEMORY_BRIDGE.md",
+      "type": "markdown",
+      "size": 308
+    },
+    {
+      "path": "docs/CONTEXT_ROUTER_SPEC.md",
+      "type": "markdown",
+      "size": 385
+    },
+    {
+      "path": "docs/DECISION_LOG_STANDARD.md",
+      "type": "markdown",
+      "size": 283
+    },
+    {
+      "path": "docs/EVIDENCE_BACKED_MEMORY.md",
+      "type": "markdown",
+      "size": 325
+    },
+    {
+      "path": "docs/EXPORT_DELETE_INSPECT.md",
+      "type": "markdown",
+      "size": 273
+    },
+    {
+      "path": "docs/GOVERNANCE_MODEL.md",
+      "type": "markdown",
+      "size": 543
+    },
+    {
+      "path": "docs/HUMAN_APPROVAL_GATE.md",
+      "type": "markdown",
+      "size": 354
+    },
+    {
+      "path": "docs/MASTER_TOC.md",
+      "type": "markdown",
+      "size": 2168
+    },
+    {
+      "path": "docs/MEETING_MEMORY_BRIDGE.md",
+      "type": "markdown",
+      "size": 254
+    },
+    {
+      "path": "docs/MEMORY_POLICY.md",
+      "type": "markdown",
+      "size": 374
+    },
+    {
+      "path": "docs/PACK3_TOC.md",
+      "type": "markdown",
+      "size": 1007
+    },
+    {
+      "path": "docs/PACK_v0.2_to_v2.0_TOC.md",
+      "type": "markdown",
+      "size": 520
+    },
+    {
+      "path": "docs/PARA_WORKSPACE.md",
+      "type": "markdown",
+      "size": 634
+    },
+    {
+      "path": "docs/PRACTICAL_USE_CASES.md",
+      "type": "markdown",
+      "size": 643
+    },
+    {
+      "path": "docs/PROJECT_CONTEXT_STANDARD.md",
+      "type": "markdown",
+      "size": 403
+    },
+    {
+      "path": "docs/PUBLIC_WEBSITE_BLUEPRINT.md",
+      "type": "markdown",
+      "size": 522
+    },
+    {
+      "path": "docs/REAL_BRAIN_OPERATIONS_MODEL.md",
+      "type": "markdown",
+      "size": 320
+    },
+    {
+      "path": "docs/REPO_MEMORY_BRIDGE.md",
+      "type": "markdown",
+      "size": 313
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "type": "markdown",
+      "size": 1256
+    },
+    {
+      "path": "docs/SIGNAL_CANONIZER.md",
+      "type": "markdown",
+      "size": 280
+    },
+    {
+      "path": "docs/SKILLS_STANDARD.md",
+      "type": "markdown",
+      "size": 345
+    },
+    {
+      "path": "docs/TEAM_BRAIN_MODEL.md",
+      "type": "markdown",
+      "size": 284
+    },
+    {
+      "path": "docs/releases/v4.1.0.md",
+      "type": "markdown",
+      "size": 207
+    },
+    {
+      "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
+      "type": "markdown",
+      "size": 813
+    },
+    {
+      "path": "docs/toc/PACK2_v2.1_to_v4.0_TOC.md",
+      "type": "markdown",
+      "size": 1357
+    },
+    {
+      "path": "examples/sample-client-memory.md",
+      "type": "markdown",
+      "size": 242
+    },
+    {
+      "path": "examples/sample-decision-log.md",
+      "type": "markdown",
+      "size": 363
+    },
+    {
+      "path": "examples/sample-evidence-report.md",
+      "type": "markdown",
+      "size": 350
+    },
+    {
+      "path": "examples/sample-memory-entry.md",
+      "type": "markdown",
+      "size": 294
+    },
+    {
+      "path": "examples/sample-project-context.md",
+      "type": "markdown",
+      "size": 531
+    },
+    {
+      "path": "examples/sample-repo-memory.md",
+      "type": "markdown",
+      "size": 294
+    },
+    {
+      "path": "examples/sample-runtime-session.md",
+      "type": "markdown",
+      "size": 378
+    },
+    {
+      "path": "examples/sample-signal-canon.md",
+      "type": "markdown",
+      "size": 321
+    },
+    {
+      "path": "examples/sample-operation-card.json",
+      "type": "json",
+      "size": 181
+    }
+  ]
+}
