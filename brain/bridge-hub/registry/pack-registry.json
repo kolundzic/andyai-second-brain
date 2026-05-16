@@ -1,0 +1,18 @@
+{
+  "repo": "andyai-second-brain",
+  "pack": "PACK10",
+  "range": "v18.1.0 -> v20.0.0",
+  "title": "Bridge Hub / Pack Registry / Status Map Integration Layer",
+  "base_tag": "v18.0.2",
+  "final_tag": "v20.0.0",
+  "status": "local-complete-push-later",
+  "outputs": [
+    "repo registry",
+    "pack registry",
+    "status map",
+    "timing payload",
+    "evidence map",
+    "repair history map",
+    "next action payload"
+  ]
+}
