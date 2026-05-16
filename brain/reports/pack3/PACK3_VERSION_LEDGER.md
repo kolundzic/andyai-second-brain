@@ -13,3 +13,4 @@
 - v5.1.0 — Approval Queue Operation
 - v5.2.0 — Memory Lifecycle Operation
 - v5.3.0 — Canon Signal Operation
+- v5.4.0 — Client Brief Operation
