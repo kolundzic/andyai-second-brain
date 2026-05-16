@@ -1,0 +1,74 @@
+{
+  "query": "PACK4 context bundle schema",
+  "project": "andyai-second-brain",
+  "created_at": "20260516T153537Z",
+  "sources": [
+    {
+      "path": "brain/search/brain-index.json",
+      "score": 68.0,
+      "kind": "resource",
+      "snippet": "{ \"created_at\": \"20260516T153536Z\", \"records\": [ { \"path\": \"ANDYAI_CONTEXT.md\", \"kind\": \"resource\", \"tokens\": 122, \"chars\": 945 }, { \"path\": \"SECOND_BRAIN_CANON.md\", \"kind\": \"resource\", \"tokens\": 167, \"chars\": 1234 }, { \"path\": \"README.md\", \"kind\": \"resource\", \"tokens\": 420, \"chars\": 3259 }, { \"path\": \"brain/",
+      "reason": "Matched query terms in resource source.",
+      "staleness_warning": ""
+    },
+    {
+      "path": "brain/retrieval/20260516T153537Z-pack4-retrieval-result-schema.json",
+      "score": 67.0,
+      "kind": "resource",
+      "snippet": "{ \"query\": \"PACK4 retrieval result schema\", \"project\": \"\", \"created_at\": \"20260516T153537Z\", \"results\": [ { \"path\": \"brain/search/brain-index.json\", \"score\": 55.0, \"kind\": \"resource\", \"snippet\": \"TEAM_BRAIN_MODEL.md\\\", \\\"kind\\\": \\\"resource\\\", \\\"tokens\\\": 36, \\\"chars\\\": 284 }, { \\\"path\\\": \\\"docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md\\\", \\\"kind\\\": \\\"resource\\\", \\\"tokens\\\": 250",
+      "reason": "Matched query terms in resource source.",
+      "staleness_warning": ""
+    },
+    {
+      "path": "docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md",
+      "score": 41.0,
+      "kind": "resource",
+      "snippet": "# 🤜💥 PACK4 — Brain Query / Retrieval / Context Assembly Layer Range: `v6.1.0 → v8.0.0` ## Mission PACK4 turns AndyAI Second Brain from a local operations system into a practical retrieval and context assembly layer. The brain must now answer a grounded operational question: > What should the agent read before acting? ## Version TOC | Version | Name | Purpose | |---|---|---| | v6.1.0 | Query Runtime Scaffold |",
+      "reason": "Matched query terms in resource source.",
+      "staleness_warning": ""
+    },
+    {
+      "path": "schemas/context-bundle.schema.json",
+      "score": 22.0,
+      "kind": "schema",
+      "snippet": "{ \"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"title\": \"AndyAI Second Brain Context Bundle\", \"type\": \"object\", \"required\": [\"query\", \"created_at\", \"sources\", \"next_action\"], \"properties\": { \"query\": { \"type\": \"string\" }, \"created_at\": { \"type\": \"string\" }, \"project\": { \"type\": \"string\" }, \"sources\": { \"type\": \"array\", \"items\": { \"$ref\": \"./retrieval-result.schema.j",
+      "reason": "Matched query terms in schema source.",
+      "staleness_warning": ""
+    },
+    {
+      "path": "brain/retrieval/sample-search-output.txt",
+      "score": 21.0,
+      "kind": "resource",
+      "snippet": "55.0 resource brain/search/brain-index.json 28.0 resource docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md 17.0 schema schemas/retrieval-result.schema.json 14.0 resource docs/pack4/QUERY_RETRIEVAL_CONTEXT_ARCHITECTURE.md 14.0 resource docs/pack4/releases/v6.3.0.md 10.0 resource docs/pack4/releases/v6.2.0.md 10.0 schema schemas/context-bundle.schema.json 8.0 resource docs",
+      "reason": "Matched query terms in resource source.",
+      "staleness_warning": ""
+    },
+    {
+      "path": "docs/pack4/QUERY_RETRIEVAL_CONTEXT_ARCHITECTURE.md",
+      "score": 21.0,
+      "kind": "resource",
+      "snippet": "# Query / Retrieval / Context Assembly Architecture PACK4 adds a practical retrieval path: ```text Question ↓ Query Request ↓ Search Index ↓ Retrieval Scoring ↓ Evidence-Aware Results ↓ Context Bundle ↓ Agent Handoff ↓ Action / Answer / Next TAP ``` ## Core Rule The agent should not read the whole brain. It should read the smallest useful context bundle that is sufficient for the next action. ## Pr",
+      "reason": "Matched query terms in resource source.",
+      "staleness_warning": ""
+    },
+    {
+      "path": "README.md",
+      "score": 19.0,
+      "kind": "resource",
+      "snippet": "o, and what requires human approval? ## Core Components - PARA workspace: Projects, Areas, Resources, Archives - Root context file - Project context files - Progressive context router - Evidence-backed memory - Decision logs - Markdown skills - Human approval gates - Repo memory bridge - Client memory bridge - Meeting memory bridge - Signal canonizer - Export/delete/inspect controls ## Practical Use This repo is",
+      "reason": "Matched query terms in resource source.",
+      "staleness_warning": ""
+    },
+    {
+      "path": "docs/pack4/releases/v6.4.0.md",
+      "score": 18.0,
+      "kind": "resource",
+      "snippet": "# v6.4.0 — Context Bundle Schema Pack: PACK4 — Brain Query / Retrieval / Context Assembly Layer ## Purpose Defines assembled context bundle format for agent-ready context. ## TAP-TAP Note This version was applied by PACK4 MASTER UDARAC using the simplified TAP-TAP v2 standard: - TAP 1: unzip ZIP package - TAP 2: run terminal script - TOC first - semafor summary - completion-aware guard - local-first / push-late",
+      "reason": "Matched query terms in resource source.",
+      "staleness_warning": ""
+    }
+  ],
+  "evidence": [],
+  "warnings": [],
+  "next_action": "Review context bundle, then decide whether to answer, inspect sources, or request human approval."
+}
