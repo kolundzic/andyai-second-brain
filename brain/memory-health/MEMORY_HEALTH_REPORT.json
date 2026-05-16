@@ -1,0 +1,14 @@
+{
+  "type": "memory_health_report",
+  "counts": {
+    "inbox": 2,
+    "active": 1,
+    "canon": 1,
+    "archives": 2,
+    "stale": 1,
+    "cleanup-requests": 1,
+    "delete-approvals": 1
+  },
+  "created_at": "20260516T231243Z",
+  "status": "reviewable"
+}
