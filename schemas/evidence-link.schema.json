@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Link",
+  "type": "object",
+  "required": ["type", "reference", "description"],
+  "properties": {
+    "type": { "type": "string" },
+    "reference": { "type": "string" },
+    "description": { "type": "string" },
+    "captured_at": { "type": "string" }
+  }
+}

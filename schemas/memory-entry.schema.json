@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Memory Entry",
+  "type": "object",
+  "required": ["claim", "source", "status"],
+  "properties": {
+    "claim": { "type": "string" },
+    "source": { "type": "string" },
+    "date": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+    "connected_project": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "suggested", "needs_review", "approved", "rejected", "locked", "archived"] }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Decision",
+  "type": "object",
+  "required": ["decision", "date", "reason", "status"],
+  "properties": {
+    "decision": { "type": "string" },
+    "date": { "type": "string" },
+    "reason": { "type": "string" },
+    "connected_projects": { "type": "array", "items": { "type": "string" } },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "next_action": { "type": "string" },
+    "status": { "type": "string" }
+  }
+}

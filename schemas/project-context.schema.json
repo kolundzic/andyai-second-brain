@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project Context",
+  "type": "object",
+  "required": ["name", "purpose", "status", "next_action"],
+  "properties": {
+    "name": { "type": "string" },
+    "purpose": { "type": "string" },
+    "status": { "type": "string" },
+    "latest_evidence": { "type": "array", "items": { "type": "string" } },
+    "next_action": { "type": "string" },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "connected_repos": { "type": "array", "items": { "type": "string" } }
+  }
+}

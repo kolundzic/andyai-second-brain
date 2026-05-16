@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Skill",
+  "type": "object",
+  "required": ["name", "purpose", "inputs", "steps", "output_format"],
+  "properties": {
+    "name": { "type": "string" },
+    "purpose": { "type": "string" },
+    "inputs": { "type": "array", "items": { "type": "string" } },
+    "steps": { "type": "array", "items": { "type": "string" } },
+    "allowed_tools": { "type": "array", "items": { "type": "string" } },
+    "evidence_required": { "type": "array", "items": { "type": "string" } },
+    "human_approval_condition": { "type": "string" },
+    "output_format": { "type": "string" }
+  }
+}
