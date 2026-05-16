@@ -1,0 +1,7 @@
+{
+  "repo": "andyai-second-brain",
+  "pack": "PACK9",
+  "range": "v16.1.0 -> v18.0.0",
+  "purpose": "Timing precision and pack intelligence",
+  "bridge_hub_ready": true
+}
