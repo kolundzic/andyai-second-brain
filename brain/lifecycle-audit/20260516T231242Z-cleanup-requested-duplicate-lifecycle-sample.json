@@ -1,0 +1,8 @@
+{
+  "type": "lifecycle_audit_event",
+  "action": "cleanup_requested",
+  "subject": "Duplicate lifecycle sample",
+  "status": "approval-required",
+  "created_at": "20260516T231242Z",
+  "human_visible": true
+}
