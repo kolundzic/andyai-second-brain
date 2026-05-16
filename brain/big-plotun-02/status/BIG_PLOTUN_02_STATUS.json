@@ -5,20 +5,20 @@
   "packs": ["PACK15", "PACK16", "PACK17", "PACK18"],
   "base_tag": "v28.0.1",
   "final_tag": "v36.0.0",
-  "latest_known_tag": "v35.9.0",
-  "head_short": "e8e9672",
+  "latest_known_tag": "v36.0.0",
+  "head_short": "1081cee",
   "status": "local-complete-push-later",
-  "semafor": {"green": 168, "yellow": 0, "red": 0},
+  "semafor": {"green": 170, "yellow": 0, "red": 0},
   "timing": {
   "started": "2026-05-16T23:56:55Z",
   "finished": "2026-05-16T23:57:32Z",
-  "total_ms": 36734,
-  "versions_completed": 79,
-  "average_phase_ms": 464,
-  "slowest_phase": {"version": "v29.5.0", "title": "Protocol Hardening Evidence Map", "pack": "PACK15", "ms": 425},
+  "total_ms": 37240,
+  "versions_completed": 80,
+  "average_phase_ms": 465,
+  "slowest_phase": {"version": "v36.0.0", "title": "Production Memory Pattern Lock", "pack": "PACK18", "ms": 566},
   "fastest_phase": {"version": "v30.2.0", "title": "Batch Plan Schema", "pack": "PACK16", "ms": 343},
-  "estimated_next_20_version_pack_ms": 9280,
-  "estimated_next_80_version_cycle_ms": 37120,
-  "estimated_next_100_version_cycle_ms": 46400
+  "estimated_next_20_version_pack_ms": 9300,
+  "estimated_next_80_version_cycle_ms": 37200,
+  "estimated_next_100_version_cycle_ms": 46500
 }
 }
