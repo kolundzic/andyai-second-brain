@@ -8,3 +8,4 @@
 - v4.6.0 — Memory Search CLI
 - v4.7.0 — Project Snapshot Operation
 - v4.8.0 — Repo Snapshot Operation
+- v4.9.0 — Evidence Card Operation

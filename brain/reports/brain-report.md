@@ -8,7 +8,7 @@ Created: 2026-05-16T14:36:22Z
   "areas": 1,
   "resources": 2,
   "archives": 1,
-  "evidence": 2,
+  "evidence": 3,
   "decisions": 2,
   "skills": 1,
   "reports": 28,
@@ -17,4 +17,4 @@ Created: 2026-05-16T14:36:22Z
 }
 
 ## Latest Tag
-v4.7.0
+v4.8.0
