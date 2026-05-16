@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Promotion Candidate","type":"object","required":["type","subject","promotion_reason","evidence"],"properties":{"type":{"const":"promotion_candidate"},"subject":{"type":"string"},"promotion_reason":{"type":"string"},"evidence":{"type":"array","items":{"type":"string"}},"human_review":{"type":"string"}}}

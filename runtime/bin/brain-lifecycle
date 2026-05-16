@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+"""AndyAI Second Brain memory lifecycle runtime. Safe local-first scaffold."""
+import json, sys, re, zipfile
+from pathlib import Path
+from datetime import datetime, timezone
+ROOT = Path(__file__).resolve().parents[2]
+BRAIN = ROOT / "brain"
+def ts(): return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+def slug(s): return (re.sub(r"[^a-zA-Z0-9]+", "-", s.lower()).strip("-")[:80] or "memory")
+def ensure(p): p.parent.mkdir(parents=True, exist_ok=True)
+def write(path, content): ensure(path); path.write_text(content, encoding="utf-8"); print(f"🟢 written: {path.relative_to(ROOT)}")
+def write_json(path, data): write(path, json.dumps(data, indent=2, ensure_ascii=False)+"\n")
+def md(title, body): return f"# {title}\n\n{body.strip()}\n"
+def arg(i, default=""): return sys.argv[i] if len(sys.argv)>i else default
+
+def audit(action, subject, status="recorded"):
+    data={"type":"lifecycle_audit_event","action":action,"subject":subject,"status":status,"created_at":ts(),"human_visible":True}
+    sid=f"{ts()}-{slug(action+'-'+subject)}"
+    write_json(BRAIN/"lifecycle-audit"/f"{sid}.json", data)
+    ledger=BRAIN/"trust-ledger"/"TRUST_LEDGER.jsonl"
+    ensure(ledger)
+    with ledger.open("a", encoding="utf-8") as f: f.write(json.dumps(data, ensure_ascii=False)+"\n")
+    print(f"🟢 ledger appended: {ledger.relative_to(ROOT)}")
+
+def inbox(title, body):
+    sid=f"{ts()}-{slug(title)}"
+    write(BRAIN/"inbox"/f"{sid}.md", md(title, f"Status: inbox\nLifecycle: intake\nCreated: {ts()}\n\n{body}"))
+    audit("inbox_intake", title)
+
+def activate(title):
+    sid=f"{ts()}-{slug(title)}"
+    write(BRAIN/"active"/f"{sid}.md", md(title, f"Status: active\nLifecycle: active-memory\nSource: inbox or direct activation\nCreated: {ts()}"))
+    audit("memory_activated", title)
+
+def promote(title, reason):
+    sid=f"{ts()}-{slug(title)}"
+    write(BRAIN/"canon"/f"{sid}.md", md(title, f"Status: canon\nPromotion reason: {reason}\nHuman review: required/recommended\nCreated: {ts()}"))
+    audit("memory_promoted_to_canon", title)
+
+def archive(title, reason):
+    sid=f"{ts()}-{slug(title)}"
+    write(BRAIN/"archives"/f"{sid}.md", md(title, f"Status: archived\nArchive reason: {reason}\nCreated: {ts()}"))
+    audit("memory_archived", title)
+
+def stale(title, reason):
+    sid=f"{ts()}-{slug(title)}"
+    write(BRAIN/"stale"/f"{sid}.md", md("Stale Memory Candidate", f"Subject: {title}\nReason: {reason}\nStatus: review-needed\nCreated: {ts()}"))
+    audit("stale_memory_detected", title, "review-needed")
+
+def cleanup(title, reason):
+    sid=f"{ts()}-{slug(title)}"
+    write(BRAIN/"cleanup-requests"/f"{sid}.md", md("Cleanup Request", f"Subject: {title}\nReason: {reason}\nHuman approval: required before destructive cleanup\nCreated: {ts()}"))
+    audit("cleanup_requested", title, "approval-required")
+
+def delete_approval(title, reason):
+    sid=f"{ts()}-{slug(title)}"
+    write(BRAIN/"delete-approvals"/f"{sid}.md", md("Delete Approval Note", f"Subject: {title}\nReason: {reason}\nDestructive action: not performed by default\nHuman approval: required\nCreated: {ts()}"))
+    audit("delete_approval_note_created", title, "approval-required")
+
+def retention():
+    write(BRAIN/"retention"/"RETENTION_POLICY.md", md("Memory Retention Policy", "Inbox items should be triaged. Active memory should be reviewed. Canon requires evidence. Archives preserve history. Deletion requires human approval."))
+
+def health():
+    counts={}
+    for name in ["inbox","active","canon","archives","stale","cleanup-requests","delete-approvals"]:
+        base=BRAIN/name
+        counts[name]=len([p for p in base.rglob("*") if p.is_file()]) if base.exists() else 0
+    write_json(BRAIN/"memory-health"/"MEMORY_HEALTH_REPORT.json", {"type":"memory_health_report","counts":counts,"created_at":ts(),"status":"reviewable"})
+    write(BRAIN/"reports"/"memory-lifecycle-report.md", md("Memory Lifecycle Report", "\n".join(f"- {k}: {v}" for k,v in counts.items())))
+
+def archive_index():
+    base=BRAIN/"archives"
+    lines=["# Archive Index", ""]
+    if base.exists():
+        for p in sorted(base.rglob("*.md")):
+            lines.append(f"- {p.relative_to(ROOT)}")
+    write(BRAIN/"archive-index"/"ARCHIVE_INDEX.md", "\n".join(lines)+"\n")
+
+def qa():
+    retention(); health(); archive_index()
+    write(BRAIN/"lifecycle-qa"/"PACK8_LIFECYCLE_QA.md", md("PACK8 Lifecycle QA", "Lifecycle runtime, retention policy, health report, archive index and audit bridge are present."))
+
+def export_bundle():
+    qa()
+    out=BRAIN/"lifecycle-exports"/"pack8-memory-lifecycle-export.zip"
+    ensure(out)
+    with zipfile.ZipFile(out,"w",zipfile.ZIP_DEFLATED) as z:
+        for folder in ["lifecycle","inbox","active","canon","archives","cleanup-requests","retention","memory-health","archive-index","lifecycle-audit","lifecycle-qa","reports"]:
+            base=BRAIN/folder
+            if base.exists():
+                for p in base.rglob("*"):
+                    if p.is_file(): z.write(p, p.relative_to(ROOT))
+    print(f"🟢 written: {out.relative_to(ROOT)}")
+
+def helptext():
+    print("brain-lifecycle commands: inbox, activate, promote, archive, stale, cleanup, delete-approval, retention, health, archive-index, qa, export")
+cmd=arg(1,"help")
+if cmd=="inbox": inbox(arg(2,"Inbox item"), arg(3,"No body provided."))
+elif cmd=="activate": activate(arg(2,"Active memory"))
+elif cmd=="promote": promote(arg(2,"Canon memory"), arg(3,"Promotion reason"))
+elif cmd=="archive": archive(arg(2,"Archived memory"), arg(3,"Archive reason"))
+elif cmd=="stale": stale(arg(2,"Stale memory"), arg(3,"Staleness reason"))
+elif cmd=="cleanup": cleanup(arg(2,"Cleanup subject"), arg(3,"Cleanup reason"))
+elif cmd=="delete-approval": delete_approval(arg(2,"Delete subject"), arg(3,"Delete reason"))
+elif cmd=="retention": retention()
+elif cmd=="health": health()
+elif cmd=="archive-index": archive_index()
+elif cmd=="qa": qa()
+elif cmd=="export": export_bundle()
+else: helptext()

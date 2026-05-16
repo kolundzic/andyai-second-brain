@@ -143,3 +143,23 @@ runtime/bin/brain-trust export
 Canonical sentence:
 
 Execution without audit becomes invisible power. Audit without evidence becomes theatre. Trust requires a ledger.
+
+## PACK8 — Memory Lifecycle / Promotion / Archive / Cleanup Layer
+
+PACK8 adds governed lifecycle operations for Second Brain memory:
+
+- inbox intake
+- active memory
+- canon promotion
+- archive
+- stale detection
+- cleanup request queue
+- delete approval notes
+- retention policy
+- memory health report
+- archive index
+- lifecycle audit bridge
+- export bundle
+- timing evidence
+
+Canonical rule: memory must have a lifecycle. Not every note deserves canon, not every stale item deserves deletion, and destructive cleanup requires human approval.

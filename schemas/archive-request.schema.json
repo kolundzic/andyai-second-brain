@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Archive Request","type":"object","required":["type","subject","archive_reason"],"properties":{"type":{"const":"archive_request"},"subject":{"type":"string"},"archive_reason":{"type":"string"},"retention_status":{"type":"string"}}}
