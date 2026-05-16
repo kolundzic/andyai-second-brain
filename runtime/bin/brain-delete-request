@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+set -euo pipefail
+echo "🟡 Delete request stub only. Canon deletion requires human approval."
