@@ -1,6 +1,6 @@
 # Brain Report
 
-Created: 2026-05-16T14:36:21Z
+Created: 2026-05-16T14:36:22Z
 
 ## Counts
 {
@@ -11,10 +11,10 @@ Created: 2026-05-16T14:36:21Z
   "evidence": 2,
   "decisions": 2,
   "skills": 1,
-  "reports": 27,
+  "reports": 28,
   "inbox": 1,
   "approvals": 0
 }
 
 ## Latest Tag
-v4.6.0
+v4.7.0
