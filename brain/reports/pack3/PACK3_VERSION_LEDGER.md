@@ -6,3 +6,4 @@
 - v4.4.0 — Context Router v1
 - v4.5.0 — Search Index Operation
 - v4.6.0 — Memory Search CLI
+- v4.7.0 — Project Snapshot Operation

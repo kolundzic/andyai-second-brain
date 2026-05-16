@@ -4,7 +4,7 @@ Created: 2026-05-16T14:36:21Z
 
 ## Counts
 {
-  "projects": 1,
+  "projects": 3,
   "areas": 1,
   "resources": 2,
   "archives": 1,
@@ -17,4 +17,4 @@ Created: 2026-05-16T14:36:21Z
 }
 
 ## Latest Tag
-v4.5.0
+v4.6.0
