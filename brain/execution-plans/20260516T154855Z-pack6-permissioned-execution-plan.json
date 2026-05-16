@@ -1,0 +1,24 @@
+{
+  "type": "execution_plan",
+  "id": "20260516T154855Z-pack6-permissioned-execution-plan",
+  "goal": "PACK6 permissioned execution plan",
+  "mode": "dry-run-first",
+  "status": "planned",
+  "requires_human_approval": true,
+  "steps": [
+    "confirm mission context",
+    "prepare action plan",
+    "run safe dry-run",
+    "capture evidence",
+    "inspect result",
+    "request approval before high-impact execution"
+  ],
+  "stop_conditions": [
+    "missing approval",
+    "dirty working tree",
+    "failed verification",
+    "unclear target",
+    "external side effect requested"
+  ],
+  "created_at": "20260516T154855Z"
+}
