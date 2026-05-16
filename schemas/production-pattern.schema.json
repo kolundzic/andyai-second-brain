@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Production Pattern","type":"object","required":["name","use","evidence"],"properties":{"name":{"type":"string"},"use":{"type":"string"},"evidence":{"type":"string"}}}

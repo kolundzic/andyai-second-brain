@@ -179,3 +179,7 @@ PACK11 prepares operator registry and external-service launcher readiness for Br
 ## BIG PLOTUN 01 — Operator → Bridge Hub → Learning Loop
 
 BIG PLOTUN 01 runs PACK12, PACK13 and PACK14 as a 60-version cycle. It connects operator execution evidence, Bridge Hub control panels and Second Brain learning memory.
+
+## BIG PLOTUN 02 — Protocol Hardening → Mega Runner → Live Factory Map → Production Memory
+
+BIG PLOTUN 02 runs PACK15–PACK18 as an 80-version stress test. It hardens TAP-TAP protocol, prepares mega-pack runner intelligence, creates a Bridge Hub live factory map layer, and records production memory patterns.

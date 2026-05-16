@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Batch Plan","type":"object","required":["range","packs","versions"],"properties":{"range":{"type":"string"},"packs":{"type":"array"},"versions":{"type":"integer"}}}
