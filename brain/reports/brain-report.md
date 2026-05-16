@@ -11,10 +11,10 @@ Created: 2026-05-16T14:36:26Z
   "evidence": 3,
   "decisions": 3,
   "skills": 1,
-  "reports": 29,
+  "reports": 30,
   "inbox": 1,
   "approvals": 1
 }
 
 ## Latest Tag
-v5.5.0
+v5.6.0
