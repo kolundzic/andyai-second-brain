@@ -1,0 +1,11 @@
+{
+  "type": "audit_event",
+  "id": "20260516T224639Z-execution-audit-created-for-pack7-governed-execution-audit",
+  "actor": "agent",
+  "target": "PACK7 governed execution audit",
+  "action": "execution audit created for PACK7 governed execution audit",
+  "status": "recorded",
+  "created_at": "20260516T224639Z",
+  "evidence_required": true,
+  "human_review_visible": true
+}
