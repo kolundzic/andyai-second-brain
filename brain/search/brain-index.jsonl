@@ -23,10 +23,10 @@
 {"path": "brain/reports/pack2/v3.9.0.md", "type": "markdown", "size": 473}
 {"path": "brain/reports/pack2/v4.0.0.md", "type": "markdown", "size": 493}
 {"path": "brain/reports/pack3/PACK3_REPAIR_NOTE.md", "type": "markdown", "size": 325}
-{"path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md", "type": "markdown", "size": 162}
+{"path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md", "type": "markdown", "size": 198}
 {"path": "brain/resources/pack2-runtime-memory.md", "type": "markdown", "size": 218}
 {"path": "brain/routes/20260516T143358Z-pack3-sample-inbox-signal.route.json", "type": "json", "size": 174}
-{"path": "brain/search/brain-index.json", "type": "json", "size": 8183}
+{"path": "brain/search/brain-index.json", "type": "json", "size": 8533}
 {"path": "skills/book-material-capture.md", "type": "markdown", "size": 292}
 {"path": "skills/canonize-signal.md", "type": "markdown", "size": 452}
 {"path": "skills/client-brief.md", "type": "markdown", "size": 398}
@@ -68,6 +68,7 @@
 {"path": "docs/releases/v4.2.0.md", "type": "markdown", "size": 180}
 {"path": "docs/releases/v4.3.0.md", "type": "markdown", "size": 196}
 {"path": "docs/releases/v4.4.0.md", "type": "markdown", "size": 190}
+{"path": "docs/releases/v4.5.0.md", "type": "markdown", "size": 190}
 {"path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md", "type": "markdown", "size": 813}
 {"path": "docs/toc/PACK2_v2.1_to_v4.0_TOC.md", "type": "markdown", "size": 1357}
 {"path": "examples/sample-client-memory.md", "type": "markdown", "size": 242}
