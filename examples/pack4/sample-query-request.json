@@ -1,0 +1,8 @@
+{
+  "query": "What should the agent read before PACK5?",
+  "intent": "assemble-context",
+  "project": "andyai-second-brain",
+  "max_results": 10,
+  "include_evidence": true,
+  "created_at": "example"
+}
