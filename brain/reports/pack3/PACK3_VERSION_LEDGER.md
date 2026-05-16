@@ -14,3 +14,4 @@
 - v5.2.0 — Memory Lifecycle Operation
 - v5.3.0 — Canon Signal Operation
 - v5.4.0 — Client Brief Operation
+- v5.5.0 — Meeting Debrief Operation

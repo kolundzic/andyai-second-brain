@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-05-16T14:36:25Z",
-  "count": 100,
+  "count": 102,
   "records": [
     {
       "path": "brain/approvals/20260516T143623Z-approve-pack3-push.md",
@@ -36,6 +36,11 @@
       "path": "brain/inbox/20260516T143358Z-pack3-sample-inbox-signal.md",
       "type": "markdown",
       "size": 156
+    },
+    {
+      "path": "brain/meetings/20260516T143625Z-pack3-planning-meeting.md",
+      "type": "markdown",
+      "size": 205
     },
     {
       "path": "brain/projects/andyai-second-brain/PROJECT_SNAPSHOT.md",
@@ -155,7 +160,7 @@
     {
       "path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md",
       "type": "markdown",
-      "size": 530
+      "size": 569
     },
     {
       "path": "brain/reports/repo-status.md",
@@ -190,7 +195,7 @@
     {
       "path": "brain/search/brain-index.json",
       "type": "json",
-      "size": 10396
+      "size": 10606
     },
     {
       "path": "skills/book-material-capture.md",
@@ -446,6 +451,11 @@
       "path": "docs/releases/v5.4.0.md",
       "type": "markdown",
       "size": 175
+    },
+    {
+      "path": "docs/releases/v5.5.0.md",
+      "type": "markdown",
+      "size": 181
     },
     {
       "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
