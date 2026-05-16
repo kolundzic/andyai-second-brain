@@ -2,8 +2,8 @@
   "repo": "andyai-second-brain",
   "pack": "PACK11",
   "range": "v20.1.0 -> v22.0.0",
-  "head_short": "3d2fe91",
-  "latest_known_tag": "v21.7.0",
+  "head_short": "038e77d",
+  "latest_known_tag": "v21.8.0",
   "operators": [
     {"name": "GitHub Operator", "status": "registered", "risk": "medium", "requires_human_approval": false},
     {"name": "Vercel Operator", "status": "registered", "risk": "high", "requires_human_approval": true},
