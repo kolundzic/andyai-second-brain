@@ -1,0 +1,15 @@
+{
+  "repo": "andyai-second-brain",
+  "pack": "PACK11",
+  "range": "v20.1.0 -> v22.0.0",
+  "head_short": "6d76e8b",
+  "latest_known_tag": "v21.4.0",
+  "operators": [
+    {"name": "GitHub Operator", "status": "registered", "risk": "medium", "requires_human_approval": false},
+    {"name": "Vercel Operator", "status": "registered", "risk": "high", "requires_human_approval": true},
+    {"name": "Supabase Operator", "status": "registered", "risk": "high", "requires_human_approval": true},
+    {"name": "Stripe Operator", "status": "registered", "risk": "high", "requires_human_approval": true},
+    {"name": "DNS Doctor", "status": "registered", "risk": "high", "requires_human_approval": true},
+    {"name": "Recovery Doctor", "status": "registered", "risk": "medium", "requires_human_approval": true}
+  ]
+}

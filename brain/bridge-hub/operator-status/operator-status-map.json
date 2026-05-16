@@ -1,0 +1,18 @@
+{
+  "repo": "andyai-second-brain",
+  "pack": "PACK11",
+  "final_tag": "v22.0.0",
+  "bridge_hub_surface": "operator registry and launcher readiness",
+  "semafor": {"green": 40, "yellow": 0, "red": 0},
+  "timing": {
+  "started": "2026-05-16T23:33:28Z",
+  "finished": "2026-05-16T23:33:33Z",
+  "total_ms": 5457,
+  "versions_completed": 14,
+  "average_phase_ms": 389,
+  "slowest_phase": {"version": "v20.1.0", "title": "Operator Registry Scaffold", "ms": 327},
+  "fastest_phase": {"version": "v20.9.0", "title": "Stripe Operator Registration", "ms": 249},
+  "estimated_next_20_version_pack_ms": 7780
+},
+  "next_action": "push main and tags after green semafor"
+}
