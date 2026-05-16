@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Runtime Memory Entry",
+  "type": "object",
+  "required": ["title", "body", "status", "created_at"],
+  "properties": {
+    "title": {"type": "string"},
+    "body": {"type": "string"},
+    "status": {"type": "string", "enum": ["draft", "needs-review", "approved", "locked", "archived"]},
+    "created_at": {"type": "string"},
+    "evidence": {"type": "string"}
+  }
+}

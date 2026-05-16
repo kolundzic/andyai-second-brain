@@ -1,0 +1,126 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+source "$ROOT_DIR/runtime/lib/common.sh"
+ensure_runtime_dirs
+cmd="${1:-help}"
+shift || true
+case "$cmd" in
+  index)
+    out="$ROOT_DIR/runtime/index/brain-index.md"
+    {
+      echo "# Brain Index"
+      echo
+      echo "Generated: $(now_utc)"
+      echo
+      echo "## Projects"
+      find "$ROOT_DIR/brain/projects" -maxdepth 2 -type f 2>/dev/null | sort | sed "s#^$ROOT_DIR/#- #" || true
+      echo
+      echo "## Evidence"
+      find "$ROOT_DIR/brain/evidence" -maxdepth 2 -type f 2>/dev/null | sort | sed "s#^$ROOT_DIR/#- #" || true
+      echo
+      echo "## Decisions"
+      find "$ROOT_DIR/brain/decisions" -maxdepth 2 -type f 2>/dev/null | sort | sed "s#^$ROOT_DIR/#- #" || true
+    } > "$out"
+    echo "🟢 Brain index written: $out"
+    ;;
+  memory-create)
+    title="${1:-Untitled Memory}"
+    body="${2:-No body provided.}"
+    slug="$(slugify "$title")"
+    out="$ROOT_DIR/brain/resources/${slug}.md"
+    mkdir -p "$ROOT_DIR/brain/resources"
+    sed -e "s/{{TITLE}}/$title/g" -e "s/{{BODY}}/$body/g" -e "s/{{CREATED_AT}}/$(now_utc)/g" "$ROOT_DIR/runtime/templates/memory-entry.md" > "$out"
+    echo "🟢 Memory entry created: $out"
+    ;;
+  decision-record)
+    decision="${1:-Untitled Decision}"
+    reason="${2:-No reason provided.}"
+    slug="$(slugify "$decision")"
+    out="$ROOT_DIR/brain/decisions/${slug}.md"
+    mkdir -p "$ROOT_DIR/brain/decisions"
+    sed -e "s/{{DECISION}}/$decision/g" -e "s/{{REASON}}/$reason/g" -e "s/{{CREATED_AT}}/$(now_utc)/g" "$ROOT_DIR/runtime/templates/decision.md" > "$out"
+    echo "🟢 Decision recorded: $out"
+    ;;
+  evidence-link)
+    claim="${1:-Untitled Claim}"
+    evidence="${2:-No evidence provided.}"
+    slug="$(slugify "$claim")"
+    out="$ROOT_DIR/brain/evidence/${slug}.md"
+    mkdir -p "$ROOT_DIR/brain/evidence"
+    sed -e "s/{{CLAIM}}/$claim/g" -e "s/{{EVIDENCE}}/$evidence/g" -e "s/{{CREATED_AT}}/$(now_utc)/g" "$ROOT_DIR/runtime/templates/evidence-link.md" > "$out"
+    echo "🟢 Evidence link created: $out"
+    ;;
+  repo-status)
+    out="$ROOT_DIR/runtime/reports/repo-status.md"
+    {
+      echo "# Repo Status Snapshot"
+      echo
+      echo "Generated: $(now_utc)"
+      echo
+      echo "## Git"
+      git -C "$ROOT_DIR" status --short || true
+      echo
+      echo "## Latest Commit"
+      git -C "$ROOT_DIR" log -1 --oneline || true
+      echo
+      echo "## Latest Tags"
+      git -C "$ROOT_DIR" tag --sort=-creatordate | head -20 || true
+    } > "$out"
+    echo "🟢 Repo status snapshot written: $out"
+    ;;
+  report)
+    "$0" index >/dev/null
+    "$0" repo-status >/dev/null
+    out="$ROOT_DIR/runtime/reports/brain-report.md"
+    {
+      echo "# Working Brain Report"
+      echo
+      echo "Generated: $(now_utc)"
+      echo
+      echo "## Counts"
+      echo "- Projects: $(find "$ROOT_DIR/brain/projects" -type f 2>/dev/null | wc -l | tr -d ' ')"
+      echo "- Resources: $(find "$ROOT_DIR/brain/resources" -type f 2>/dev/null | wc -l | tr -d ' ')"
+      echo "- Evidence: $(find "$ROOT_DIR/brain/evidence" -type f 2>/dev/null | wc -l | tr -d ' ')"
+      echo "- Decisions: $(find "$ROOT_DIR/brain/decisions" -type f 2>/dev/null | wc -l | tr -d ' ')"
+      echo
+      echo "## Next Action"
+      echo "Review generated runtime/index/brain-index.md and runtime/reports/repo-status.md."
+    } > "$out"
+    echo "🟢 Brain report written: $out"
+    ;;
+  skill-run)
+    skill="${1:-none}"
+    out="$ROOT_DIR/runtime/reports/skill-run-${skill}.md"
+    {
+      echo "# Skill Runner Skeleton"
+      echo
+      echo "Skill: $skill"
+      echo "Generated: $(now_utc)"
+      echo "Status: stub-only"
+      echo
+      echo "This runtime records that a skill was requested. Later packs may execute structured skill steps."
+    } > "$out"
+    echo "🟢 Skill run skeleton written: $out"
+    ;;
+  inspect)
+    target="${1:-runtime/reports/brain-report.md}"
+    [[ -f "$ROOT_DIR/$target" ]] || { echo "🔴 File not found: $target"; exit 1; }
+    sed -n '1,160p' "$ROOT_DIR/$target"
+    ;;
+  help|*)
+    cat <<HELP
+AndyAI Second Brain Runtime CLI
+
+Commands:
+  index                                  Generate runtime/index/brain-index.md
+  memory-create "Title" "Body"          Create local memory entry
+  decision-record "Decision" "Reason"   Create local decision entry
+  evidence-link "Claim" "Evidence"      Create local evidence link
+  repo-status                            Create repo status snapshot
+  report                                 Create working brain report
+  skill-run "skill-name"                 Record skill-run skeleton
+  inspect "path"                         Inspect a generated file
+HELP
+    ;;
+esac

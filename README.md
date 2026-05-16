@@ -59,3 +59,18 @@ The terminal output uses a semafor:
 ## Human Authority Rule
 
 AI may organize, suggest, draft, inspect and verify. Human approval is required for publishing, deleting canon, changing production, sending client materials or executing high-impact actions.
+
+## PACK2 — Working Brain Runtime Layer
+
+PACK2 adds the first local runtime layer:
+
+```bash
+./runtime/bin/brain index
+./runtime/bin/brain memory-create "Title" "Body"
+./runtime/bin/brain decision-record "Decision" "Reason"
+./runtime/bin/brain evidence-link "Claim" "Evidence"
+./runtime/bin/brain repo-status
+./runtime/bin/brain report
+```
+
+Rule: runtime outputs are local-first and need human review before becoming canonical truth.

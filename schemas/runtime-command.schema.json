@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Second Brain Runtime Command",
+  "type": "object",
+  "required": ["command", "status", "created_at"],
+  "properties": {
+    "command": {"type": "string"},
+    "args": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string", "enum": ["planned", "executed", "failed", "needs-review"]},
+    "created_at": {"type": "string"},
+    "evidence": {"type": "string"}
+  }
+}

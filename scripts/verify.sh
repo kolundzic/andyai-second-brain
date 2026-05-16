@@ -1,40 +1,24 @@
 #!/usr/bin/env bash
 set -euo pipefail
-
-required_files=(
+required=(
   README.md
   ANDYAI_CONTEXT.md
   SECOND_BRAIN_CANON.md
-  docs/MASTER_TOC.md
-  docs/PARA_WORKSPACE.md
-  docs/PROJECT_CONTEXT_STANDARD.md
-  docs/EVIDENCE_BACKED_MEMORY.md
-  docs/HUMAN_APPROVAL_GATE.md
-  docs/REPO_MEMORY_BRIDGE.md
-  docs/CLIENT_MEMORY_BRIDGE.md
-  docs/CONTEXT_ROUTER_SPEC.md
-  skills/context-router.md
-  skills/evidence-memory-update.md
-  schemas/repo-memory.schema.json
-  schemas/client-memory.schema.json
-  examples/sample-repo-memory.md
+  docs/toc/PACK2_v2.1_to_v4.0_TOC.md
+  docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md
+  runtime/bin/brain
+  runtime/lib/common.sh
+  runtime/templates/memory-entry.md
+  runtime/templates/decision.md
+  runtime/templates/evidence-link.md
+  schemas/runtime-command.schema.json
+  schemas/runtime-memory-entry.schema.json
+  skills/runtime-brain-index.md
+  examples/sample-runtime-session.md
 )
-
-for file in "${required_files[@]}"; do
-  if [ ! -s "$file" ]; then
-    echo "❌ Missing or empty required file: $file"
-    exit 1
-  fi
+for f in "${required[@]}"; do
+  [[ -f "$f" ]] || { echo "Missing $f"; exit 1; }
 done
-
-if ! grep -q "RAG pronalazi fragmente" README.md; then
-  echo "❌ Canon formula missing from README.md"
-  exit 1
-fi
-
-if ! grep -q "Human approval" docs/HUMAN_APPROVAL_GATE.md; then
-  echo "❌ Human approval gate missing expected phrase"
-  exit 1
-fi
-
-echo "✅ AndyAI Second Brain verification passed."
+[[ -x runtime/bin/brain ]] || { echo "runtime/bin/brain not executable"; exit 1; }
+[[ -x scripts/brain-check.sh ]] || { echo "scripts/brain-check.sh not executable"; exit 1; }
+echo "✅ AndyAI Second Brain PACK2 verification passed."

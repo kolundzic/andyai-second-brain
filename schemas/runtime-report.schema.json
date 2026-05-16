@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Runtime Report",
+  "type": "object",
+  "required": ["generated_at", "counts", "next_action"],
+  "properties": {
+    "generated_at": {"type": "string"},
+    "counts": {"type": "object"},
+    "next_action": {"type": "string"}
+  }
+}
