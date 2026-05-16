@@ -1,0 +1,1 @@
+{"type": "audit_event", "id": "20260516T224638Z-pack7-audit-event-recorder-active", "actor": "system", "target": "trust-ledger", "action": "PACK7 audit event recorder active", "status": "recorded", "created_at": "20260516T224638Z", "evidence_required": true, "human_review_visible": true}
