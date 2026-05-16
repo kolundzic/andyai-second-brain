@@ -1,0 +1,8 @@
+{
+  "type": "lifecycle_audit_event",
+  "action": "stale_memory_detected",
+  "subject": "Outdated memory candidate",
+  "status": "review-needed",
+  "created_at": "20260516T231242Z",
+  "human_visible": true
+}

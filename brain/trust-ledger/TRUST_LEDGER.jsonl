@@ -9,3 +9,4 @@
 {"type": "lifecycle_audit_event", "action": "memory_activated", "subject": "PACK8 lifecycle signal", "status": "recorded", "created_at": "20260516T231241Z", "human_visible": true}
 {"type": "lifecycle_audit_event", "action": "memory_promoted_to_canon", "subject": "PACK8 lifecycle standard", "status": "recorded", "created_at": "20260516T231241Z", "human_visible": true}
 {"type": "lifecycle_audit_event", "action": "memory_archived", "subject": "PACK8 old working note", "status": "recorded", "created_at": "20260516T231241Z", "human_visible": true}
+{"type": "lifecycle_audit_event", "action": "stale_memory_detected", "subject": "Outdated memory candidate", "status": "review-needed", "created_at": "20260516T231242Z", "human_visible": true}
