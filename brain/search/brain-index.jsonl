@@ -8,6 +8,7 @@
 {"path": "brain/meetings/20260516T143625Z-pack3-planning-meeting.md", "type": "markdown", "size": 205}
 {"path": "brain/projects/andyai-second-brain/PROJECT_SNAPSHOT.md", "type": "markdown", "size": 159}
 {"path": "brain/reports/OPS_DASHBOARD.md", "type": "markdown", "size": 282}
+{"path": "brain/reports/PACK3_DIRTY_TREE_REPAIR_STATUS.md", "type": "markdown", "size": 478}
 {"path": "brain/reports/brain-report.md", "type": "markdown", "size": 247}
 {"path": "brain/reports/pack2/v2.1.0.md", "type": "markdown", "size": 379}
 {"path": "brain/reports/pack2/v2.2.0.md", "type": "markdown", "size": 375}
@@ -40,7 +41,7 @@
 {"path": "brain/lifecycle/pack3-runtime-layer.json", "type": "json", "size": 132}
 {"path": "brain/queries/second-brain.json", "type": "json", "size": 1201}
 {"path": "brain/routes/20260516T143358Z-pack3-sample-inbox-signal.route.json", "type": "json", "size": 174}
-{"path": "brain/search/brain-index.json", "type": "json", "size": 11557}
+{"path": "brain/search/brain-index.json", "type": "json", "size": 11763}
 {"path": "skills/book-material-capture.md", "type": "markdown", "size": 292}
 {"path": "skills/canonize-signal.md", "type": "markdown", "size": 452}
 {"path": "skills/client-brief.md", "type": "markdown", "size": 398}
@@ -98,6 +99,7 @@
 {"path": "docs/releases/v5.8.0.md", "type": "markdown", "size": 177}
 {"path": "docs/releases/v5.9.0.md", "type": "markdown", "size": 185}
 {"path": "docs/releases/v6.0.0.md", "type": "markdown", "size": 191}
+{"path": "docs/repairs/PACK3_DIRTY_TREE_CLEANUP_v6.0.1.md", "type": "markdown", "size": 867}
 {"path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md", "type": "markdown", "size": 813}
 {"path": "docs/toc/PACK2_v2.1_to_v4.0_TOC.md", "type": "markdown", "size": 1357}
 {"path": "examples/sample-client-memory.md", "type": "markdown", "size": 242}

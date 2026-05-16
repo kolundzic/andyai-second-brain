@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-16T14:36:28Z",
-  "count": 111,
+  "generated_at": "2026-05-16T14:37:51Z",
+  "count": 113,
   "records": [
     {
       "path": "brain/approvals/20260516T143623Z-approve-pack3-push.md",
@@ -51,6 +51,11 @@
       "path": "brain/reports/OPS_DASHBOARD.md",
       "type": "markdown",
       "size": 282
+    },
+    {
+      "path": "brain/reports/PACK3_DIRTY_TREE_REPAIR_STATUS.md",
+      "type": "markdown",
+      "size": 478
     },
     {
       "path": "brain/reports/brain-report.md",
@@ -215,7 +220,7 @@
     {
       "path": "brain/search/brain-index.json",
       "type": "json",
-      "size": 11557
+      "size": 11763
     },
     {
       "path": "skills/book-material-capture.md",
@@ -501,6 +506,11 @@
       "path": "docs/releases/v6.0.0.md",
       "type": "markdown",
       "size": 191
+    },
+    {
+      "path": "docs/repairs/PACK3_DIRTY_TREE_CLEANUP_v6.0.1.md",
+      "type": "markdown",
+      "size": 867
     },
     {
       "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
