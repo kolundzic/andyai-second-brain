@@ -1,0 +1,148 @@
+#!/usr/bin/env python3
+"""AndyAI Second Brain trust ledger and audit runtime. Safe local-first scaffold."""
+import json, sys, re, zipfile, hashlib
+from pathlib import Path
+from datetime import datetime, timezone
+ROOT = Path(__file__).resolve().parents[2]
+BRAIN = ROOT / "brain"
+def ts(): return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+def slug(s): return (re.sub(r"[^a-zA-Z0-9]+", "-", s.lower()).strip("-")[:80] or "trust-event")
+def ensure(p): p.parent.mkdir(parents=True, exist_ok=True)
+def write(path, content): ensure(path); path.write_text(content, encoding="utf-8"); print(f"🟢 written: {path.relative_to(ROOT)}")
+def write_json(path, data): write(path, json.dumps(data, indent=2, ensure_ascii=False)+"\n")
+def md(title, body): return f"# {title}\n\n{body.strip()}\n"
+def arg(i, default=""): return sys.argv[i] if len(sys.argv)>i else default
+def digest(text): return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+def event(action, actor="human", target="second-brain", status="recorded"):
+    sid=f"{ts()}-{slug(action)}"
+    data={"type":"audit_event","id":sid,"actor":actor,"target":target,"action":action,"status":status,"created_at":ts(),"evidence_required":True,"human_review_visible":True}
+    write_json(BRAIN/"audit-events"/f"{sid}.json", data)
+    ledger_line=json.dumps(data, ensure_ascii=False)
+    ledger=BRAIN/"trust-ledger"/"TRUST_LEDGER.jsonl"
+    ensure(ledger)
+    with ledger.open("a", encoding="utf-8") as f: f.write(ledger_line+"\n")
+    print(f"🟢 ledger appended: {ledger.relative_to(ROOT)}")
+
+def approval(subject):
+    sid=f"{ts()}-{slug(subject)}"
+    body=f"Subject: {subject}\nActor: human\nDecision: pending\nEvidence: required\nCreated: {ts()}\n"
+    write(BRAIN/"approval-audit"/f"{sid}.md", md("Approval Audit Trail", body))
+    event(f"approval audit created for {subject}", "human", subject)
+
+def execution(subject):
+    sid=f"{ts()}-{slug(subject)}"
+    body=f"Subject: {subject}\nExecution mode: governed\nDry run: required before action\nEvidence capture: required\nResult inspection: required\nCreated: {ts()}\n"
+    write(BRAIN/"execution-audit"/f"{sid}.md", md("Execution Audit Trail", body))
+    event(f"execution audit created for {subject}", "agent", subject)
+
+def evidence(claim, detail):
+    sid=f"{ts()}-{slug(claim)}"
+    d=digest(claim+"\n"+detail)
+    data={"type":"evidence_hash_record","id":sid,"claim":claim,"detail":detail,"sha256":d,"created_at":ts(),"verification_status":"recorded"}
+    write_json(BRAIN/"evidence-ledger"/f"{sid}.json", data)
+    event(f"evidence hash recorded for {claim}", "system", claim)
+
+def decision(decision_text, reason):
+    sid=f"{ts()}-{slug(decision_text)}"
+    body=f"Decision: {decision_text}\nReason: {reason}\nOwner: human\nAccountability: visible\nCreated: {ts()}\n"
+    write(BRAIN/"decision-accountability"/f"{sid}.md", md("Decision Accountability Card", body))
+    event(f"decision accountability card created for {decision_text}", "human", decision_text)
+
+def rollback(subject, reason):
+    sid=f"{ts()}-{slug(subject)}"
+    body=f"Subject: {subject}\nRollback reason: {reason}\nStatus: noted\nCreated: {ts()}\n"
+    write(BRAIN/"rollback-audit"/f"{sid}.md", md("Rollback Audit Trail", body))
+    event(f"rollback audit recorded for {subject}", "human", subject)
+
+def breach(subject, reason):
+    sid=f"{ts()}-{slug(subject)}"
+    body=f"Subject: {subject}\nBreach or concern: {reason}\nSeverity: review-needed\nStatus: open\nCreated: {ts()}\n"
+    write(BRAIN/"policy-breaches"/f"{sid}.md", md("Policy Breach Note", body))
+    event(f"policy breach note recorded for {subject}", "system", subject, "review-needed")
+
+def score():
+    ledger=BRAIN/"trust-ledger"/"TRUST_LEDGER.jsonl"
+    count=0
+    if ledger.exists(): count=len([x for x in ledger.read_text(encoding="utf-8").splitlines() if x.strip()])
+    data={"type":"trust_score_stub","audit_events":count,"score":"green-if-ledger-present","status":"stub","created_at":ts()}
+    write_json(BRAIN/"trust-scores"/"TRUST_SCORE_STUB.json", data)
+
+def query(term):
+    term=term.lower()
+    hits=[]
+    for p in BRAIN.rglob("*"):
+      if p.is_file() and p.suffix.lower() in {".md",".json",".jsonl",".txt"}:
+        txt=p.read_text(encoding="utf-8", errors="ignore")
+        if term in txt.lower() or term in p.name.lower(): hits.append(str(p.relative_to(ROOT)))
+    out="# Audit Query Results\n\nQuery: {}\n\n{}\n".format(term, "\n".join(f"- {h}" for h in hits[:50]) or "No hits.")
+    write(BRAIN/"audit-queries"/f"{ts()}-{slug(term)}.md", out)
+
+def integrity():
+    ledger=BRAIN/"trust-ledger"/"TRUST_LEDGER.jsonl"
+    ok=ledger.exists() and ledger.stat().st_size>0
+    data={"type":"ledger_integrity_check","ledger_exists":ledger.exists(),"ledger_non_empty":ok,"status":"pass" if ok else "warning","created_at":ts()}
+    write_json(BRAIN/"integrity"/"LEDGER_INTEGRITY_CHECK.json", data)
+
+def human_report():
+    body="Human accountability report\n\n- Human approval is required for high-impact actions.\n- Human decisions must have reason and evidence.\n- Audit trail must remain inspectable.\n"
+    write(BRAIN/"human-accountability"/"HUMAN_ACCOUNTABILITY_REPORT.md", md("Human Accountability Report", body))
+
+def agent_report():
+    body="Agent accountability report\n\n- Agent actions must be tied to mission context.\n- Agent execution must be dry-run-first.\n- Agent outputs must capture evidence and result inspection.\n"
+    write(BRAIN/"agent-accountability"/"AGENT_ACCOUNTABILITY_REPORT.md", md("Agent Accountability Report", body))
+
+def cross_pack():
+    tags=[]
+    try:
+      import subprocess
+      tags=subprocess.check_output(["git","tag","--list","v*"], cwd=ROOT, text=True).splitlines()
+    except Exception:
+      tags=[]
+    body="# Cross-Pack Audit Map\n\n"+"\n".join(f"- {t}" for t in tags[-40:])+"\n"
+    write(BRAIN/"cross-pack-audit"/"CROSS_PACK_AUDIT_MAP.md", body)
+
+def report():
+    ledger=BRAIN/"trust-ledger"/"TRUST_LEDGER.jsonl"
+    count=0
+    if ledger.exists(): count=len([x for x in ledger.read_text(encoding="utf-8").splitlines() if x.strip()])
+    body=f"Audit events: {count}\nLedger: {ledger.relative_to(ROOT)}\nStatus: governed audit layer active\nGenerated: {ts()}\n"
+    write(BRAIN/"reports"/"trust-ledger-report.md", md("Trust Ledger Report", body))
+
+def qa():
+    integrity(); score(); report(); human_report(); agent_report(); cross_pack()
+    body="PACK7 QA passed if ledger, integrity, reports and accountability files exist.\n"
+    write(BRAIN/"trust-qa"/"PACK7_TRUST_QA.md", md("PACK7 Trust QA", body))
+
+def export_bundle():
+    qa()
+    out=BRAIN/"trust-exports"/"pack7-trust-ledger-export.zip"
+    ensure(out)
+    with zipfile.ZipFile(out,"w",zipfile.ZIP_DEFLATED) as z:
+      for folder in ["trust-ledger","audit-events","approval-audit","execution-audit","evidence-ledger","decision-accountability","integrity","reports","trust-qa"]:
+        base=BRAIN/folder
+        if base.exists():
+          for p in base.rglob("*"):
+            if p.is_file(): z.write(p, p.relative_to(ROOT))
+    print(f"🟢 written: {out.relative_to(ROOT)}")
+
+def helptext():
+    print("brain-trust commands: event, approval, execution, evidence, decision, rollback, breach, score, query, integrity, human-report, agent-report, cross-pack, report, qa, export")
+cmd=arg(1,"help")
+if cmd=="event": event(arg(2,"trust ledger event"), arg(3,"human"), arg(4,"second-brain"))
+elif cmd=="approval": approval(arg(2,"PACK7 approval audit"))
+elif cmd=="execution": execution(arg(2,"PACK7 execution audit"))
+elif cmd=="evidence": evidence(arg(2,"Claim"), arg(3,"Evidence detail"))
+elif cmd=="decision": decision(arg(2,"Decision"), arg(3,"Reason"))
+elif cmd=="rollback": rollback(arg(2,"Rollback subject"), arg(3,"Reason"))
+elif cmd=="breach": breach(arg(2,"Policy subject"), arg(3,"Reason"))
+elif cmd=="score": score()
+elif cmd=="query": query(arg(2,"approval"))
+elif cmd=="integrity": integrity()
+elif cmd=="human-report": human_report()
+elif cmd=="agent-report": agent_report()
+elif cmd=="cross-pack": cross_pack()
+elif cmd=="report": report()
+elif cmd=="qa": qa()
+elif cmd=="export": export_bundle()
+else: helptext()

@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": ["type", "id", "actor", "target", "action", "status", "created_at"],
+  "properties": {
+    "type": {"const": "audit_event"},
+    "id": {"type": "string"},
+    "actor": {"type": "string"},
+    "target": {"type": "string"},
+    "action": {"type": "string"},
+    "status": {"type": "string"},
+    "created_at": {"type": "string"},
+    "evidence_required": {"type": "boolean"},
+    "human_review_visible": {"type": "boolean"}
+  }
+}

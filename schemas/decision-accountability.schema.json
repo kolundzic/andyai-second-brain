@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "required": ["decision", "reason", "owner", "status"],
+  "properties": {
+    "decision": {"type": "string"},
+    "reason": {"type": "string"},
+    "owner": {"type": "string"},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string"},
+    "created_at": {"type": "string"}
+  }
+}

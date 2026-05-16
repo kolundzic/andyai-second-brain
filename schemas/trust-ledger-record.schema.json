@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": ["id", "type", "status", "created_at"],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"type": "string"},
+    "status": {"type": "string"},
+    "created_at": {"type": "string"},
+    "actor": {"type": "string"},
+    "target": {"type": "string"},
+    "action": {"type": "string"},
+    "sha256": {"type": "string"}
+  }
+}

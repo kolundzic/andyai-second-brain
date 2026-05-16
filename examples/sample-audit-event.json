@@ -1,0 +1,11 @@
+{
+  "type": "audit_event",
+  "id": "sample-audit-event",
+  "actor": "human",
+  "target": "andyai-second-brain",
+  "action": "approve governed execution",
+  "status": "recorded",
+  "created_at": "2026-05-16T00:00:00Z",
+  "evidence_required": true,
+  "human_review_visible": true
+}

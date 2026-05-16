@@ -121,3 +121,25 @@ PACK6 adds a safe local-first governed execution layer: execution plans, approva
 Canonical line:
 
 > Mission without approval is danger. Execution without evidence is noise.
+
+## PACK7 — Trust Ledger / Audit Trail / Decision Accountability Layer
+
+PACK7 adds the trust ledger and audit accountability layer.
+
+Core runtime:
+
+```bash
+runtime/bin/brain-trust help
+runtime/bin/brain-trust event "PACK7 trust event"
+runtime/bin/brain-trust approval "Approve PACK7 push"
+runtime/bin/brain-trust execution "PACK7 governed execution"
+runtime/bin/brain-trust evidence "Claim" "Evidence detail"
+runtime/bin/brain-trust decision "Decision" "Reason"
+runtime/bin/brain-trust query "approval"
+runtime/bin/brain-trust qa
+runtime/bin/brain-trust export
+```
+
+Canonical sentence:
+
+Execution without audit becomes invisible power. Audit without evidence becomes theatre. Trust requires a ledger.
