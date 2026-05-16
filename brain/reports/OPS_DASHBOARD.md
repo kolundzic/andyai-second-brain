@@ -1,9 +1,9 @@
 # AndyAI Second Brain Ops Dashboard
 
-Created: 2026-05-16T14:36:26Z
+Created: 2026-05-16T14:36:27Z
 
 ## Current Tag
-v5.6.0
+v5.8.0
 
 ## Working Tree
 M brain/reports/brain-report.md
