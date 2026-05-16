@@ -4,9 +4,9 @@
   "title": "Timing Precision / Pack Intelligence / Bridge Hub Readiness Layer",
   "started": "2026-05-16T23:21:55Z",
   "finished": "2026-05-16T23:22:03Z",
-  "total_ms": 7424,
-  "versions_completed": 19,
-  "average_phase_ms": 390,
+  "total_ms": 8010,
+  "versions_completed": 20,
+  "average_phase_ms": 400,
   "slowest_phase": {
     "version": "v17.9.0",
     "title": "Pack9 QA Final",
@@ -17,6 +17,6 @@
     "title": "Timing Evidence Writer",
     "ms": 209
   },
-  "estimated_next_20_version_pack_ms": 7800,
+  "estimated_next_20_version_pack_ms": 8000,
   "note": "PACK9 upgrades timing from whole seconds to milliseconds because PACK8 completed too fast for useful second-level estimates."
 }
