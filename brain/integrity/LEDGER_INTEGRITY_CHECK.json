@@ -1,0 +1,7 @@
+{
+  "type": "ledger_integrity_check",
+  "ledger_exists": true,
+  "ledger_non_empty": true,
+  "status": "pass",
+  "created_at": "20260516T224642Z"
+}
