@@ -13,8 +13,8 @@ Created: 2026-05-16T14:36:23Z
   "skills": 1,
   "reports": 28,
   "inbox": 1,
-  "approvals": 0
+  "approvals": 1
 }
 
 ## Latest Tag
-v4.9.0
+v5.0.0

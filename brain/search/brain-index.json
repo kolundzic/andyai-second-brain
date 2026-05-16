@@ -1,7 +1,12 @@
 {
   "generated_at": "2026-05-16T14:36:23Z",
-  "count": 92,
+  "count": 94,
   "records": [
+    {
+      "path": "brain/approvals/20260516T143623Z-approve-pack3-push.md",
+      "type": "markdown",
+      "size": 176
+    },
     {
       "path": "brain/decisions/20260516T143623Z-pack3-remains-local-first.md",
       "type": "markdown",
@@ -145,7 +150,7 @@
     {
       "path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md",
       "type": "markdown",
-      "size": 380
+      "size": 418
     },
     {
       "path": "brain/reports/repo-status.md",
@@ -170,7 +175,7 @@
     {
       "path": "brain/search/brain-index.json",
       "type": "json",
-      "size": 9498
+      "size": 9732
     },
     {
       "path": "skills/book-material-capture.md",
@@ -406,6 +411,11 @@
       "path": "docs/releases/v5.0.0.md",
       "type": "markdown",
       "size": 177
+    },
+    {
+      "path": "docs/releases/v5.1.0.md",
+      "type": "markdown",
+      "size": 193
     },
     {
       "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
