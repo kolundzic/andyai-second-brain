@@ -1,0 +1,8 @@
+{
+  "pack": "PACK10",
+  "evidence_paths": [
+    "evidence/pack10",
+    "brain/reports/bridge-hub-status-report.md",
+    "brain/bridge-hub/status/status-map.json"
+  ]
+}
