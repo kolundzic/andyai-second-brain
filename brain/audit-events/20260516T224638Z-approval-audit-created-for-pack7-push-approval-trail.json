@@ -1,0 +1,11 @@
+{
+  "type": "audit_event",
+  "id": "20260516T224638Z-approval-audit-created-for-pack7-push-approval-trail",
+  "actor": "human",
+  "target": "PACK7 push approval trail",
+  "action": "approval audit created for PACK7 push approval trail",
+  "status": "recorded",
+  "created_at": "20260516T224638Z",
+  "evidence_required": true,
+  "human_review_visible": true
+}
