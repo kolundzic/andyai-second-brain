@@ -1,0 +1,11 @@
+{
+  "type": "audit_event",
+  "id": "20260516T224640Z-rollback-audit-recorded-for-pack7-rollback-audit-path",
+  "actor": "human",
+  "target": "PACK7 rollback audit path",
+  "action": "rollback audit recorded for PACK7 rollback audit path",
+  "status": "recorded",
+  "created_at": "20260516T224640Z",
+  "evidence_required": true,
+  "human_review_visible": true
+}
