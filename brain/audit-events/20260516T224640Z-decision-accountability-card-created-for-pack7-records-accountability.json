@@ -1,0 +1,11 @@
+{
+  "type": "audit_event",
+  "id": "20260516T224640Z-decision-accountability-card-created-for-pack7-records-accountability",
+  "actor": "human",
+  "target": "PACK7 records accountability",
+  "action": "decision accountability card created for PACK7 records accountability",
+  "status": "recorded",
+  "created_at": "20260516T224640Z",
+  "evidence_required": true,
+  "human_review_visible": true
+}
