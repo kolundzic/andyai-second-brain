@@ -3,14 +3,16 @@
 Generated: 2026-05-16T14:25:30Z
 
 ## Git
-?? brain/reports/pack2/v2.8.0.md
-?? runtime/reports/repo-status.md
+ M runtime/index/brain-index.md
+ M runtime/reports/repo-status.md
+?? brain/reports/pack2/v2.9.0.md
 
 ## Latest Commit
-4188d80 v2.7.0 Skill Runner Skeleton
+0a7d601 v2.8.0 Repo Status Snapshot
 
 ## Latest Tags
 v2.7.0
+v2.8.0
 v2.5.0
 v2.6.0
 v2.1.0
@@ -29,4 +31,3 @@ v0.8.0
 v0.9.0
 v1.0.0
 v1.1.0
-v1.2.0
