@@ -1,0 +1,13 @@
+  41.0  resource   brain/context/bundles/20260516T153537Z-pack4-context-bundle-schema.json
+  41.0  resource   brain/context/bundles/20260516T153537Z-pack4-context-bundle-schema.md
+  38.0  resource   brain/search/brain-index.json
+  32.0  resource   docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md
+  29.0  resource   README.md
+  23.0  resource   brain/retrieval/20260516T153537Z-pack4-retrieval-result-schema.json
+  23.0  resource   docs/MASTER_TOC.md
+  22.0  resource   docs/ROADMAP.md
+  19.5  skill      skills/start-project.md
+  18.0  resource   docs/ARCHITECTURE.md
+  18.0  resource   docs/PROJECT_CONTEXT_STANDARD.md
+  18.0  resource   docs/pack4/QUERY_RETRIEVAL_CONTEXT_ARCHITECTURE.md
+🟢 Retrieval results written: brain/retrieval/20260516T153538Z-evidence-decision-project-context.json
