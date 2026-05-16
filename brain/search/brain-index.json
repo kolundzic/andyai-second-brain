@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-05-16T14:33:58Z",
-  "count": 77,
+  "count": 78,
   "records": [
     {
       "path": "brain/decisions/adopt-local-runtime-layer.md",
@@ -125,7 +125,7 @@
     {
       "path": "brain/reports/pack3/PACK3_VERSION_LEDGER.md",
       "type": "markdown",
-      "size": 94
+      "size": 131
     },
     {
       "path": "brain/resources/pack2-runtime-memory.md",
@@ -135,7 +135,7 @@
     {
       "path": "brain/search/brain-index.json",
       "type": "json",
-      "size": 7649
+      "size": 8084
     },
     {
       "path": "skills/book-material-capture.md",
@@ -331,6 +331,11 @@
       "path": "docs/releases/v4.2.0.md",
       "type": "markdown",
       "size": 180
+    },
+    {
+      "path": "docs/releases/v4.3.0.md",
+      "type": "markdown",
+      "size": 196
     },
     {
       "path": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
