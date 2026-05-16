@@ -4,12 +4,12 @@
   "timing": {
   "started": "2026-05-16T23:25:58Z",
   "finished": "2026-05-16T23:26:01Z",
-  "total_ms": 2318,
-  "versions_completed": 5,
-  "average_phase_ms": 463,
-  "slowest_phase": {"version": "v18.1.0", "title": "Bridge Hub Integration Scaffold", "ms": 336},
+  "total_ms": 2816,
+  "versions_completed": 6,
+  "average_phase_ms": 469,
+  "slowest_phase": {"version": "v18.6.0", "title": "Repo Registry Writer", "ms": 451},
   "fastest_phase": {"version": "v18.5.0", "title": "Bridge Hub Runtime CLI", "ms": 259},
-  "estimated_next_20_version_pack_ms": 9260
+  "estimated_next_20_version_pack_ms": 9380
 },
   "precision": "milliseconds",
   "note": "Timing report is generated before final lock to avoid dirty-tree after final tag."
