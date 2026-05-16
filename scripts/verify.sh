@@ -1,52 +1,40 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-required=(
-  "README.md"
-  "ANDYAI_CONTEXT.md"
-  "SECOND_BRAIN_CANON.md"
-  "docs/ARCHITECTURE.md"
-  "docs/PRACTICAL_USE_CASES.md"
-  "docs/GOVERNANCE_MODEL.md"
-  "docs/MEMORY_POLICY.md"
-  "docs/SKILLS_STANDARD.md"
-  "docs/ROADMAP.md"
-  "brain/projects/.gitkeep"
-  "brain/areas/.gitkeep"
-  "brain/resources/.gitkeep"
-  "brain/archives/.gitkeep"
-  "brain/evidence/.gitkeep"
-  "brain/decisions/.gitkeep"
-  "brain/skills/.gitkeep"
-  "brain/reports/.gitkeep"
-  "skills/start-project.md"
-  "skills/canonize-signal.md"
-  "skills/repo-status.md"
-  "skills/meeting-debrief.md"
-  "skills/taptap-pack-summary.md"
-  "skills/client-brief.md"
-  "schemas/project-context.schema.json"
-  "schemas/memory-entry.schema.json"
-  "schemas/evidence-link.schema.json"
-  "schemas/skill.schema.json"
-  "schemas/decision.schema.json"
-  "examples/sample-project-context.md"
-  "examples/sample-memory-entry.md"
-  "examples/sample-decision-log.md"
-  "examples/sample-evidence-report.md"
+required_files=(
+  README.md
+  ANDYAI_CONTEXT.md
+  SECOND_BRAIN_CANON.md
+  docs/MASTER_TOC.md
+  docs/PARA_WORKSPACE.md
+  docs/PROJECT_CONTEXT_STANDARD.md
+  docs/EVIDENCE_BACKED_MEMORY.md
+  docs/HUMAN_APPROVAL_GATE.md
+  docs/REPO_MEMORY_BRIDGE.md
+  docs/CLIENT_MEMORY_BRIDGE.md
+  docs/CONTEXT_ROUTER_SPEC.md
+  skills/context-router.md
+  skills/evidence-memory-update.md
+  schemas/repo-memory.schema.json
+  schemas/client-memory.schema.json
+  examples/sample-repo-memory.md
 )
 
-missing=0
-for f in "${required[@]}"; do
-  if [ ! -f "$f" ]; then
-    echo "❌ Missing: $f"
-    missing=1
+for file in "${required_files[@]}"; do
+  if [ ! -s "$file" ]; then
+    echo "❌ Missing or empty required file: $file"
+    exit 1
   fi
 done
 
-if [ "$missing" -ne 0 ]; then
-  echo "❌ Verification failed."
+if ! grep -q "RAG pronalazi fragmente" README.md; then
+  echo "❌ Canon formula missing from README.md"
   exit 1
 fi
 
-echo "✅ AndyAI Second Brain v0.1.0 verification passed."
+if ! grep -q "Human approval" docs/HUMAN_APPROVAL_GATE.md; then
+  echo "❌ Human approval gate missing expected phrase"
+  exit 1
+fi
+
+echo "✅ AndyAI Second Brain verification passed."

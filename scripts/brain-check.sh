@@ -2,8 +2,10 @@
 set -euo pipefail
 
 echo "🧠 AndyAI Second Brain check"
-echo "Root context: $(test -f ANDYAI_CONTEXT.md && echo OK || echo MISSING)"
-echo "Canon: $(test -f SECOND_BRAIN_CANON.md && echo OK || echo MISSING)"
+echo "Root context: $([ -s ANDYAI_CONTEXT.md ] && echo OK || echo MISSING)"
+echo "Canon: $([ -s SECOND_BRAIN_CANON.md ] && echo OK || echo MISSING)"
+echo "TOC: $([ -s docs/MASTER_TOC.md ] && echo OK || echo MISSING)"
 echo "Skills: $(find skills -type f -name '*.md' | wc -l | tr -d ' ')"
 echo "Schemas: $(find schemas -type f -name '*.json' | wc -l | tr -d ' ')"
 echo "Docs: $(find docs -type f -name '*.md' | wc -l | tr -d ' ')"
+echo "Examples: $(find examples -type f | wc -l | tr -d ' ')"

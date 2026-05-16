@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Repo Memory",
+  "type": "object",
+  "required": ["repoName", "latestTag", "status", "nextAction"],
+  "properties": {
+    "repoName": { "type": "string" },
+    "localPath": { "type": "string" },
+    "githubUrl": { "type": "string" },
+    "latestTag": { "type": "string" },
+    "latestCommit": { "type": "string" },
+    "verificationStatus": { "type": "string" },
+    "deploymentStatus": { "type": "string" },
+    "status": { "type": "string" },
+    "nextAction": { "type": "string" }
+  }
+}

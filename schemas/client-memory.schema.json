@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Client Memory",
+  "type": "object",
+  "required": ["clientName", "status", "nextFollowUp"],
+  "properties": {
+    "clientName": { "type": "string" },
+    "organization": { "type": "string" },
+    "language": { "type": "string" },
+    "promises": { "type": "array", "items": { "type": "string" } },
+    "materialsSent": { "type": "array", "items": { "type": "string" } },
+    "status": { "type": "string" },
+    "nextFollowUp": { "type": "string" }
+  }
+}

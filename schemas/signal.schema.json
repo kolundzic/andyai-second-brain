@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canon Signal",
+  "type": "object",
+  "required": ["source", "coreClaim", "andyaiAngle", "nextStrike"],
+  "properties": {
+    "source": { "type": "string" },
+    "coreClaim": { "type": "string" },
+    "verifiedTruth": { "type": "string" },
+    "hypeVsReality": { "type": "string" },
+    "andyaiAngle": { "type": "string" },
+    "riskSurface": { "type": "string" },
+    "practicalTakeaway": { "type": "string" },
+    "repoConsequence": { "type": "string" },
+    "nextStrike": { "type": "string" }
+  }
+}

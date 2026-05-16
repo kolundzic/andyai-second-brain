@@ -14,45 +14,47 @@ Serbian:
 
 ## What It Is
 
-AndyAI Second Brain is a structured memory system designed to help humans and AI agents continue work across sessions, projects, repositories, meetings, signals and decisions.
+AndyAI Second Brain is structured work memory for human-AI collaboration.
 
-It is not just note-taking.  
-It is not just RAG.  
-It is not just chat history.
+It helps answer:
 
-It is a governed context layer with evidence, project memory, skills, approval gates and practical continuity.
+- Where did we stop?
+- What is the current project status?
+- What proof do we have?
+- What decision was made?
+- What is the next action?
+- What may AI do, and what requires human approval?
 
 ## Core Components
 
-- PARA-style workspace
+- PARA workspace: Projects, Areas, Resources, Archives
 - Root context file
 - Project context files
+- Progressive context router
 - Evidence-backed memory
 - Decision logs
 - Markdown skills
 - Human approval gates
 - Repo memory bridge
 - Client memory bridge
-- Export and inspection controls
+- Meeting memory bridge
+- Signal canonizer
+- Export/delete/inspect controls
 
-## Canonical Sentence
+## Practical Use
 
-Second Brain is not a pile of notes.  
-Second Brain is structured work memory that an agent can understand, use, update and prove.
+This repo is the memory spine for AndyAI work: projects, repos, client flows, meetings, signals, book material and verified delivery.
 
-## v0.1.0 Scope
+## TAP-TAP Simplification
 
-This first bootstrap locks the architecture foundation:
+1. First TAP: unzip the package.
+2. Second TAP: run the terminal script.
 
-- repository identity
-- root context
-- canon definition
-- docs scaffold
-- brain workspace folders
-- initial skill definitions
-- initial JSON schemas
-- examples
-- verification script
+The terminal output uses a semafor:
+
+- 🟢 passed/safe
+- 🟡 warning/non-blocking
+- 🔴 blocking failure/STOP
 
 ## Human Authority Rule
 
