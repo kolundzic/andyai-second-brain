@@ -1,0 +1,9 @@
+  55.0  resource   brain/search/brain-index.json
+  28.0  resource   docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md
+  17.0  schema     schemas/retrieval-result.schema.json
+  14.0  resource   docs/pack4/QUERY_RETRIEVAL_CONTEXT_ARCHITECTURE.md
+  14.0  resource   docs/pack4/releases/v6.3.0.md
+  10.0  resource   docs/pack4/releases/v6.2.0.md
+  10.0  schema     schemas/context-bundle.schema.json
+   8.0  resource   docs/pack4/releases/v6.1.0.md
+🟢 Retrieval results written: brain/retrieval/20260516T153537Z-pack4-retrieval-result-schema.json
