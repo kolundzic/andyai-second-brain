@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+case "${1:-help}" in
+  help)
+    cat <<'HELP'
+brain-operator commands:
+  registry   Show operator registry path
+  readiness  Show external service readiness payload path
+  status     Show Bridge Hub operator status path
+  report     Show operator readiness report path
+  export     Show operator export bundle path
+HELP
+    ;;
+  registry) echo "$ROOT/brain/operators/registry/operator-registry.json" ;;
+  readiness) echo "$ROOT/brain/operators/readiness/external-service-readiness.json" ;;
+  status) echo "$ROOT/brain/bridge-hub/operator-status/operator-status-map.json" ;;
+  report) echo "$ROOT/brain/reports/operator-readiness-report.md" ;;
+  export) echo "$ROOT/brain/operators/exports/pack11-operator-registry-export.zip" ;;
+  *) echo "Unknown command: $1"; exit 1 ;;
+esac

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Operator Registry",
+  "type": "object",
+  "required": ["repo", "pack", "operators"],
+  "properties": {
+    "repo": {"type": "string"},
+    "pack": {"type": "string"},
+    "operators": {"type": "array"}
+  }
+}

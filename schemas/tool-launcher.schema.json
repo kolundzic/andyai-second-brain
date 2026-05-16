@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Tool Launcher Contract",
+  "type": "object",
+  "required": ["tool", "mode", "risk_level", "requires_human_approval"],
+  "properties": {
+    "tool": {"type": "string"},
+    "mode": {"type": "string"},
+    "risk_level": {"type": "string"},
+    "requires_human_approval": {"type": "boolean"}
+  }
+}

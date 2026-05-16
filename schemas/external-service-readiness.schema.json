@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI External Service Readiness",
+  "type": "object",
+  "required": ["service", "checks", "approval_required"],
+  "properties": {
+    "service": {"type": "string"},
+    "checks": {"type": "array"},
+    "approval_required": {"type": "boolean"}
+  }
+}

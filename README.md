@@ -171,3 +171,7 @@ PACK9 upgrades TAP-TAP timing from whole-second summaries to millisecond-precisi
 ## PACK10 — Bridge Hub / Pack Registry / Status Map Integration Layer
 
 PACK10 prepares AndyAI Second Brain to provide Bridge Hub-ready registry and status payloads: repo registry, pack registry, status map, timing payload, evidence map, repair history and next action.
+
+## PACK11 — Operator Registry / Tool Launcher / External Service Readiness Layer
+
+PACK11 prepares operator registry and external-service launcher readiness for Bridge Hub. It registers guided operator patterns such as GitHub Operator, Vercel Operator, Supabase Operator, Stripe Operator, DNS Doctor and Recovery Doctor.
