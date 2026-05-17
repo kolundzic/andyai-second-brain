@@ -1,13 +1,16 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T00:22:14Z",
+  "generated_at": "2026-05-17T00:22:16Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "73e2c63",
+    "head": "abae610",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
+      "v51.3.0",
+      "v51.1.0",
+      "v51.2.0",
       "v51.0.0",
       "v50.8.0",
       "v50.9.0",
@@ -24,10 +27,7 @@
       "v49.8.0",
       "v49.7.0",
       "v49.6.0",
-      "v49.4.0",
-      "v49.5.0",
-      "v49.2.0",
-      "v49.3.0"
+      "v49.4.0"
     ]
   },
   "sections": [
