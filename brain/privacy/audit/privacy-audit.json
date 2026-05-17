@@ -1,9 +1,9 @@
 {
   "kind": "andyai.privacy_audit",
-  "generated_at": "2026-05-17T01:17:57Z",
+  "generated_at": "2026-05-17T01:18:00Z",
   "public_gate": {
     "ok": false,
-    "scanned_at": "2026-05-17T01:17:57Z",
+    "scanned_at": "2026-05-17T01:18:00Z",
     "paths": [
       "public"
     ],
@@ -70,7 +70,7 @@
   },
   "general_scan": {
     "ok": false,
-    "scanned_at": "2026-05-17T01:17:57Z",
+    "scanned_at": "2026-05-17T01:18:00Z",
     "paths": [
       "public",
       "brain/client",

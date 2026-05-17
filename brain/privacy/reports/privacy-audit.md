@@ -1,6 +1,6 @@
 # Privacy Audit Report
 
-Generated: 2026-05-17T01:17:57Z
+Generated: 2026-05-17T01:18:00Z
 
 - Public gate findings: 8
 - General scan findings: 23
