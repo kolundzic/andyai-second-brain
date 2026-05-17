@@ -4,8 +4,8 @@
   "range": "v54.1.0 -> v56.0.0",
   "base_tag": "v54.0.3",
   "final_tag": "v56.0.0",
-  "latest_known_tag": "v55.9.0",
-  "head_short": "c8c8c75",
+  "latest_known_tag": "v56.0.0",
+  "head_short": "e0887da",
   "mode": "bojno-punjenje",
   "capabilities": [
     "real client-report CLI",
@@ -16,15 +16,15 @@
     "real client delivery export bundle",
     "real smoke test"
   ],
-  "semafor": {"green": 43, "yellow": 0, "red": 0},
+  "semafor": {"green": 45, "yellow": 0, "red": 0},
   "timing": {
   "started": "2026-05-17T00:46:13Z",
-  "finished": "2026-05-17T00:46:28Z",
-  "total_ms": 15161,
-  "versions_completed": 19,
-  "average_phase_ms": 797,
+  "finished": "2026-05-17T00:46:31Z",
+  "total_ms": 17450,
+  "versions_completed": 20,
+  "average_phase_ms": 872,
   "slowest_phase": {"version": "v55.9.0", "title": "Pack28 QA Final", "ms": 2760},
   "fastest_phase": {"version": "v55.6.0", "title": "Client Report Smoke Test", "ms": 289},
-  "estimated_next_20_version_pack_ms": 15940
+  "estimated_next_20_version_pack_ms": 17440
 }
 }
