@@ -1,0 +1,4 @@
+confidential private client note
+email: test.person@example.com
+api_key = DEMO_SECRET_VALUE_DO_NOT_USE
+raw conversation: this is a fake unsafe sample for scanner testing

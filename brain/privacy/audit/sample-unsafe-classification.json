@@ -1,0 +1,42 @@
+{
+  "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+  "classification": "secret",
+  "findings_count": 5,
+  "findings": [
+    {
+      "group": "secret",
+      "type": "api_key_assignment",
+      "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+      "line": 3,
+      "match_preview": "api_key = DEMO_SECRET_VALUE_DO_NOT_USE"
+    },
+    {
+      "group": "pii",
+      "type": "email",
+      "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+      "line": 2,
+      "match_preview": "test.person@example.com"
+    },
+    {
+      "group": "client_data",
+      "type": "client_confidential_marker",
+      "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+      "line": 1,
+      "match_preview": "confidential"
+    },
+    {
+      "group": "client_data",
+      "type": "client_confidential_marker",
+      "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+      "line": 1,
+      "match_preview": "private client"
+    },
+    {
+      "group": "client_data",
+      "type": "raw_conversation_marker",
+      "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+      "line": 4,
+      "match_preview": "raw conversation"
+    }
+  ]
+}
