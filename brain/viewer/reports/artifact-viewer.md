@@ -1,11 +1,11 @@
 # AndyAI Artifact Viewer
 
-Generated: 2026-05-17T00:22:16Z
+Generated: 2026-05-17T00:22:20Z
 
 ## Repo
 
 - Name: andyai-second-brain
-- HEAD: abae610
+- HEAD: da732ea
 - Remote: git@github.com:kolundzic/andyai-second-brain.git
 
 ## Dashboard Artifacts
@@ -200,6 +200,7 @@ Generated: 2026-05-17T00:22:16Z
 - `brain/operators/exports/pack11-operator-registry-export.zip` — 11823 bytes
 - `brain/timing-exports/pack9-timing-export.zip` — 5211 bytes
 - `brain/trust-exports/pack7-trust-ledger-export.zip` — 20059 bytes
+- `brain/viewer/exports/artifact-viewer-export.zip` — 15885 bytes
 
 ## Release Notes
 
