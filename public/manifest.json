@@ -1,0 +1,21 @@
+{
+  "kind": "andyai.vercel_static_export",
+  "version": "1.0",
+  "generated_at": "2026-05-17T00:29:53Z",
+  "repo": {
+    "name": "andyai-second-brain",
+    "head": "149874d",
+    "remote": "git@github.com:kolundzic/andyai-second-brain.git"
+  },
+  "files": [
+    "index.html",
+    "artifacts/viewer/index.html",
+    "artifacts/viewer/artifact-index.json",
+    "artifacts/viewer/artifact-viewer.md",
+    "artifacts/dashboard/bridge-hub-dashboard.html",
+    "artifacts/dashboard/bridge-hub-feed.json",
+    "artifacts/dashboard/bridge-hub-dashboard.md",
+    "artifacts/doctor/brain-doctor-report.json",
+    "artifacts/doctor/brain-doctor-report.md"
+  ]
+}

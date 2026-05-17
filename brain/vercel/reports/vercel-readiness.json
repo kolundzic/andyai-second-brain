@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "checked_at": "2026-05-17T00:29:53Z",
+  "checks": {
+    "public_index": true,
+    "manifest": true,
+    "vercel_json": true,
+    "viewer": true,
+    "dashboard": true
+  },
+  "export": {
+    "ok": true,
+    "index": "public/index.html",
+    "manifest": "public/manifest.json",
+    "files": [
+      "index.html",
+      "artifacts/viewer/index.html",
+      "artifacts/viewer/artifact-index.json",
+      "artifacts/viewer/artifact-viewer.md",
+      "artifacts/dashboard/bridge-hub-dashboard.html",
+      "artifacts/dashboard/bridge-hub-feed.json",
+      "artifacts/dashboard/bridge-hub-dashboard.md",
+      "artifacts/doctor/brain-doctor-report.json",
+      "artifacts/doctor/brain-doctor-report.md"
+    ]
+  }
+}

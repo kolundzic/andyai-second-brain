@@ -1,0 +1,85 @@
+{
+  "ok": true,
+  "checked_at": "2026-05-17T00:13:15Z",
+  "schemas": {
+    "count": 48,
+    "valid": 48,
+    "invalid": 0,
+    "invalid_items": []
+  },
+  "reports": {
+    "count": 657,
+    "sample": [
+      "brain/reports/BATTLE_PACK24_REPORT.md",
+      "brain/reports/BIG_PLOTUN_01_REPORT.md",
+      "brain/reports/BIG_PLOTUN_02_REPORT.md",
+      "brain/reports/BIG_PLOTUN_03_REPORT.md",
+      "brain/reports/BRIDGE_HUB_HANDOFF_REPORT.md",
+      "brain/reports/BRIDGE_HUB_OPERATOR_PANEL_STUB.md",
+      "brain/reports/OPS_DASHBOARD.md",
+      "brain/reports/PACK3_DIRTY_TREE_REPAIR_STATUS.md",
+      "brain/reports/PACK4_CONTEXT_ASSEMBLY_REPORT.md",
+      "brain/reports/PACK4_FINAL_QA.md",
+      "brain/reports/PACK4_RETRIEVAL_QA.md",
+      "brain/reports/PACK5_LOCK_REPORT.md",
+      "brain/reports/PACK7_TRUST_LEDGER_AUDIT_LOCK.md",
+      "brain/reports/PACK8_MEMORY_LIFECYCLE_LOCK.md",
+      "brain/reports/PACK9_PACK_INTELLIGENCE_REPORT.md",
+      "brain/reports/PACK_REGISTRY_DASHBOARD_STUB.md",
+      "brain/reports/TIMING_DASHBOARD_STUB.md",
+      "brain/reports/brain-report.md",
+      "brain/reports/bridge-hub-status-report.md",
+      "brain/reports/memory-lifecycle-report.md"
+    ]
+  },
+  "evidence": {
+    "count": 186,
+    "sample": [
+      "evidence/big-plotun-02/v28.1.0/evidence.md",
+      "evidence/big-plotun-02/v28.2.0/evidence.md",
+      "evidence/big-plotun-02/v28.3.0/evidence.md",
+      "evidence/big-plotun-02/v28.4.0/evidence.md",
+      "evidence/big-plotun-02/v28.5.0/evidence.md",
+      "evidence/big-plotun-02/v28.6.0/evidence.md",
+      "evidence/big-plotun-02/v28.7.0/evidence.md",
+      "evidence/big-plotun-02/v28.8.0/evidence.md",
+      "evidence/big-plotun-02/v28.9.0/evidence.md",
+      "evidence/big-plotun-02/v29.0.0/evidence.md",
+      "evidence/big-plotun-02/v29.1.0/evidence.md",
+      "evidence/big-plotun-02/v29.2.0/evidence.md",
+      "evidence/big-plotun-02/v29.3.0/evidence.md",
+      "evidence/big-plotun-02/v29.4.0/evidence.md",
+      "evidence/big-plotun-02/v29.5.0/evidence.md",
+      "evidence/big-plotun-02/v29.6.0/evidence.md",
+      "evidence/big-plotun-02/v29.7.0/evidence.md",
+      "evidence/big-plotun-02/v29.8.0/evidence.md",
+      "evidence/big-plotun-02/v29.9.0/evidence.md",
+      "evidence/big-plotun-02/v30.0.0/evidence.md"
+    ]
+  },
+  "tags": {
+    "count": 486,
+    "latest": [
+      "v48.0.0",
+      "v47.9.0",
+      "v47.8.0",
+      "v47.7.0",
+      "v47.6.0",
+      "v47.5.0",
+      "v47.3.0",
+      "v47.4.0",
+      "v47.0.0",
+      "v47.1.0",
+      "v47.2.0",
+      "v46.7.0",
+      "v46.8.0",
+      "v46.9.0",
+      "v46.4.0",
+      "v46.5.0",
+      "v46.6.0",
+      "v46.2.0",
+      "v46.3.0",
+      "v46.1.0"
+    ]
+  }
+}

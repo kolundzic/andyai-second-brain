@@ -1,0 +1,30 @@
+{
+  "repo": "andyai-second-brain",
+  "pack": "BATTLE PACK 27",
+  "range": "v52.1.0 -> v54.0.0",
+  "base_tag": "v52.0.1",
+  "final_tag": "v54.0.0",
+  "latest_known_tag": "v54.0.0",
+  "head_short": "149874d",
+  "mode": "bojno-punjenje",
+  "capabilities": [
+    "real vercel-export CLI",
+    "real public static export",
+    "real public index generation",
+    "real artifact public copy",
+    "real vercel.json",
+    "real local preview server command",
+    "real static smoke test"
+  ],
+  "semafor": {"green": 45, "yellow": 0, "red": 0},
+  "timing": {
+  "started": "2026-05-17T00:29:36Z",
+  "finished": "2026-05-17T00:29:51Z",
+  "total_ms": 14676,
+  "versions_completed": 20,
+  "average_phase_ms": 733,
+  "slowest_phase": {"version": "v53.6.0", "title": "Battle Vercel Verify Script", "ms": 1916},
+  "fastest_phase": {"version": "v52.2.0", "title": "Public Control Panel Export Runtime", "ms": 242},
+  "estimated_next_20_version_pack_ms": 14660
+}
+}
