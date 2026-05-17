@@ -1,0 +1,275 @@
+{
+  "kind": "andyai.bridge_hub.dashboard_feed",
+  "version": "1.0",
+  "generated_at": "2026-05-17T00:17:05Z",
+  "repo": {
+    "repo": "andyai-second-brain",
+    "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
+    "head": "0325914",
+    "latest_tag": "v48.5.0",
+    "remote": "git@github.com:kolundzic/andyai-second-brain.git",
+    "generated_at": "2026-05-17T00:17:05Z"
+  },
+  "cards": [
+    {
+      "id": "repo",
+      "title": "Repo",
+      "status": "ok",
+      "data": {
+        "repo": "andyai-second-brain",
+        "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
+        "head": "0325914",
+        "latest_tag": "v48.5.0",
+        "remote": "git@github.com:kolundzic/andyai-second-brain.git",
+        "generated_at": "2026-05-17T00:17:05Z"
+      }
+    },
+    {
+      "id": "doctor",
+      "title": "Brain Doctor",
+      "status": "ok",
+      "data": {
+        "ok": true,
+        "checked_at": "2026-05-17T00:13:15Z",
+        "schemas": {
+          "count": 48,
+          "valid": 48,
+          "invalid": 0,
+          "invalid_items": []
+        },
+        "reports": {
+          "count": 657,
+          "sample": [
+            "brain/reports/BATTLE_PACK24_REPORT.md",
+            "brain/reports/BIG_PLOTUN_01_REPORT.md",
+            "brain/reports/BIG_PLOTUN_02_REPORT.md",
+            "brain/reports/BIG_PLOTUN_03_REPORT.md",
+            "brain/reports/BRIDGE_HUB_HANDOFF_REPORT.md",
+            "brain/reports/BRIDGE_HUB_OPERATOR_PANEL_STUB.md",
+            "brain/reports/OPS_DASHBOARD.md",
+            "brain/reports/PACK3_DIRTY_TREE_REPAIR_STATUS.md",
+            "brain/reports/PACK4_CONTEXT_ASSEMBLY_REPORT.md",
+            "brain/reports/PACK4_FINAL_QA.md",
+            "brain/reports/PACK4_RETRIEVAL_QA.md",
+            "brain/reports/PACK5_LOCK_REPORT.md",
+            "brain/reports/PACK7_TRUST_LEDGER_AUDIT_LOCK.md",
+            "brain/reports/PACK8_MEMORY_LIFECYCLE_LOCK.md",
+            "brain/reports/PACK9_PACK_INTELLIGENCE_REPORT.md",
+            "brain/reports/PACK_REGISTRY_DASHBOARD_STUB.md",
+            "brain/reports/TIMING_DASHBOARD_STUB.md",
+            "brain/reports/brain-report.md",
+            "brain/reports/bridge-hub-status-report.md",
+            "brain/reports/memory-lifecycle-report.md"
+          ]
+        },
+        "evidence": {
+          "count": 186,
+          "sample": [
+            "evidence/big-plotun-02/v28.1.0/evidence.md",
+            "evidence/big-plotun-02/v28.2.0/evidence.md",
+            "evidence/big-plotun-02/v28.3.0/evidence.md",
+            "evidence/big-plotun-02/v28.4.0/evidence.md",
+            "evidence/big-plotun-02/v28.5.0/evidence.md",
+            "evidence/big-plotun-02/v28.6.0/evidence.md",
+            "evidence/big-plotun-02/v28.7.0/evidence.md",
+            "evidence/big-plotun-02/v28.8.0/evidence.md",
+            "evidence/big-plotun-02/v28.9.0/evidence.md",
+            "evidence/big-plotun-02/v29.0.0/evidence.md",
+            "evidence/big-plotun-02/v29.1.0/evidence.md",
+            "evidence/big-plotun-02/v29.2.0/evidence.md",
+            "evidence/big-plotun-02/v29.3.0/evidence.md",
+            "evidence/big-plotun-02/v29.4.0/evidence.md",
+            "evidence/big-plotun-02/v29.5.0/evidence.md",
+            "evidence/big-plotun-02/v29.6.0/evidence.md",
+            "evidence/big-plotun-02/v29.7.0/evidence.md",
+            "evidence/big-plotun-02/v29.8.0/evidence.md",
+            "evidence/big-plotun-02/v29.9.0/evidence.md",
+            "evidence/big-plotun-02/v30.0.0/evidence.md"
+          ]
+        },
+        "tags": {
+          "count": 486,
+          "latest": [
+            "v48.0.0",
+            "v47.9.0",
+            "v47.8.0",
+            "v47.7.0",
+            "v47.6.0",
+            "v47.5.0",
+            "v47.3.0",
+            "v47.4.0",
+            "v47.0.0",
+            "v47.1.0",
+            "v47.2.0",
+            "v46.7.0",
+            "v46.8.0",
+            "v46.9.0",
+            "v46.4.0",
+            "v46.5.0",
+            "v46.6.0",
+            "v46.2.0",
+            "v46.3.0",
+            "v46.1.0"
+          ]
+        }
+      }
+    },
+    {
+      "id": "counts",
+      "title": "Artifact Counts",
+      "status": "ok",
+      "data": {
+        "schemas": 49,
+        "docs": 367,
+        "evidence": 186,
+        "reports": 49,
+        "exports": 14
+      }
+    },
+    {
+      "id": "packs",
+      "title": "Pack Status",
+      "status": "ok",
+      "data": [
+        {
+          "path": "brain/battle-pack24/status/BATTLE_PACK24_STATUS.json",
+          "data": {
+            "repo": "andyai-second-brain",
+            "pack": "BATTLE PACK 24",
+            "range": "v46.1.0 -> v48.0.0",
+            "base_tag": "v46.0.1",
+            "final_tag": "v48.0.0",
+            "latest_known_tag": "v48.0.0",
+            "head_short": "c3bd2f4",
+            "mode": "bojno-punjenje",
+            "capabilities": [
+              "real brain-doctor CLI",
+              "real JSON parse validation",
+              "real scanner commands",
+              "real report generation",
+              "real evidence export",
+              "real smoke test"
+            ],
+            "semafor": {
+              "green": 47,
+              "yellow": 0,
+              "red": 0
+            },
+            "timing": {
+              "started": "2026-05-17T00:12:51Z",
+              "finished": "2026-05-17T00:13:12Z",
+              "total_ms": 21225,
+              "versions_completed": 20,
+              "average_phase_ms": 1061,
+              "slowest_phase": {
+                "version": "v47.9.0",
+                "title": "Pack24 QA Final",
+                "ms": 2784
+              },
+              "fastest_phase": {
+                "version": "v46.7.0",
+                "title": "Evidence File Scanner",
+                "ms": 277
+              },
+              "estimated_next_20_version_pack_ms": 21220
+            }
+          }
+        },
+        {
+          "path": "brain/big-plotun-03/status/BIG_PLOTUN_03_STATUS.json",
+          "data": {
+            "repo": "andyai-second-brain",
+            "plotun": "BIG PLOTUN 03",
+            "range": "v36.1.0 -> v46.0.0",
+            "packs": [
+              "PACK19",
+              "PACK20",
+              "PACK21",
+              "PACK22",
+              "PACK23"
+            ],
+            "base_tag": "v36.0.1",
+            "final_tag": "v46.0.0",
+            "latest_known_tag": "v46.0.0",
+            "head_short": "f0e9654",
+            "status": "local-complete-push-later",
+            "semafor": {
+              "green": 210,
+              "yellow": 0,
+              "red": 0
+            },
+            "timing": {
+              "started": "2026-05-17T00:07:08Z",
+              "finished": "2026-05-17T00:07:56Z",
+              "total_ms": 47289,
+              "versions_completed": 100,
+              "average_phase_ms": 472,
+              "slowest_phase": {
+                "version": "v46.0.0",
+                "title": "100-Version Factory Benchmark Lock",
+                "pack": "PACK23",
+                "ms": 636
+              },
+              "fastest_phase": {
+                "version": "v44.4.0",
+                "title": "TAP-TAP Certification Note",
+                "pack": "PACK23",
+                "ms": 365
+              },
+              "estimated_next_20_version_pack_ms": 9440,
+              "estimated_next_80_version_cycle_ms": 37760,
+              "estimated_next_100_version_cycle_ms": 47200,
+              "estimated_next_200_version_cycle_ms": 94400
+            }
+          }
+        },
+        {
+          "path": "brain/big-plotun-02/status/BIG_PLOTUN_02_STATUS.json",
+          "data": {
+            "repo": "andyai-second-brain",
+            "plotun": "BIG PLOTUN 02",
+            "range": "v28.1.0 -> v36.0.0",
+            "packs": [
+              "PACK15",
+              "PACK16",
+              "PACK17",
+              "PACK18"
+            ],
+            "base_tag": "v28.0.1",
+            "final_tag": "v36.0.0",
+            "latest_known_tag": "v36.0.0",
+            "head_short": "1081cee",
+            "status": "local-complete-push-later",
+            "semafor": {
+              "green": 170,
+              "yellow": 0,
+              "red": 0
+            },
+            "timing": {
+              "started": "2026-05-16T23:56:55Z",
+              "finished": "2026-05-16T23:57:32Z",
+              "total_ms": 37240,
+              "versions_completed": 80,
+              "average_phase_ms": 465,
+              "slowest_phase": {
+                "version": "v36.0.0",
+                "title": "Production Memory Pattern Lock",
+                "pack": "PACK18",
+                "ms": 566
+              },
+              "fastest_phase": {
+                "version": "v30.2.0",
+                "title": "Batch Plan Schema",
+                "pack": "PACK16",
+                "ms": 343
+              },
+              "estimated_next_20_version_pack_ms": 9300,
+              "estimated_next_80_version_cycle_ms": 37200,
+              "estimated_next_100_version_cycle_ms": 46500
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
