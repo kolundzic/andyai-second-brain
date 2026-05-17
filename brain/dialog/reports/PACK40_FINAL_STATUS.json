@@ -1,0 +1,13 @@
+{
+  "kind": "andyai.second_brain.pack40_brain_dialog_status",
+  "generated_at": "2026-05-17T03:19:45Z",
+  "range": "v78.1.0 -> v80.0.0",
+  "final_tag": "v80.0.0",
+  "status": "brain-dialog-upload-memory-prototype-ready",
+  "routes": [
+    "/dialog/",
+    "/help/",
+    "/capture/"
+  ],
+  "next_layer": "real upload processing and memory indexing"
+}
