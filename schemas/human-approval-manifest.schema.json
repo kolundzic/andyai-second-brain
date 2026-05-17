@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Human Approval Manifest",
+  "type": "object",
+  "required": ["artifact", "approved_by_human", "approval_scope"],
+  "properties": {
+    "artifact": {"type": "string"},
+    "approved_by_human": {"type": "boolean"},
+    "approval_scope": {"type": "string"},
+    "approved_at": {"type": "string"}
+  }
+}
