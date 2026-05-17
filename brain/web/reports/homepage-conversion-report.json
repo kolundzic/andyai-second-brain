@@ -1,0 +1,26 @@
+{
+  "kind": "andyai.second_brain.homepage_conversion",
+  "generated_at": "2026-05-17T02:58:10Z",
+  "ok": true,
+  "homepage": "public/index.html",
+  "sections": [
+    "hero",
+    "visual story",
+    "what you can do",
+    "how it works",
+    "ask your second brain",
+    "upload and memory zone",
+    "voice preview",
+    "trust",
+    "pricing",
+    "cta"
+  ],
+  "routes": [
+    "/",
+    "/client/",
+    "/client-portal/",
+    "/trust/",
+    "/faq/",
+    "/health/"
+  ]
+}
