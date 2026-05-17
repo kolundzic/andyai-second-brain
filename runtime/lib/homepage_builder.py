@@ -134,7 +134,8 @@ def build_homepage():
         <a href="#dialog">Ask your Brain</a>
         <a href="#trust">Trust</a>
         <a href="#pricing">Pricing</a>
-        <a href="/health/">Health</a>\n        <a href="/help/">Help</a>
+        <a href="/health/">Health</a>
+        <a href="/help/">Help</a>
       </div>
       <a class="btn primary" href="#pricing">Start now</a>
     </div>

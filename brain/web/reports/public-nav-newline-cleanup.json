@@ -1,0 +1,19 @@
+{
+  "kind": "andyai.second_brain.public_nav_newline_cleanup",
+  "generated_at": "2026-05-17T07:13:11Z",
+  "ok": true,
+  "checked": [
+    "public/index.html",
+    "public/help/index.html",
+    "public/help/print.html",
+    "public/knowledge/index.html",
+    "runtime/lib/homepage_builder.py",
+    "runtime/lib/brain_dialog.py"
+  ],
+  "changed": [
+    "public/index.html",
+    "runtime/lib/homepage_builder.py",
+    "runtime/lib/brain_dialog.py"
+  ],
+  "rule": "Public navigation must not display escaped newline tokens such as \\n."
+}

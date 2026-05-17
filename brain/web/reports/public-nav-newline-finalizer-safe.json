@@ -1,0 +1,18 @@
+{
+  "kind": "andyai.second_brain.public_nav_newline_finalizer_safe",
+  "generated_at": "2026-05-17T07:17:06Z",
+  "ok": true,
+  "checked": [
+    "public/index.html",
+    "public/help/index.html",
+    "public/help/print.html",
+    "public/knowledge/index.html",
+    "public/dialog/index.html",
+    "public/capture/index.html",
+    "runtime/lib/homepage_builder.py",
+    "runtime/lib/brain_dialog.py"
+  ],
+  "changed": [],
+  "remaining_nav_hits": [],
+  "rule": "No literal escaped newline tokens may appear in public navigation."
+}

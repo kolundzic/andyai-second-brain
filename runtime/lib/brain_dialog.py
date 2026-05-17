@@ -127,7 +127,8 @@ def update_home_menu():
         return {"ok": False, "reason": "public/index.html missing"}
     text = p.read_text()
     if 'href="/help/"' not in text:
-        text = text.replace('<a href="/health/">Health</a>', '<a href="/health/">Health</a>\\n        <a href="/help/">Help</a>')
+        text = text.replace('<a href="/health/">Health</a>', '<a href="/health/">Health</a>
+        <a href="/help/">Help</a>')
     if 'href="/dialog/"' not in text:
         text = text.replace('<a class="btn dark" href="#dialog">Try the concept</a>', '<a class="btn dark" href="/dialog/">Ask Your Brain</a>')
     if 'href="/capture/"' not in text and "Talk with your 2nd Brain by voice." in text:
@@ -141,7 +142,8 @@ def patch_homepage_builder():
         return {"ok": False, "reason": "homepage_builder missing"}
     text = p.read_text()
     if 'href="/help/"' not in text:
-        text = text.replace('<a href="/health/">Health</a>', '<a href="/health/">Health</a>\\n        <a href="/help/">Help</a>')
+        text = text.replace('<a href="/health/">Health</a>', '<a href="/health/">Health</a>
+        <a href="/help/">Help</a>')
     if 'href="/dialog/"' not in text:
         text = text.replace('<a class="btn dark" href="#dialog">Try the concept</a>', '<a class="btn dark" href="/dialog/">Ask Your Brain</a>')
     p.write_text(text)
