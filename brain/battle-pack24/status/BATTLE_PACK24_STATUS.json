@@ -4,8 +4,8 @@
   "range": "v46.1.0 -> v48.0.0",
   "base_tag": "v46.0.1",
   "final_tag": "v48.0.0",
-  "latest_known_tag": "v47.9.0",
-  "head_short": "5cca4a0",
+  "latest_known_tag": "v48.0.0",
+  "head_short": "c3bd2f4",
   "mode": "bojno-punjenje",
   "capabilities": [
     "real brain-doctor CLI",
@@ -15,15 +15,15 @@
     "real evidence export",
     "real smoke test"
   ],
-  "semafor": {"green": 45, "yellow": 0, "red": 0},
+  "semafor": {"green": 47, "yellow": 0, "red": 0},
   "timing": {
   "started": "2026-05-17T00:12:51Z",
-  "finished": "2026-05-17T00:13:10Z",
-  "total_ms": 19072,
-  "versions_completed": 19,
-  "average_phase_ms": 1003,
+  "finished": "2026-05-17T00:13:12Z",
+  "total_ms": 21225,
+  "versions_completed": 20,
+  "average_phase_ms": 1061,
   "slowest_phase": {"version": "v47.9.0", "title": "Pack24 QA Final", "ms": 2784},
   "fastest_phase": {"version": "v46.7.0", "title": "Evidence File Scanner", "ms": 277},
-  "estimated_next_20_version_pack_ms": 20060
+  "estimated_next_20_version_pack_ms": 21220
 }
 }
