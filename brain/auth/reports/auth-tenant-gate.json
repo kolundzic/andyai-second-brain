@@ -1,0 +1,21 @@
+{
+  "kind": "andyai.second_brain.auth_tenant_gate",
+  "generated_at": "2026-05-17T07:44:55Z",
+  "ok": true,
+  "routes": [
+    "/login/",
+    "/app/",
+    "/access-denied/"
+  ],
+  "status": "protected_app_shell_prototype_ready",
+  "real_client_data_allowed": false,
+  "requires_before_real_data": [
+    "Supabase Auth",
+    "RLS verified",
+    "tenant session verified",
+    "storage policy verified",
+    "privacy firewall",
+    "logic-layer firewall",
+    "human approval"
+  ]
+}
