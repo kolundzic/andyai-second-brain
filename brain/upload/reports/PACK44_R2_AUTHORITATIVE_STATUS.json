@@ -1,0 +1,7 @@
+{
+  "kind": "andyai.second_brain.pack44_r2_authoritative_status",
+  "status": "complete",
+  "tag": "v88.0.2",
+  "real_confidential_uploads_allowed": false,
+  "finalizer_safe_rule": "generate before verify; verify before capture; tag after capture"
+}

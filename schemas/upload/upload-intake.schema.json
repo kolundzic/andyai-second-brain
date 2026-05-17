@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Second Brain Upload Intake",
+  "type": "object",
+  "required": ["tenant_id", "owner_id", "original_file_name", "file_type", "status", "privacy_status", "logic_status"],
+  "properties": {
+    "tenant_id": {"type": "string"},
+    "owner_id": {"type": "string"},
+    "original_file_name": {"type": "string"},
+    "file_type": {"type": "string"},
+    "file_size_bytes": {"type": "integer", "minimum": 0},
+    "storage_bucket": {"type": "string"},
+    "storage_path": {"type": "string"},
+    "status": {"type": "string"},
+    "privacy_status": {"type": "string"},
+    "logic_status": {"type": "string"},
+    "processing_job_id": {"type": "string"}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "andyai.second_brain.upload_intake_pipeline",
+  "generated_at": "2026-05-17T08:01:23Z",
+  "ok": true,
+  "real_confidential_uploads_allowed": false,
+  "pipeline": [
+    "metadata",
+    "storage_path_policy",
+    "privacy_prescan_placeholder",
+    "logic_layer_prescan_placeholder",
+    "processing_job_queue",
+    "audit_event",
+    "operator_review"
+  ],
+  "accepted_demo": {
+    "file": "sample-client-report.pdf",
+    "bucket": "private-uploads",
+    "status": "metadata_created",
+    "privacy_status": "needs_scan",
+    "logic_status": "needs_scan"
+  },
+  "rejected_demo": {
+    "file": "dangerous-script.sh",
+    "status": "rejected_file_type"
+  }
+}

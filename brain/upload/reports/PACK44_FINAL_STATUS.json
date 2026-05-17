@@ -1,0 +1,8 @@
+{
+  "kind": "andyai.second_brain.pack44_final_status",
+  "range": "v86.1.0 -> v88.0.0",
+  "repair": "v88.0.3",
+  "status": "upload_intake_storage_pipeline_ready",
+  "real_confidential_uploads_allowed": false,
+  "next_pack": "PACK45 Memory Index / Search / Timeline Layer"
+}
