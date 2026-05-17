@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Brain Doctor Result",
+  "type": "object",
+  "required": ["ok", "checked_at", "schemas", "reports", "evidence", "tags"],
+  "properties": {
+    "ok": {"type": "boolean"},
+    "checked_at": {"type": "string"},
+    "schemas": {"type": "object"},
+    "reports": {"type": "object"},
+    "evidence": {"type": "object"},
+    "tags": {"type": "object"}
+  }
+}
