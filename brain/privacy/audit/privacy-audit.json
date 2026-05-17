@@ -1,0 +1,255 @@
+{
+  "kind": "andyai.privacy_audit",
+  "generated_at": "2026-05-17T01:17:49Z",
+  "public_gate": {
+    "ok": false,
+    "scanned_at": "2026-05-17T01:17:49Z",
+    "paths": [
+      "public"
+    ],
+    "files_scanned": 15,
+    "findings_count": 8,
+    "findings": [
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-dashboard.html",
+        "line": 24,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-dashboard.md",
+        "line": 10,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-dashboard.md",
+        "line": 21,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-feed.json",
+        "line": 10,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-feed.json",
+        "line": 23,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/viewer/artifact-index.json",
+        "line": 9,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/viewer/artifact-viewer.md",
+        "line": 9,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/manifest.json",
+        "line": 8,
+        "match_preview": "git@github.com"
+      }
+    ]
+  },
+  "general_scan": {
+    "ok": false,
+    "scanned_at": "2026-05-17T01:17:49Z",
+    "paths": [
+      "public",
+      "brain/client",
+      "brain/vercel",
+      "docs",
+      "examples"
+    ],
+    "files_scanned": 457,
+    "findings_count": 23,
+    "findings": [
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/pack29/CLIENT_DATA_MARKER_SCANNER.md",
+        "line": 3,
+        "match_preview": "confidential"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/pack29/CLIENT_DATA_MARKER_SCANNER.md",
+        "line": 3,
+        "match_preview": "confidential"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/pack29/CLIENT_DATA_MARKER_SCANNER.md",
+        "line": 3,
+        "match_preview": "private client"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/pack29/CLIENT_DATA_MARKER_SCANNER.md",
+        "line": 3,
+        "match_preview": "NDA"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/pack29/CLIENT_DATA_MARKER_SCANNER.md",
+        "line": 3,
+        "match_preview": "internal only"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/privacy/PRIVACY_POLICY_CONFIG.md",
+        "line": 7,
+        "match_preview": "confidential"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/privacy/REDACTION_RULES.md",
+        "line": 11,
+        "match_preview": "confidential"
+      },
+      {
+        "group": "client_data",
+        "type": "raw_conversation_marker",
+        "path": "docs/privacy/REDACTION_RULES.md",
+        "line": 12,
+        "match_preview": "raw conversation"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/privacy/VERCEL_PUBLIC_EXPORT_GATE.md",
+        "line": 7,
+        "match_preview": "confidential"
+      },
+      {
+        "group": "secret",
+        "type": "api_key_assignment",
+        "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+        "line": 3,
+        "match_preview": "api_key = DEMO_SECRET_VALUE_DO_NOT_USE"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+        "line": 2,
+        "match_preview": "test.person@example.com"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+        "line": 1,
+        "match_preview": "confidential"
+      },
+      {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+        "line": 1,
+        "match_preview": "private client"
+      },
+      {
+        "group": "client_data",
+        "type": "raw_conversation_marker",
+        "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
+        "line": 4,
+        "match_preview": "raw conversation"
+      },
+      {
+        "group": "pii",
+        "type": "phone_like",
+        "path": "examples/sample-decision-log.md",
+        "line": 5,
+        "match_preview": "2026-05-16"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-dashboard.html",
+        "line": 24,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-dashboard.md",
+        "line": 10,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-dashboard.md",
+        "line": 21,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-feed.json",
+        "line": 10,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/dashboard/bridge-hub-feed.json",
+        "line": 23,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/viewer/artifact-index.json",
+        "line": 9,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/artifacts/viewer/artifact-viewer.md",
+        "line": 9,
+        "match_preview": "git@github.com"
+      },
+      {
+        "group": "pii",
+        "type": "email",
+        "path": "public/manifest.json",
+        "line": 8,
+        "match_preview": "git@github.com"
+      }
+    ]
+  },
+  "rules": [
+    "No client data in GitHub.",
+    "No secrets in GitHub.",
+    "No raw evidence in public.",
+    "No public report without human approval.",
+    "No Supabase table without RLS.",
+    "No deployment without privacy gate."
+  ]
+}
