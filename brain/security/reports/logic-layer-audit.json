@@ -1,6 +1,6 @@
 {
   "kind": "andyai.logic_layer_firewall.audit",
-  "generated_at": "2026-05-17T02:56:14Z",
+  "generated_at": "2026-05-17T02:56:15Z",
   "ok": false,
   "paths": [
     "docs",
