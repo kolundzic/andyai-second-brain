@@ -1,12 +1,12 @@
 # Bridge Hub Dashboard Feed
 
-Generated: 2026-05-17T00:17:25Z
+Generated: 2026-05-17T00:17:29Z
 
 ## Repo
 
 - Name: andyai-second-brain
-- HEAD: 76eb4fe
-- Latest tag: v49.8.0
+- HEAD: 72d0c36
+- Latest tag: v49.9.0
 - Remote: git@github.com:kolundzic/andyai-second-brain.git
 
 ## Cards
@@ -16,10 +16,10 @@ Generated: 2026-05-17T00:17:25Z
 - Status: ok
 - repo: andyai-second-brain
 - path: /Users/andrijakolundzic/Documents/Projects/andyai-second-brain
-- head: 76eb4fe
-- latest_tag: v49.8.0
+- head: 72d0c36
+- latest_tag: v49.9.0
 - remote: git@github.com:kolundzic/andyai-second-brain.git
-- generated_at: 2026-05-17T00:17:25Z
+- generated_at: 2026-05-17T00:17:29Z
 
 ### Brain Doctor
 
@@ -33,10 +33,10 @@ Generated: 2026-05-17T00:17:25Z
 - schemas: 49
 - docs: 371
 - evidence: 187
-- reports: 49
+- reports: 50
 - exports: 16
 
 ### Pack Status
 
 - Status: ok
-- Items: 3
+- Items: 4

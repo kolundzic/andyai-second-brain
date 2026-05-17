@@ -1,0 +1,29 @@
+{
+  "repo": "andyai-second-brain",
+  "pack": "BATTLE PACK 25",
+  "range": "v48.1.0 -> v50.0.0",
+  "base_tag": "v48.0.1",
+  "final_tag": "v50.0.0",
+  "latest_known_tag": "v49.9.0",
+  "head_short": "72d0c36",
+  "mode": "bojno-punjenje",
+  "capabilities": [
+    "real bridge-feed CLI",
+    "real dashboard feed JSON generation",
+    "real Markdown dashboard generation",
+    "real HTML dashboard generation",
+    "real export bundle",
+    "real smoke test"
+  ],
+  "semafor": {"green": 43, "yellow": 0, "red": 0},
+  "timing": {
+  "started": "2026-05-17T00:17:02Z",
+  "finished": "2026-05-17T00:17:26Z",
+  "total_ms": 24330,
+  "versions_completed": 19,
+  "average_phase_ms": 1280,
+  "slowest_phase": {"version": "v49.9.0", "title": "Pack25 QA Final", "ms": 4345},
+  "fastest_phase": {"version": "v49.5.0", "title": "Dashboard Smoke Test", "ms": 279},
+  "estimated_next_20_version_pack_ms": 25600
+}
+}
