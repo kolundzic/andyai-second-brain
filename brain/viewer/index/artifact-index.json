@@ -1,33 +1,33 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T00:22:36Z",
+  "generated_at": "2026-05-17T01:30:14Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "39684ca",
+    "head": "bc701e4",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
-      "v52.0.0",
-      "v51.9.0",
-      "v51.8.0",
-      "v51.7.0",
-      "v51.6.0",
-      "v51.5.0",
-      "v51.3.0",
-      "v51.4.0",
-      "v51.1.0",
-      "v51.2.0",
-      "v51.0.0",
-      "v50.8.0",
-      "v50.9.0",
-      "v50.6.0",
-      "v50.7.0",
-      "v50.5.0",
-      "v50.4.0",
-      "v50.1.0",
-      "v50.2.0",
-      "v50.3.0"
+      "v60.0.1",
+      "v60.0.0",
+      "v59.9.0",
+      "v59.8.0",
+      "v59.7.0",
+      "v59.6.0",
+      "v59.5.0",
+      "v59.4.0",
+      "v59.3.0",
+      "v59.1.0",
+      "v59.2.0",
+      "v58.9.0",
+      "v59.0.0",
+      "v58.8.0",
+      "v58.5.0",
+      "v58.6.0",
+      "v58.7.0",
+      "v58.3.0",
+      "v58.4.0",
+      "v58.1.0"
     ]
   },
   "sections": [
@@ -129,6 +129,24 @@
           "path": "brain/reports/BATTLE_PACK26_REPORT.md",
           "name": "BATTLE_PACK26_REPORT.md",
           "size": 474,
+          "type": "md"
+        },
+        {
+          "path": "brain/reports/BATTLE_PACK27_REPORT.md",
+          "name": "BATTLE_PACK27_REPORT.md",
+          "size": 557,
+          "type": "md"
+        },
+        {
+          "path": "brain/reports/BATTLE_PACK28_REPORT.md",
+          "name": "BATTLE_PACK28_REPORT.md",
+          "size": 476,
+          "type": "md"
+        },
+        {
+          "path": "brain/reports/BATTLE_PACK29_REPORT.md",
+          "name": "BATTLE_PACK29_REPORT.md",
+          "size": 397,
           "type": "md"
         },
         {
@@ -1536,6 +1554,36 @@
           "type": "md"
         },
         {
+          "path": "evidence/pack27/BATTLE_PACK27_EVIDENCE.md",
+          "name": "BATTLE_PACK27_EVIDENCE.md",
+          "size": 154,
+          "type": "md"
+        },
+        {
+          "path": "evidence/pack27/v54.0.2-clean-tree-repair-evidence.md",
+          "name": "v54.0.2-clean-tree-repair-evidence.md",
+          "size": 158,
+          "type": "md"
+        },
+        {
+          "path": "evidence/pack27/v54.0.3-post-verify-capture-evidence.md",
+          "name": "v54.0.3-post-verify-capture-evidence.md",
+          "size": 153,
+          "type": "md"
+        },
+        {
+          "path": "evidence/pack29/BATTLE_PACK29_EVIDENCE.md",
+          "name": "BATTLE_PACK29_EVIDENCE.md",
+          "size": 180,
+          "type": "md"
+        },
+        {
+          "path": "evidence/pack29/v56.8.1-pre-continue-cleanup-evidence.md",
+          "name": "v56.8.1-pre-continue-cleanup-evidence.md",
+          "size": 127,
+          "type": "md"
+        },
+        {
           "path": "evidence/pack8/TIMING_AND_LEARNING_NOTE.md",
           "name": "TIMING_AND_LEARNING_NOTE.md",
           "size": 286,
@@ -1551,6 +1599,12 @@
           "path": "evidence/pack9/v18.0.2-clean-tree-repair-evidence.md",
           "name": "v18.0.2-clean-tree-repair-evidence.md",
           "size": 371,
+          "type": "md"
+        },
+        {
+          "path": "evidence/plotun-30-32/v60.1.0/evidence.md",
+          "name": "evidence.md",
+          "size": 23,
           "type": "md"
         }
       ]
@@ -1596,6 +1650,48 @@
           "type": "zip"
         },
         {
+          "path": "brain/battle-pack27/exports/battle-pack27-final-vercel-static-export.zip",
+          "name": "battle-pack27-final-vercel-static-export.zip",
+          "size": 23848,
+          "type": "zip"
+        },
+        {
+          "path": "brain/battle-pack27/exports/battle-pack27-v54.0.2-final-static-export.zip",
+          "name": "battle-pack27-v54.0.2-final-static-export.zip",
+          "size": 23848,
+          "type": "zip"
+        },
+        {
+          "path": "brain/battle-pack27/exports/battle-pack27-v54.0.3-final-static-export.zip",
+          "name": "battle-pack27-v54.0.3-final-static-export.zip",
+          "size": 23845,
+          "type": "zip"
+        },
+        {
+          "path": "brain/battle-pack27/exports/battle-pack27-vercel-static-export.zip",
+          "name": "battle-pack27-vercel-static-export.zip",
+          "size": 23848,
+          "type": "zip"
+        },
+        {
+          "path": "brain/battle-pack28/exports/battle-pack28-client-delivery.zip",
+          "name": "battle-pack28-client-delivery.zip",
+          "size": 7572,
+          "type": "zip"
+        },
+        {
+          "path": "brain/battle-pack29/exports/battle-pack29-final-privacy-firewall.zip",
+          "name": "battle-pack29-final-privacy-firewall.zip",
+          "size": 2188,
+          "type": "zip"
+        },
+        {
+          "path": "brain/battle-pack29/exports/battle-pack29-privacy-firewall.zip",
+          "name": "battle-pack29-privacy-firewall.zip",
+          "size": 1790,
+          "type": "zip"
+        },
+        {
           "path": "brain/big-plotun/exports/big-plotun-01-export.zip",
           "name": "big-plotun-01-export.zip",
           "size": 107119,
@@ -1617,6 +1713,18 @@
           "path": "brain/bridge-hub/exports/pack10-bridge-hub-export.zip",
           "name": "pack10-bridge-hub-export.zip",
           "size": 9786,
+          "type": "zip"
+        },
+        {
+          "path": "brain/client/exports/client-report-delivery.zip",
+          "name": "client-report-delivery.zip",
+          "size": 7572,
+          "type": "zip"
+        },
+        {
+          "path": "brain/client-portal/exports/client-portal-blueprint.zip",
+          "name": "client-portal-blueprint.zip",
+          "size": 1223,
           "type": "zip"
         },
         {
@@ -1662,6 +1770,12 @@
           "type": "zip"
         },
         {
+          "path": "brain/privacy/exports/public-safe-privacy-export.zip",
+          "name": "public-safe-privacy-export.zip",
+          "size": 2186,
+          "type": "zip"
+        },
+        {
           "path": "brain/timing-exports/pack9-timing-export.zip",
           "name": "pack9-timing-export.zip",
           "size": 5211,
@@ -1674,9 +1788,15 @@
           "type": "zip"
         },
         {
+          "path": "brain/vercel/exports/vercel-static-export.zip",
+          "name": "vercel-static-export.zip",
+          "size": 23848,
+          "type": "zip"
+        },
+        {
           "path": "brain/viewer/exports/artifact-viewer-export.zip",
           "name": "artifact-viewer-export.zip",
-          "size": 16053,
+          "size": 16051,
           "type": "zip"
         }
       ]
@@ -3166,6 +3286,36 @@
           "name": "v52.0.0.md",
           "size": 238,
           "type": "md"
+        },
+        {
+          "path": "release-notes/v54.0.0.md",
+          "name": "v54.0.0.md",
+          "size": 159,
+          "type": "md"
+        },
+        {
+          "path": "release-notes/v56.0.0.md",
+          "name": "v56.0.0.md",
+          "size": 190,
+          "type": "md"
+        },
+        {
+          "path": "release-notes/v59.9.0.md",
+          "name": "v59.9.0.md",
+          "size": 120,
+          "type": "md"
+        },
+        {
+          "path": "release-notes/v60.0.0.md",
+          "name": "v60.0.0.md",
+          "size": 164,
+          "type": "md"
+        },
+        {
+          "path": "release-notes/v60.1.0.md",
+          "name": "v60.1.0.md",
+          "size": 39,
+          "type": "md"
         }
       ]
     },
@@ -3228,6 +3378,12 @@
           "type": "json"
         },
         {
+          "path": "schemas/client-report.schema.json",
+          "name": "client-report.schema.json",
+          "size": 597,
+          "type": "json"
+        },
+        {
           "path": "schemas/context-bundle.schema.json",
           "name": "context-bundle.schema.json",
           "size": 554,
@@ -3243,6 +3399,12 @@
           "path": "schemas/dashboard-payload.schema.json",
           "name": "dashboard-payload.schema.json",
           "size": 228,
+          "type": "json"
+        },
+        {
+          "path": "schemas/data-classification.schema.json",
+          "name": "data-classification.schema.json",
+          "size": 409,
           "type": "json"
         },
         {
@@ -3297,6 +3459,12 @@
           "path": "schemas/factory-map.schema.json",
           "name": "factory-map.schema.json",
           "size": 191,
+          "type": "json"
+        },
+        {
+          "path": "schemas/human-approval-manifest.schema.json",
+          "name": "human-approval-manifest.schema.json",
+          "size": 374,
           "type": "json"
         },
         {
@@ -3471,6 +3639,18 @@
           "path": "schemas/trust-ledger-record.schema.json",
           "name": "trust-ledger-record.schema.json",
           "size": 368,
+          "type": "json"
+        },
+        {
+          "path": "schemas/vercel-operator-readiness.schema.json",
+          "name": "vercel-operator-readiness.schema.json",
+          "size": 339,
+          "type": "json"
+        },
+        {
+          "path": "schemas/vercel-static-export.schema.json",
+          "name": "vercel-static-export.schema.json",
+          "size": 389,
           "type": "json"
         }
       ]

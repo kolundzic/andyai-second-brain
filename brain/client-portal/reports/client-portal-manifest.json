@@ -1,0 +1,12 @@
+{
+  "kind": "andyai.client_portal.blueprint",
+  "generated_at": "2026-05-17T01:30:14Z",
+  "routes": [
+    "/client/",
+    "/client-portal/",
+    "/client-portal/reports",
+    "/client-portal/evidence"
+  ],
+  "auth_boundary": "required-before-real-client-data",
+  "human_approval": "required-before-publication"
+}

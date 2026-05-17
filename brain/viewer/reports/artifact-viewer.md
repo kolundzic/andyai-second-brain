@@ -1,11 +1,11 @@
 # AndyAI Artifact Viewer
 
-Generated: 2026-05-17T00:22:36Z
+Generated: 2026-05-17T01:30:14Z
 
 ## Repo
 
 - Name: andyai-second-brain
-- HEAD: 39684ca
+- HEAD: bc701e4
 - Remote: git@github.com:kolundzic/andyai-second-brain.git
 
 ## Dashboard Artifacts
@@ -30,6 +30,9 @@ Generated: 2026-05-17T00:22:36Z
 - `brain/reports/BATTLE_PACK24_REPORT.md` — 400 bytes
 - `brain/reports/BATTLE_PACK25_REPORT.md` — 453 bytes
 - `brain/reports/BATTLE_PACK26_REPORT.md` — 474 bytes
+- `brain/reports/BATTLE_PACK27_REPORT.md` — 557 bytes
+- `brain/reports/BATTLE_PACK28_REPORT.md` — 476 bytes
+- `brain/reports/BATTLE_PACK29_REPORT.md` — 397 bytes
 - `brain/reports/BIG_PLOTUN_01_REPORT.md` — 650 bytes
 - `brain/reports/BIG_PLOTUN_02_REPORT.md` — 535 bytes
 - `brain/reports/BIG_PLOTUN_03_REPORT.md` — 755 bytes
@@ -190,10 +193,19 @@ Generated: 2026-05-17T00:22:36Z
 - `brain/battle-pack25/exports/battle-pack25-final-dashboard-feed.zip` — 4966 bytes
 - `brain/battle-pack26/exports/battle-pack26-artifact-viewer.zip` — 15890 bytes
 - `brain/battle-pack26/exports/battle-pack26-final-artifact-viewer.zip` — 16011 bytes
+- `brain/battle-pack27/exports/battle-pack27-final-vercel-static-export.zip` — 23848 bytes
+- `brain/battle-pack27/exports/battle-pack27-v54.0.2-final-static-export.zip` — 23848 bytes
+- `brain/battle-pack27/exports/battle-pack27-v54.0.3-final-static-export.zip` — 23845 bytes
+- `brain/battle-pack27/exports/battle-pack27-vercel-static-export.zip` — 23848 bytes
+- `brain/battle-pack28/exports/battle-pack28-client-delivery.zip` — 7572 bytes
+- `brain/battle-pack29/exports/battle-pack29-final-privacy-firewall.zip` — 2188 bytes
+- `brain/battle-pack29/exports/battle-pack29-privacy-firewall.zip` — 1790 bytes
 - `brain/big-plotun/exports/big-plotun-01-export.zip` — 107119 bytes
 - `brain/big-plotun-02/exports/big-plotun-02-export.zip` — 119005 bytes
 - `brain/big-plotun-03/exports/big-plotun-03-export.zip` — 150068 bytes
 - `brain/bridge-hub/exports/pack10-bridge-hub-export.zip` — 9786 bytes
+- `brain/client/exports/client-report-delivery.zip` — 7572 bytes
+- `brain/client-portal/exports/client-portal-blueprint.zip` — 1223 bytes
 - `brain/dashboard/exports/bridge-hub-dashboard-feed.zip` — 4965 bytes
 - `brain/doctor/exports/brain-doctor-evidence.zip` — 1081 bytes
 - `brain/execution-exports/pack6-governed-execution-export.zip` — 4219 bytes
@@ -201,9 +213,11 @@ Generated: 2026-05-17T00:22:36Z
 - `brain/exports/pack5-mission-handoff-export.zip` — 18179 bytes
 - `brain/lifecycle-exports/pack8-memory-lifecycle-export.zip` — 21370 bytes
 - `brain/operators/exports/pack11-operator-registry-export.zip` — 11823 bytes
+- `brain/privacy/exports/public-safe-privacy-export.zip` — 2186 bytes
 - `brain/timing-exports/pack9-timing-export.zip` — 5211 bytes
 - `brain/trust-exports/pack7-trust-ledger-export.zip` — 20059 bytes
-- `brain/viewer/exports/artifact-viewer-export.zip` — 16053 bytes
+- `brain/vercel/exports/vercel-static-export.zip` — 23848 bytes
+- `brain/viewer/exports/artifact-viewer-export.zip` — 16051 bytes
 
 ## Release Notes
 
@@ -319,9 +333,11 @@ Generated: 2026-05-17T00:22:36Z
 - `schemas/batch-plan.schema.json` — 232 bytes
 - `schemas/bridge-hub-feed.schema.json` — 385 bytes
 - `schemas/client-memory.schema.json` — 529 bytes
+- `schemas/client-report.schema.json` — 597 bytes
 - `schemas/context-bundle.schema.json` — 554 bytes
 - `schemas/dashboard-feed.schema.json` — 205 bytes
 - `schemas/dashboard-payload.schema.json` — 228 bytes
+- `schemas/data-classification.schema.json` — 409 bytes
 - `schemas/decision-accountability.schema.json` — 341 bytes
 - `schemas/decision.schema.json` — 516 bytes
 - `schemas/doctor-result.schema.json` — 425 bytes
@@ -331,6 +347,7 @@ Generated: 2026-05-17T00:22:36Z
 - `schemas/external-service-readiness.schema.json` — 326 bytes
 - `schemas/factory-certification.schema.json` — 249 bytes
 - `schemas/factory-map.schema.json` — 191 bytes
+- `schemas/human-approval-manifest.schema.json` — 374 bytes
 - `schemas/memory-entry.schema.json` — 603 bytes
 - `schemas/memory-lifecycle.schema.json` — 430 bytes
 - `schemas/mission-request.schema.json` — 468 bytes
@@ -360,3 +377,5 @@ Generated: 2026-05-17T00:22:36Z
 - `schemas/status-map.schema.json` — 561 bytes
 - `schemas/tool-launcher.schema.json` — 377 bytes
 - `schemas/trust-ledger-record.schema.json` — 368 bytes
+- `schemas/vercel-operator-readiness.schema.json` — 339 bytes
+- `schemas/vercel-static-export.schema.json` — 389 bytes
