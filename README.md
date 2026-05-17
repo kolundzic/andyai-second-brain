@@ -1,189 +1,113 @@
 # 🅰️ AndyAI Second Brain
 
-A governed AI work-memory layer for people, projects, repositories, decisions, evidence and reusable skills.
+**Governed AI memory, context, and delivery system.**
 
-## Core Formula
+AndyAI Second Brain helps people and teams turn scattered chats, files, notes, decisions and AI output into organized knowledge, trusted workflows and safe delivery surfaces.
 
-**RAG finds fragments.**  
-**Second Brain preserves work continuity.**
+It is not just another AI chat.
 
-Serbian:
+It is a practical operating layer for remembering project context, preparing better AI work, creating client-ready reports, protecting privacy before publishing, keeping evidence and approval trails, and moving from raw machine output to human-readable delivery.
 
-**RAG pronalazi fragmente.**  
-**Drugi mozak čuva kontinuitet rada.**
+<p align="center">
+  <img src="./docs/visuals/andyai-second-brain-overview.png" alt="AndyAI Second Brain overview" width="100%">
+</p>
 
-## What It Is
+## Why it matters
 
-AndyAI Second Brain is structured work memory for human-AI collaboration.
+Most AI work becomes chaotic very quickly.
 
-It helps answer:
+Chats get lost. Files are disconnected. Decisions are not recorded. Outputs become drafts without delivery. Private information can accidentally move into public places.
 
-- Where did we stop?
-- What is the current project status?
-- What proof do we have?
-- What decision was made?
-- What is the next action?
-- What may AI do, and what requires human approval?
+AndyAI Second Brain introduces structure:
 
-## Core Components
+- **less chaos**
+- **faster work**
+- **safer output**
+- **clearer context**
+- **better client delivery**
+- **privacy and human approval before release**
 
-- PARA workspace: Projects, Areas, Resources, Archives
-- Root context file
-- Project context files
-- Progressive context router
-- Evidence-backed memory
-- Decision logs
-- Markdown skills
-- Human approval gates
-- Repo memory bridge
-- Client memory bridge
-- Meeting memory bridge
-- Signal canonizer
-- Export/delete/inspect controls
+## What can you do with it?
 
-## Practical Use
+<p align="center">
+  <img src="./docs/visuals/what-you-can-do-with-it.png" alt="What you can do with AndyAI Second Brain" width="100%">
+</p>
 
-This repo is the memory spine for AndyAI work: projects, repos, client flows, meetings, signals, book material and verified delivery.
+You can use AndyAI Second Brain to organize knowledge, prepare AI work, create client reports, track decisions, protect privacy and publish safely.
 
-## TAP-TAP Simplification
+## How it works
 
-1. First TAP: unzip the package.
-2. Second TAP: run the terminal script.
+<p align="center">
+  <img src="./docs/visuals/how-it-works.png" alt="How AndyAI Second Brain works" width="100%">
+</p>
 
-The terminal output uses a semafor:
+The basic workflow is:
 
-- 🟢 passed/safe
-- 🟡 warning/non-blocking
-- 🔴 blocking failure/STOP
+1. **Request** — the user asks a question or gives a task.
+2. **Collect** — relevant files, notes and project context are gathered.
+3. **Assemble** — context, memory and reusable skills are packaged.
+4. **Prepare Agent** — mission, tools and boundaries are defined.
+5. **Generate** — AI creates a draft output, report or page.
+6. **Check & Approve** — privacy, trust and human approval gates are applied.
+7. **Deliver** — the result becomes a client page, dashboard, document or public site.
 
-## Human Authority Rule
+> **Approved intent → Guided action → Verified outcome**
 
-AI may organize, suggest, draft, inspect and verify. Human approval is required for publishing, deleting canon, changing production, sending client materials or executing high-impact actions.
+## Trust & Privacy Architecture
 
-## PACK2 — Working Brain Runtime Layer
+<p align="center">
+  <img src="./docs/visuals/trust-and-privacy-architecture.png" alt="Trust and privacy architecture" width="100%">
+</p>
 
-PACK2 adds the first local runtime layer:
+Privacy is not an afterthought.
 
-```bash
-./runtime/bin/brain index
-./runtime/bin/brain memory-create "Title" "Body"
-./runtime/bin/brain decision-record "Decision" "Reason"
-./runtime/bin/brain evidence-link "Claim" "Evidence"
-./runtime/bin/brain repo-status
-./runtime/bin/brain report
-```
+AndyAI Second Brain separates private input, internal memory, trust gates, public pages and protected service layers.
 
-Rule: runtime outputs are local-first and need human review before becoming canonical truth.
+> **Machine output is not automatically safe.**  
+> Safe output is machine output that passed privacy, trust and human approval gates.
 
-## 🤜💥 PACK3 — Real Brain Operations Layer
+> **Trust is not a feature. Trust is the product boundary.**
 
-PACK3 adds practical local operations to AndyAI Second Brain: inbox intake, context routing, brain search, project snapshots, repo snapshots, evidence cards, decision cards, approval queue, lifecycle status, canon signals, client briefs, meeting debriefs, report cards, ops dashboard and export bundle.
+## Plans & Pricing
 
-```bash
-./runtime/bin/brain inbox-add "New signal" "Raw note or source text"
-./runtime/bin/brain search "TAP-TAP"
-./runtime/bin/brain project-snapshot "andyai-second-brain" --status active --next "PACK4"
-./runtime/bin/brain approval-request "Publish brief" "Send client-ready brief" --risk medium
-./runtime/bin/brain dashboard
-./runtime/bin/brain export-bundle
-```
+<p align="center">
+  <img src="./docs/visuals/plans-and-pricing.png" alt="Plans and pricing" width="100%">
+</p>
 
-## 🤜💥 PACK4 — Brain Query / Retrieval / Context Assembly Layer
+### Starter — $19/mo
 
-PACK4 adds a local retrieval and context assembly runtime.
+For individuals who want to organize AI work and personal project memory.
 
-Example commands:
+Includes 1 workspace, personal memory vault, context assembly, basic client report and manual approval.
 
-```bash
-runtime/bin/brain-query index
-runtime/bin/brain-query search "second brain runtime"
-runtime/bin/brain-query bundle "what should the agent read before PACK5?"
-runtime/bin/brain-query handoff "prepare next AndyAI Second Brain strike"
-runtime/bin/brain-query answer-draft "what changed in PACK4?"
-runtime/bin/brain-query report
-```
+### Pro — $79/mo
 
-Canon sentence:
+For consultants, creators and advanced operators.
 
-> Search finds files. Retrieval finds relevance. Context assembly prepares action.
+Includes 5 workspaces, advanced memory and skills, client report pages, privacy firewall, audit trail and priority support.
 
-## PACK5 — Agent Handoff / Mission Context / Action Preparation Layer
+### Business — $249/mo
 
-PACK5 turns retrieval context into mission-ready handoff packages. It adds mission request schemas, agent handoff schemas, action plan schemas, risk and permission policies, human approval checklists, mission QA, and the `runtime/bin/brain-mission` CLI.
+For teams, agencies and small businesses.
 
-Canon: Search finds files. Retrieval finds relevance. Context assembly prepares action. PACK5 prepares a governed mission.
+Includes unlimited internal projects, multi-client delivery, operator registry, approval workflows, team collaboration and launch assistance.
 
+## Documentation
 
-## 🤜💥 PACK6 — Governed Agent Execution / Approval Runtime Layer
+- [Beginner Quickstart](./docs/tutorials/01-beginner-quickstart.md)
+- [What is AndyAI Second Brain?](./docs/beginners/WHAT_IS_ANDYAI_SECOND_BRAIN.md)
+- [Privacy and Trust](./docs/trust/PRIVACY_AND_TRUST.md)
+- [Plans and Pricing](./docs/pricing/PLANS_AND_PRICING.md)
+- [First Tutorial Scaffold](./docs/tutorials/FIRST_TUTORIAL_SCAFFOLD.md)
+- [Front Page Copy Deck](./docs/marketing/FRONT_PAGE_COPY_DECK.md)
 
-PACK6 adds a safe local-first governed execution layer: execution plans, approval gates, dry-run-first policy, permission matrix, safe run stub, evidence capture, result inspection, stop conditions, rollback notes, execution reports, and sandbox contract.
+## Public demo routes
 
-Canonical line:
+- `https://brain.andyai.ai`
+- `https://brain.andyai.ai/client/`
+- `https://brain.andyai.ai/client-portal/`
+- `https://brain.andyai.ai/health/`
+- `https://brain.andyai.ai/trust/`
+- `https://brain.andyai.ai/faq/`
 
-> Mission without approval is danger. Execution without evidence is noise.
-
-## PACK7 — Trust Ledger / Audit Trail / Decision Accountability Layer
-
-PACK7 adds the trust ledger and audit accountability layer.
-
-Core runtime:
-
-```bash
-runtime/bin/brain-trust help
-runtime/bin/brain-trust event "PACK7 trust event"
-runtime/bin/brain-trust approval "Approve PACK7 push"
-runtime/bin/brain-trust execution "PACK7 governed execution"
-runtime/bin/brain-trust evidence "Claim" "Evidence detail"
-runtime/bin/brain-trust decision "Decision" "Reason"
-runtime/bin/brain-trust query "approval"
-runtime/bin/brain-trust qa
-runtime/bin/brain-trust export
-```
-
-Canonical sentence:
-
-Execution without audit becomes invisible power. Audit without evidence becomes theatre. Trust requires a ledger.
-
-## PACK8 — Memory Lifecycle / Promotion / Archive / Cleanup Layer
-
-PACK8 adds governed lifecycle operations for Second Brain memory:
-
-- inbox intake
-- active memory
-- canon promotion
-- archive
-- stale detection
-- cleanup request queue
-- delete approval notes
-- retention policy
-- memory health report
-- archive index
-- lifecycle audit bridge
-- export bundle
-- timing evidence
-
-Canonical rule: memory must have a lifecycle. Not every note deserves canon, not every stale item deserves deletion, and destructive cleanup requires human approval.
-
-## PACK9 — Timing Precision / Pack Intelligence / Bridge Hub Readiness Layer
-
-PACK9 upgrades TAP-TAP timing from whole-second summaries to millisecond-precision pack intelligence. It prepares timing reports, pack estimates, Bridge Hub handoff notes, and reusable timing QA for future MASTER-UDARAC scripts.
-
-## PACK10 — Bridge Hub / Pack Registry / Status Map Integration Layer
-
-PACK10 prepares AndyAI Second Brain to provide Bridge Hub-ready registry and status payloads: repo registry, pack registry, status map, timing payload, evidence map, repair history and next action.
-
-## PACK11 — Operator Registry / Tool Launcher / External Service Readiness Layer
-
-PACK11 prepares operator registry and external-service launcher readiness for Bridge Hub. It registers guided operator patterns such as GitHub Operator, Vercel Operator, Supabase Operator, Stripe Operator, DNS Doctor and Recovery Doctor.
-
-## BIG PLOTUN 01 — Operator → Bridge Hub → Learning Loop
-
-BIG PLOTUN 01 runs PACK12, PACK13 and PACK14 as a 60-version cycle. It connects operator execution evidence, Bridge Hub control panels and Second Brain learning memory.
-
-## BIG PLOTUN 02 — Protocol Hardening → Mega Runner → Live Factory Map → Production Memory
-
-BIG PLOTUN 02 runs PACK15–PACK18 as an 80-version stress test. It hardens TAP-TAP protocol, prepares mega-pack runner intelligence, creates a Bridge Hub live factory map layer, and records production memory patterns.
-
-## BIG PLOTUN 03 — 100-Version Factory Benchmark
-
-BIG PLOTUN 03 runs PACK19–PACK23 as a 100-version benchmark. It covers production readiness, runtime contracts, Bridge Hub dashboard data contracts, evidence/release bundle automation, and factory certification.
+Start simple. Grow into governed AI operations.
