@@ -1,0 +1,15 @@
+{
+  "kind": "andyai.second_brain.rich_help_print_polish",
+  "generated_at": "2026-05-17T05:24:15Z",
+  "ok": true,
+  "files": [
+    "public/help/index.html",
+    "public/help/print.html"
+  ],
+  "fixes": [
+    "local relative visual paths",
+    "markdown rendered as rich HTML",
+    "print CSS",
+    "print-friendly page"
+  ]
+}
