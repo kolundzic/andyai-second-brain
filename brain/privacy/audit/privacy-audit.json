@@ -1,9 +1,9 @@
 {
   "kind": "andyai.privacy_audit",
-  "generated_at": "2026-05-17T01:18:12Z",
+  "generated_at": "2026-05-17T01:18:15Z",
   "public_gate": {
     "ok": false,
-    "scanned_at": "2026-05-17T01:18:12Z",
+    "scanned_at": "2026-05-17T01:18:15Z",
     "paths": [
       "public"
     ],
@@ -70,7 +70,7 @@
   },
   "general_scan": {
     "ok": false,
-    "scanned_at": "2026-05-17T01:18:12Z",
+    "scanned_at": "2026-05-17T01:18:15Z",
     "paths": [
       "public",
       "brain/client",
@@ -78,7 +78,7 @@
       "docs",
       "examples"
     ],
-    "files_scanned": 459,
+    "files_scanned": 460,
     "findings_count": 23,
     "findings": [
       {

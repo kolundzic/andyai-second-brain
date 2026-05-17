@@ -5,8 +5,8 @@
   "continue_range": "v56.9.0 -> v60.0.0",
   "base_tag": "v56.8.1",
   "final_tag": "v60.0.0",
-  "latest_known_tag": "v59.8.0",
-  "head_short": "e4ca86d",
+  "latest_known_tag": "v59.9.0",
+  "head_short": "1227a2e",
   "mode": "bojno-punjenje",
   "trust_mode": "privacy-first",
   "capabilities": [
@@ -20,6 +20,6 @@
     "real safe export bundle",
     "real smoke test"
   ],
-  "semafor": {"green": 64, "yellow": 2, "red": 0},
-  "timing": {"started":"2026-05-17T01:17:39Z","finished":"2026-05-17T01:18:10Z","total_ms":30620,"versions_completed":30,"average_phase_ms":1020,"slowest_phase":{"version":"v59.8.0","title":"Pack29 QA Final","ms":3583},"fastest_phase":{"version":"v57.3.0","title":"Redaction Engine","ms":291},"estimated_next_20_version_pack_ms":20400,"estimated_next_40_version_pack_ms":40800}
+  "semafor": {"green": 66, "yellow": 2, "red": 0},
+  "timing": {"started":"2026-05-17T01:17:39Z","finished":"2026-05-17T01:18:13Z","total_ms":33852,"versions_completed":31,"average_phase_ms":1092,"slowest_phase":{"version":"v59.8.0","title":"Pack29 QA Final","ms":3583},"fastest_phase":{"version":"v57.3.0","title":"Redaction Engine","ms":291},"estimated_next_20_version_pack_ms":21840,"estimated_next_40_version_pack_ms":43680}
 }
