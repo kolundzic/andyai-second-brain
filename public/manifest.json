@@ -1,10 +1,10 @@
 {
   "kind": "andyai.vercel_static_export",
   "version": "1.0",
-  "generated_at": "2026-05-17T01:30:34Z",
+  "generated_at": "2026-05-17T01:30:36Z",
   "repo": {
     "name": "andyai-second-brain",
-    "head": "1e6ad20",
+    "head": "26c37ff",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git"
   },
   "files": [
