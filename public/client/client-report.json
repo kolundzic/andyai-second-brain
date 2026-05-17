@@ -1,11 +1,11 @@
 {
   "kind": "andyai.client_report",
   "version": "1.0",
-  "generated_at": "2026-05-17T01:30:29Z",
+  "generated_at": "2026-05-17T01:30:30Z",
   "repo": {
     "name": "andyai-second-brain",
-    "head": "e9a07c9",
-    "latest_tag": "v61.0.0"
+    "head": "1581f91",
+    "latest_tag": "v61.1.0"
   },
   "client": {
     "client_name": "Sample Client",
