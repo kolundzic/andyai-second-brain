@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Data Classification",
+  "type": "object",
+  "required": ["path", "classification", "findings_count"],
+  "properties": {
+    "path": {"type": "string"},
+    "classification": {"enum": ["public_candidate", "internal", "confidential", "secret"]},
+    "findings_count": {"type": "integer"},
+    "findings": {"type": "array"}
+  }
+}
