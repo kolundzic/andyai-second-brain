@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Release Bundle","type":"object","required":["tag","artifacts"],"properties":{"tag":{"type":"string"},"artifacts":{"type":"array"}}}

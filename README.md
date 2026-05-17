@@ -183,3 +183,7 @@ BIG PLOTUN 01 runs PACK12, PACK13 and PACK14 as a 60-version cycle. It connects 
 ## BIG PLOTUN 02 — Protocol Hardening → Mega Runner → Live Factory Map → Production Memory
 
 BIG PLOTUN 02 runs PACK15–PACK18 as an 80-version stress test. It hardens TAP-TAP protocol, prepares mega-pack runner intelligence, creates a Bridge Hub live factory map layer, and records production memory patterns.
+
+## BIG PLOTUN 03 — 100-Version Factory Benchmark
+
+BIG PLOTUN 03 runs PACK19–PACK23 as a 100-version benchmark. It covers production readiness, runtime contracts, Bridge Hub dashboard data contracts, evidence/release bundle automation, and factory certification.

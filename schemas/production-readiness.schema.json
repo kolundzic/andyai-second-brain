@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Production Readiness","type":"object","required":["area","status","evidence"],"properties":{"area":{"type":"string"},"status":{"type":"string"},"evidence":{"type":"string"}}}

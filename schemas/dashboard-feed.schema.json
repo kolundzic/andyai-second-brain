@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Dashboard Feed","type":"object","required":["cards","updated_at"],"properties":{"cards":{"type":"array"},"updated_at":{"type":"string"}}}

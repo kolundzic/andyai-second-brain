@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+case "${1:-help}" in
+  help)
+    echo "brain-factory commands: status report export"
+    ;;
+  status)
+    echo "$ROOT/brain/big-plotun-03/status/BIG_PLOTUN_03_STATUS.json"
+    ;;
+  report)
+    echo "$ROOT/brain/reports/BIG_PLOTUN_03_REPORT.md"
+    ;;
+  export)
+    echo "$ROOT/brain/big-plotun-03/exports/big-plotun-03-export.zip"
+    ;;
+  *)
+    echo "Unknown command: $1"
+    exit 1
+    ;;
+esac
