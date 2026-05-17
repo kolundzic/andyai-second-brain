@@ -1,0 +1,25 @@
+{
+  "repo": "andyai-second-brain",
+  "plotun": "BIG PLOTUN 03",
+  "range": "v36.1.0 -> v46.0.0",
+  "packs": ["PACK19", "PACK20", "PACK21", "PACK22", "PACK23"],
+  "base_tag": "v36.0.1",
+  "final_tag": "v46.0.0",
+  "latest_known_tag": "v45.9.0",
+  "head_short": "89ce529",
+  "status": "local-complete-push-later",
+  "semafor": {"green": 208, "yellow": 0, "red": 0},
+  "timing": {
+  "started": "2026-05-17T00:07:08Z",
+  "finished": "2026-05-17T00:07:55Z",
+  "total_ms": 46710,
+  "versions_completed": 99,
+  "average_phase_ms": 471,
+  "slowest_phase": {"version": "v37.4.0", "title": "Operator Boundary Recheck", "pack": "PACK19", "ms": 582},
+  "fastest_phase": {"version": "v44.4.0", "title": "TAP-TAP Certification Note", "pack": "PACK23", "ms": 365},
+  "estimated_next_20_version_pack_ms": 9420,
+  "estimated_next_80_version_cycle_ms": 37680,
+  "estimated_next_100_version_cycle_ms": 47100,
+  "estimated_next_200_version_cycle_ms": 94200
+}
+}
