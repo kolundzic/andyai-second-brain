@@ -5,8 +5,8 @@
   "base_tag": "v66.0.2",
   "final_tag": "v72.0.0",
   "public_domain": "https://brain.andyai.ai",
-  "latest_known_tag": "v71.9.0",
-  "head_short": "d40a5a1",
+  "latest_known_tag": "v72.0.0",
+  "head_short": "ba62a76",
   "mode": "public-launch-polish",
   "capabilities": [
     "public launch operator",
@@ -19,6 +19,6 @@
     "FAQ page",
     "launch dossier"
   ],
-  "semafor": {"green": 123, "yellow": 0, "red": 0},
-  "timing": {"started":"2026-05-17T01:56:19Z","finished":"2026-05-17T01:57:23Z","total_ms":63735,"versions_completed":59,"average_phase_ms":1080,"slowest_phase":{"version":"v66.1.0","title":"Public Launch Scaffold","ms":2532},"fastest_phase":{"version":"v69.6.0","title":"Pack34 QA Final","ms":855},"estimated_next_20_version_pack_ms":21600,"estimated_next_40_version_pack_ms":43200,"estimated_next_60_version_pack_ms":64800}
+  "semafor": {"green": 125, "yellow": 0, "red": 0},
+  "timing": {"started":"2026-05-17T01:56:19Z","finished":"2026-05-17T01:57:25Z","total_ms":65558,"versions_completed":60,"average_phase_ms":1092,"slowest_phase":{"version":"v66.1.0","title":"Public Launch Scaffold","ms":2532},"fastest_phase":{"version":"v69.6.0","title":"Pack34 QA Final","ms":855},"estimated_next_20_version_pack_ms":21840,"estimated_next_40_version_pack_ms":43680,"estimated_next_60_version_pack_ms":65520}
 }
