@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Artifact Viewer Index",
+  "type": "object",
+  "required": ["kind", "version", "generated_at", "repo", "sections"],
+  "properties": {
+    "kind": {"type": "string"},
+    "version": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "repo": {"type": "object"},
+    "sections": {"type": "array"}
+  }
+}
