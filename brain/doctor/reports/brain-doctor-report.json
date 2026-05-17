@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "checked_at": "2026-05-17T00:13:04Z",
+  "checked_at": "2026-05-17T00:13:06Z",
   "schemas": {
     "count": 48,
     "valid": 48,
@@ -33,7 +33,7 @@
     ]
   },
   "evidence": {
-    "count": 185,
+    "count": 186,
     "sample": [
       "evidence/big-plotun-02/v28.1.0/evidence.md",
       "evidence/big-plotun-02/v28.2.0/evidence.md",
@@ -58,8 +58,9 @@
     ]
   },
   "tags": {
-    "count": 482,
+    "count": 483,
     "latest": [
+      "v47.7.0",
       "v47.6.0",
       "v47.5.0",
       "v47.3.0",
@@ -78,8 +79,7 @@
       "v46.1.0",
       "v46.0.1",
       "v45.9.0",
-      "v46.0.0",
-      "v45.7.0"
+      "v46.0.0"
     ]
   }
 }
