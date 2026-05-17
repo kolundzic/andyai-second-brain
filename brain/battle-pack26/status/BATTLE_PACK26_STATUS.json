@@ -4,8 +4,8 @@
   "range": "v50.1.0 -> v52.0.0",
   "base_tag": "v50.0.1",
   "final_tag": "v52.0.0",
-  "latest_known_tag": "v51.9.0",
-  "head_short": "9c6ecfb",
+  "latest_known_tag": "v52.0.0",
+  "head_short": "39684ca",
   "mode": "bojno-punjenje",
   "capabilities": [
     "real artifact-viewer CLI",
@@ -16,15 +16,15 @@
     "real viewer export bundle",
     "real smoke test"
   ],
-  "semafor": {"green": 43, "yellow": 0, "red": 0},
+  "semafor": {"green": 45, "yellow": 0, "red": 0},
   "timing": {
   "started": "2026-05-17T00:22:08Z",
-  "finished": "2026-05-17T00:22:30Z",
-  "total_ms": 21953,
-  "versions_completed": 19,
-  "average_phase_ms": 1155,
+  "finished": "2026-05-17T00:22:33Z",
+  "total_ms": 24576,
+  "versions_completed": 20,
+  "average_phase_ms": 1228,
   "slowest_phase": {"version": "v51.9.0", "title": "Pack26 QA Final", "ms": 3655},
   "fastest_phase": {"version": "v50.3.0", "title": "Artifact Viewer CLI Wrapper", "ms": 296},
-  "estimated_next_20_version_pack_ms": 23100
+  "estimated_next_20_version_pack_ms": 24560
 }
 }

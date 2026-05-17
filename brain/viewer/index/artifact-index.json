@@ -1,13 +1,14 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T00:22:32Z",
+  "generated_at": "2026-05-17T00:22:36Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "9c6ecfb",
+    "head": "39684ca",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
+      "v52.0.0",
       "v51.9.0",
       "v51.8.0",
       "v51.7.0",
@@ -26,8 +27,7 @@
       "v50.4.0",
       "v50.1.0",
       "v50.2.0",
-      "v50.3.0",
-      "v50.0.1"
+      "v50.3.0"
     ]
   },
   "sections": [
@@ -1590,6 +1590,12 @@
           "type": "zip"
         },
         {
+          "path": "brain/battle-pack26/exports/battle-pack26-final-artifact-viewer.zip",
+          "name": "battle-pack26-final-artifact-viewer.zip",
+          "size": 16011,
+          "type": "zip"
+        },
+        {
           "path": "brain/big-plotun/exports/big-plotun-01-export.zip",
           "name": "big-plotun-01-export.zip",
           "size": 107119,
@@ -1670,7 +1676,7 @@
         {
           "path": "brain/viewer/exports/artifact-viewer-export.zip",
           "name": "artifact-viewer-export.zip",
-          "size": 16011,
+          "size": 16053,
           "type": "zip"
         }
       ]

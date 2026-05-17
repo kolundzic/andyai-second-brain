@@ -1,11 +1,11 @@
 # AndyAI Artifact Viewer
 
-Generated: 2026-05-17T00:22:32Z
+Generated: 2026-05-17T00:22:36Z
 
 ## Repo
 
 - Name: andyai-second-brain
-- HEAD: 9c6ecfb
+- HEAD: 39684ca
 - Remote: git@github.com:kolundzic/andyai-second-brain.git
 
 ## Dashboard Artifacts
@@ -189,6 +189,7 @@ Generated: 2026-05-17T00:22:32Z
 - `brain/battle-pack25/exports/battle-pack25-dashboard-feed.zip` — 4790 bytes
 - `brain/battle-pack25/exports/battle-pack25-final-dashboard-feed.zip` — 4966 bytes
 - `brain/battle-pack26/exports/battle-pack26-artifact-viewer.zip` — 15890 bytes
+- `brain/battle-pack26/exports/battle-pack26-final-artifact-viewer.zip` — 16011 bytes
 - `brain/big-plotun/exports/big-plotun-01-export.zip` — 107119 bytes
 - `brain/big-plotun-02/exports/big-plotun-02-export.zip` — 119005 bytes
 - `brain/big-plotun-03/exports/big-plotun-03-export.zip` — 150068 bytes
@@ -202,7 +203,7 @@ Generated: 2026-05-17T00:22:32Z
 - `brain/operators/exports/pack11-operator-registry-export.zip` — 11823 bytes
 - `brain/timing-exports/pack9-timing-export.zip` — 5211 bytes
 - `brain/trust-exports/pack7-trust-ledger-export.zip` — 20059 bytes
-- `brain/viewer/exports/artifact-viewer-export.zip` — 16011 bytes
+- `brain/viewer/exports/artifact-viewer-export.zip` — 16053 bytes
 
 ## Release Notes
 
