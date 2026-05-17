@@ -1,6 +1,6 @@
 {
   "kind": "andyai.second_brain.auth_tenant_gate",
-  "generated_at": "2026-05-17T07:44:59Z",
+  "generated_at": "2026-05-17T07:45:01Z",
   "ok": true,
   "routes": [
     "/login/",
