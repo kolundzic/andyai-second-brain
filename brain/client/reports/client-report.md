@@ -1,6 +1,6 @@
 # Sample Client — AI Delivery Readiness Report
 
-Generated: 2026-05-17T01:31:04Z
+Generated: 2026-05-17T01:31:06Z
 
 ## Executive Summary
 
