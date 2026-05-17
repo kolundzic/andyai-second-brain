@@ -111,3 +111,25 @@ Includes unlimited internal projects, multi-client delivery, operator registry, 
 - `https://brain.andyai.ai/faq/`
 
 Start simple. Grow into governed AI operations.
+
+## Knowledge Front Page
+
+AndyAI Second Brain treats this repository as a living knowledge front page, not just a code/document folder.
+
+Start by audience:
+
+- [Beginner Learning Path](./docs/learning-paths/BEGINNER_LEARNING_PATH.md)
+- [Operator Learning Path](./docs/learning-paths/OPERATOR_LEARNING_PATH.md)
+- [Builder Learning Path](./docs/learning-paths/BUILDER_LEARNING_PATH.md)
+- [Business Learning Path](./docs/learning-paths/BUSINESS_LEARNING_PATH.md)
+
+Knowledge maps:
+
+- [Knowledge Domain Map](./docs/knowledge-front-page/KNOWLEDGE_DOMAIN_MAP.md)
+- [Resource Cards](./docs/resources/RESOURCE_CARDS.md)
+- [Evidence Status Legend](./docs/evidence/EVIDENCE_STATUS_LEGEND.md)
+- [Lifecycle Tag System](./docs/lifecycle/LIFECYCLE_TAG_SYSTEM.md)
+- [Export-Ready Document Map](./docs/exports/EXPORT_READY_DOCUMENT_MAP.md)
+- [Operator Help Index](./docs/operator/OPERATOR_HELP_INDEX.md)
+
+Public knowledge route: `/knowledge/`
