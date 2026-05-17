@@ -1,0 +1,8 @@
+{
+  "kind": "andyai.bridge_hub.privacy_payload",
+  "status": "privacy-firewall-present",
+  "public_gate": "required",
+  "human_approval": "required",
+  "github_leak_guard": "required",
+  "supabase_rls": "required-before-production"
+}
