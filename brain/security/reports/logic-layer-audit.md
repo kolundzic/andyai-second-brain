@@ -1,0 +1,1 @@
+# Logic Layer Report — logic-layer-audit\n\n- generated_at: `2026-05-17T02:56:05Z`\n- ok: `False`\n- findings_count: `24`\n- rule: Memory is not truth. Retrieval is not authority. Tool access is not permission.\n

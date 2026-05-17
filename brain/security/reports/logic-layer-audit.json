@@ -1,0 +1,4824 @@
+{
+  "kind": "andyai.logic_layer_firewall.audit",
+  "generated_at": "2026-05-17T02:56:05Z",
+  "ok": false,
+  "paths": [
+    "docs",
+    "public"
+  ],
+  "findings_count": 24,
+  "findings": [
+    {
+      "type": "tool_escalation",
+      "source": "docs/toc/PACK2_v2.1_to_v4.0_TOC.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.7.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.3.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.2.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.6.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.9.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v8.0.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.1.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.5.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.4.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.8.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.7.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.3.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.2.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.6.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.1.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.5.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.9.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.8.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v6.4.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "tool_escalation",
+      "source": "docs/pack4/releases/v7.0.0.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "run terminal",
+      "severity": "high",
+      "recommendation": "Block tool action until independent authority and human approval are confirmed."
+    },
+    {
+      "type": "metadata_command",
+      "source": "docs/security/METADATA_INSTRUCTION_DETECTOR_SPEC.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "metadata contains operational language such as run",
+      "severity": "low",
+      "recommendation": "Review before using as operational context."
+    },
+    {
+      "type": "public_leakage",
+      "source": "docs/security/MEMORY_INJECTION_RISK_MATRIX.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "publish private",
+      "severity": "medium",
+      "recommendation": "Run public export gate and redact sensitive material."
+    },
+    {
+      "type": "audit_tamper",
+      "source": "docs/repairs/PACK3_DIRTY_TREE_CLEANUP_v6.0.1.md",
+      "channel": "audit",
+      "line": 1,
+      "match_preview": "rewrite history",
+      "severity": "high",
+      "recommendation": "Preserve evidence and escalate for review."
+    }
+  ],
+  "reports": [
+    {
+      "ok": false,
+      "source": "docs",
+      "channel": "audit",
+      "files_scanned": 521,
+      "findings_count": 24,
+      "reports": [
+        {
+          "ok": true,
+          "source": "docs/PACK6_GOVERNED_EXECUTION.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/EXPORT_DELETE_INSPECT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/SIGNAL_CANONIZER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PACK6_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/ARCHITECTURE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/SKILLS_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/DECISION_ACCOUNTABILITY_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/plotun-33-35-TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PRACTICAL_USE_CASES.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PROJECT_CONTEXT_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/plotun-30-32-TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PACK7_TRUST_LEDGER_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PACK_v0.2_to_v2.0_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/GOVERNANCE_MODEL.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/MASTER_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/TRUST_LEDGER_ARCHITECTURE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PACK6_EXECUTION_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/AUDIT_TRAIL_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PARA_WORKSPACE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/ROADMAP.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/CONTEXT_ROUTER_SPEC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/EVIDENCE_BACKED_MEMORY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/REPO_MEMORY_BRIDGE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/CLIENT_MEMORY_BRIDGE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/HUMAN_APPROVAL_GATE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/REAL_BRAIN_OPERATIONS_MODEL.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/MEETING_MEMORY_BRIDGE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PUBLIC_WEBSITE_BLUEPRINT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/TEAM_BRAIN_MODEL.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PACK4_QUERY_RETRIEVAL_CONTEXT_ASSEMBLY_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/DECISION_LOG_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/PACK3_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/MEMORY_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/offer/OFFER_AND_SUBSCRIPTION_MODEL.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/mission-context/PACK5_MISSION_CONTEXT_SCAFFOLD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/mission-context/MISSION_CONTEXT_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.6.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.2.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.3.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.7.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.8.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.4.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v6.0.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.5.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.1.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.9.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.6.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.2.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.3.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.7.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.0.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.4.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.8.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.9.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v4.5.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/releases/v5.1.0.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": false,
+          "source": "docs/toc/PACK2_v2.1_to_v4.0_TOC.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/toc/PACK2_v2.1_to_v4.0_TOC.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/RETRIEVAL_SCORING_V1.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/EVIDENCE_AWARE_RETRIEVAL.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/SKILL_CONTEXT_ASSEMBLY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/CONTEXT_BUDGET_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/PACK4_FINAL_LOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/SOURCE_PRIORITY_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/BRAIN_QUERY_CLI.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/QUERY_RETRIEVAL_CONTEXT_ARCHITECTURE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/STALENESS_WARNING_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack4/PROJECT_CONTEXT_ASSEMBLY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.7.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.7.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.3.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.3.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.2.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.2.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.6.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.6.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.9.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.9.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v8.0.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v8.0.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.1.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.1.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.5.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.5.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.4.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.4.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.8.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.8.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.7.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.7.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.3.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.3.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.2.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.2.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.6.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.6.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.1.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.1.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.5.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.5.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.9.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.9.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.8.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.8.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v6.4.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v6.4.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": false,
+          "source": "docs/pack4/releases/v7.0.0.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "tool_escalation",
+              "source": "docs/pack4/releases/v7.0.0.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "run terminal",
+              "severity": "high",
+              "recommendation": "Block tool action until independent authority and human approval are confirmed."
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "source": "docs/vercel/VERCEL_HUMAN_APPROVAL_GATE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/vercel/VERCEL_CONFIG_INTEGRITY_CHECK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/vercel/PUBLIC_DIRECTORY_INTEGRITY_CHECK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/vercel/VERCEL_OPERATOR_SCAFFOLD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/vercel/VERCEL_ENVIRONMENT_CHECKLIST.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack35/POST_LAUNCH_MONITORING_CHECKLIST.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack35/PUBLIC_LAUNCH_READINESS_LOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack35/PACK35_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack35/LAUNCH_DOSSIER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack32/DEPLOYMENT_DECISION_MATRIX.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack32/CLIENT_SECURITY_EXPLANATION.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack32/SAAS_PRIVACY_BOUNDARY_DIAGRAM.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack32/VERCEL_SUPABASE_READINESS_LOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack32/INVESTOR_TRUST_NOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack32/PACK32_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack32/VERCEL_SUPABASE_INTEGRATION_MAP.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/REDACTION_RULES.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/GITHUB_LEAK_GUARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/CLIENT_REPORT_PRIVACY_BLOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/ALLOWLIST_DENYLIST_RULES.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/PRE_PUSH_SAFETY_CHECKLIST.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/VERCEL_PUBLIC_EXPORT_GATE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/TRUST_BOUNDARY_CANON.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/PRIVACY_ALLOWLIST_GIT_REMOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/HUMAN_APPROVAL_MANIFEST.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/PRIVACY_POLICY_CONFIG.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/SUPABASE_RLS_BLUEPRINT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/privacy/ENVIRONMENT_SECRETS_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/LAUNCH_ANNOUNCEMENT_DRAFT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/CLIENT_DEMO_SCRIPT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/OPERATOR_VS_CLIENT_STORY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/INVESTOR_DEMO_SCRIPT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/SECOND_BRAIN_PUBLIC_STORY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/TAP_TAP_SPEED_STORY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/DEMO_STORY_SCAFFOLD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/PRIVACY_FIREWALL_STORY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/demo-story/PARTNER_PRESENTATION_NOTES.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/battle-mode/BOJNO_PUNJENJE_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/operators/OPERATOR_REGISTRY_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/bridge-hub/BRIDGE_HUB_INTEGRATION_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack33/PACK33_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack33/PUBLIC_LAUNCH_LOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack33/v66_0_2_PRIVACY_ALLOWLIST_NOTES.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/security/CROSS_SESSION_TRIGGER_AUDIT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/security/SECOND_BRAIN_LOGIC_LAYER_DEFENSE_REPORT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": false,
+          "source": "docs/security/METADATA_INSTRUCTION_DETECTOR_SPEC.md",
+          "channel": "audit",
+          "trust_class": "suspicious",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "metadata_command",
+              "source": "docs/security/METADATA_INSTRUCTION_DETECTOR_SPEC.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "metadata contains operational language such as run",
+              "severity": "low",
+              "recommendation": "Review before using as operational context."
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "source": "docs/security/LOGIC_LAYER_THREAT_MODEL.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/security/TOOL_CALL_AUTHORITY_GATE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/security/PUBLIC_EXPORT_LPCI_GATE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/security/RAG_CHUNK_TRUST_CLASSIFIER_SPEC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/security/MEMORY_INJECTION_RISK_MATRIX.md",
+          "channel": "audit",
+          "trust_class": "sensitive",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "public_leakage",
+              "source": "docs/security/MEMORY_INJECTION_RISK_MATRIX.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "publish private",
+              "severity": "medium",
+              "recommendation": "Run public export gate and redact sensitive material."
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "source": "docs/security/LPCI_DEFENSE_CANON.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack34/TRUST_BOUNDARY_PUBLIC_LOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack34/PUBLIC_TRUST_LOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack34/TRUST_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack34/PACK34_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.5.0-batch-semafor-ledger.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.9.0-resume-point-detector.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.7.0-batch-phase-marker.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.2.0-resume-recommendation-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.7.0-batch-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.1.0-failed-version-capture.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.8.0-bridge-hub-batch-payload.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.3.0-batch-phase-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.0.0-last-successful-tag-resolver.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.6.0-batch-start-marker.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.2.0-batch-plan-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v32.0.0-mega-pack-runner-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.5.0-mega-runner-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.8.0-batch-completion-marker.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.6.0-mega-pack-health-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.4.0-resume-state-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.9.0-pack16-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v30.1.0-mega-pack-runner-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.4.0-batch-timing-ledger.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack16/v31.3.0-partial-pack-state-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/CLIENT_DATA_MARKER_SCANNER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/SECRET_PATTERN_SCANNER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/GIT_TRACKED_PRIVACY_SCAN.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/PII_PATTERN_SCANNER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/PRIVACY_FIREWALL_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/PACK29_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/PUBLIC_EXPORT_SCANNER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/REDACTION_ENGINE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack29/PACK29_PRE_CONTINUE_CLEANUP_v56_8_1.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack11/PACK11_CYCLE_CONTEXT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack11/PACK11_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack27/DEPLOYMENT_READINESS_REPORT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack27/ARTIFACT_INDEX_PUBLIC_COPY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack27/PACK27_v54_0_2_CLEAN_TREE_REPAIR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack27/LOCAL_PREVIEW_COMMAND.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack27/PACK27_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack27/PACK27_v54_0_3_POST_VERIFY_CAPTURE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack27/VERCEL_EXPORT_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack27/DASHBOARD_PUBLIC_COPY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/big-plotun-03/BIG_PLOTUN_03_CYCLE_CONTEXT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/big-plotun-03/BIG_PLOTUN_03_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.3.0-mega-pack-template-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.9.0-pack18-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.4.0-repair-lesson-template-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.2.0-bridge-hub-pattern-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.4.0-80-version-cycle-template.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.0.0-semafor-pattern-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.2.0-production-pattern-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.8.0-second-brain-pattern-handoff.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.1.0-production-memory-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.3.0-reusable-pack-template-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v36.0.0-production-memory-pattern-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.1.0-operator-pattern-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.7.0-pattern-library-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.9.0-timing-pattern-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.8.0-repair-lesson-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.7.0-failed-pack-pattern-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.6.0-successful-pack-pattern-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.5.0-100-version-cycle-readiness-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v34.5.0-production-memory-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack18/v35.6.0-production-memory-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.9.0-pack20-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.1.0-runtime-contract-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.7.0-command-help-consistency-check.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.6.0-semafor-payload-doctor.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.1.0-report-presence-doctor.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.2.0-evidence-presence-doctor.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.7.0-runtime-doctor-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.8.0-runtime-path-resolver.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.3.0-doctor-result-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.5.0-runtime-doctor-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.9.0-missing-artifact-detector.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.8.0-runtime-contract-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.2.0-runtime-command-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.3.0-export-presence-doctor.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.5.0-timing-payload-doctor.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.6.0-command-surface-inventory.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v38.4.0-cli-contract-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.0.0-schema-presence-doctor.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v40.0.0-runtime-contract-doctor-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack20/v39.4.0-bridge-payload-doctor.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.6.0-dashboard-feed-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v42.0.0-bridge-hub-dashboard-feed-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.9.0-operator-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.4.0-pack-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.8.0-repair-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.1.0-next-action-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.2.0-dashboard-feed-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.2.0-risk-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.0.0-learning-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.5.0-timing-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.8.0-dashboard-feed-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.1.0-dashboard-feed-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.7.0-evidence-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.9.0-pack21-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.6.0-semafor-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.4.0-factory-map-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v40.3.0-repo-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.7.0-bridge-hub-ui-handoff.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.3.0-approval-card-data-contract.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack21/v41.5.0-dashboard-feed-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack26/RELEASE_NOTES_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack26/OPEN_CONTROL_PANEL_COMMAND.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack26/ARTIFACT_VIEWER_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack26/DOCTOR_ARTIFACT_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack26/EXPORT_ARTIFACT_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack26/DASHBOARD_ARTIFACT_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack26/PACK26_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack26/EVIDENCE_ARTIFACT_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.5.0-bridge-hub-sync-audit.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.4.0-cli-surface-audit.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v38.0.0-production-readiness-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.6.0-brain-check-expansion-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.4.0-operator-boundary-recheck.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.7.0-risk-register-refresh.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.9.0-release-hygiene-checklist.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.7.0-production-readiness-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.5.0-verifier-expansion-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.3.0-clean-tree-discipline-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.2.0-rollback-readiness-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.8.0-evidence-coverage-audit.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.0.0-tag-discipline-audit.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.2.0-readiness-audit-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.1.0-production-readiness-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.1.0-push-safety-checklist.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v36.3.0-runtime-contract-review.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.8.0-hardening-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.6.0-second-brain-sync-audit.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack19/v37.9.0-pack19-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/big-plotun-02/BIG_PLOTUN_02_CYCLE_CONTEXT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/big-plotun-02/BIG_PLOTUN_02_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack10/PACK10_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.6.0-human-approval-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v34.0.0-bridge-hub-live-factory-map-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.5.0-risk-boundary-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.0.0-timing-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.8.0-pack-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.9.0-pack17-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.3.0-repo-status-node-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.8.0-bridge-hub-live-map-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.1.0-semafor-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.2.0-evidence-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.6.0-factory-map-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.4.0-next-action-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.5.0-operator-status-node-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.9.0-operator-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.7.0-factory-map-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.7.0-repo-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.2.0-factory-map-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.1.0-live-factory-map-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v32.4.0-pack-status-node-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack17/v33.3.0-repair-node-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack28/NEXT_ACTION_CTA_BUILDER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack28/EVIDENCE_TRUST_BLOCK_BUILDER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack28/CLIENT_DELIVERY_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack28/EXECUTIVE_SUMMARY_BUILDER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack28/ENGINE_OUTPUT_INGESTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack28/RECOMMENDATION_CARD_BUILDER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack28/PACK28_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/runtime/WORKING_BRAIN_RUNTIME_LAYER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": false,
+          "source": "docs/repairs/PACK3_DIRTY_TREE_CLEANUP_v6.0.1.md",
+          "channel": "audit",
+          "trust_class": "action_blocked",
+          "findings_count": 1,
+          "findings": [
+            {
+              "type": "audit_tamper",
+              "source": "docs/repairs/PACK3_DIRTY_TREE_CLEANUP_v6.0.1.md",
+              "channel": "audit",
+              "line": 1,
+              "match_preview": "rewrite history",
+              "severity": "high",
+              "recommendation": "Preserve evidence and escalate for review."
+            }
+          ]
+        },
+        {
+          "ok": true,
+          "source": "docs/public-launch/PUBLIC_NAVIGATION_INDEX.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/public-launch/VERCEL_DEPLOYMENT_CHECKLIST.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/public-launch/PUBLIC_HOME_COPY_POLISH.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/public-launch/CLIENT_ROUTE_VERIFICATION.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/public-launch/DOMAIN_CANONICAL_NOTES.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/public-launch/CLIENT_PORTAL_ROUTE_VERIFICATION.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/public-launch/PUBLIC_LAUNCH_SCAFFOLD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/qa/PACK5_VERIFY_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/policies/ROLLBACK_AND_STOP_CONDITIONS.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/policies/NO_ACTION_ZONE_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/supabase/SUPABASE_SERVICE_ROLE_BOUNDARY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/supabase/SUPABASE_OPERATOR_CHECKLIST.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/supabase/SUPABASE_STORAGE_BUCKET_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/supabase/SUPABASE_READINESS_SCAFFOLD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/supabase/SUPABASE_AUDIT_LOG_BLUEPRINT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/supabase/SUPABASE_VAULT_SECRETS_CHECKLIST.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/packs/PACK5_AGENT_HANDOFF_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack8/PACK8_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack8/v14.5.0-lifecycle-runtime-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack8/v14.4.0-archive-request-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack8/v14.2.0-memory-lifecycle-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack8/v14.1.0-lifecycle-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack8/v14.3.0-promotion-candidate-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/taptap/TAPTAP_TIMING_PRECISION_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/taptap/PACK8_TIMING_STANDARD_NOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/beginners/BEGINNER_EXPLANATION.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/beginners/WHAT_IS_ANDYAI_SECOND_BRAIN.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack9/PACK9_v18.0.2_CLEAN_TREE_REPAIR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack9/PACK9_TIMING_REPORT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack9/PACK9_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/public/HOMEPAGE_HERO_BLOCKS.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/public/HOMEPAGE_VISUAL_BLOCKS.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack31/PACK31_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack31/CLIENT_PORTAL_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack31/PROTECTED_CLIENT_PORTAL_LOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack36/PACK36_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/action-prep/ACTION_PREPARATION_STANDARD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack37/PACK37_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack30/VERCEL_OPERATOR_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack30/VERCEL_OPERATOR_LOCK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack30/PACK30_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/README_HERO_REWRITE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/AUDIENCE_POSITIONING.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/README_CTA_AND_LINKS.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/USE_CASES.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/WORKFLOW.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/MARKETING_VISUAL_CANON_SCAFFOLD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/HERO_VISUAL_ASSETS_IMPORT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/VISUAL_CANON.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/marketing/FRONT_PAGE_COPY_DECK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/tutorials/FIRST_TUTORIAL_SCAFFOLD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/tutorials/01-beginner-quickstart.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/README_TRUST_SECTION.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/PUBLIC_DISCLAIMER_PAGE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/PUBLIC_TRUST_INDEX.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/EVIDENCE_BASED_SAFETY_NOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/SUPABASE_BOUNDARY_PUBLIC_NOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/HUMAN_APPROVAL_PUBLIC_NOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/PRIVACY_PUBLIC_EXPLANATION.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/GITHUB_BOUNDARY_PUBLIC_NOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/INVESTOR_TRUST_PAGE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/PRIVACY_AND_TRUST.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/BRAND_CLAIM_SAFETY_NOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/CLIENT_SECURITY_PAGE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/trust/VERCEL_BOUNDARY_PUBLIC_NOTE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/agent-handoff/AGENT_HANDOFF_LAYER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.3.0-service-doctor-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.6.0-github-operator-run-stub.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.3.0-operator-evidence-capture.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.4.0-operator-stop-conditions.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.0.0-dns-doctor-run-stub.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.7.0-vercel-operator-run-stub.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.2.0-operator-run-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.8.0-supabase-operator-run-stub.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v24.0.0-operator-execution-evidence-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.9.0-stripe-operator-run-stub.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.6.0-operator-result-inspection.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.1.0-recovery-doctor-run-stub.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.1.0-operator-execution-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.9.0-pack12-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.5.0-operator-execution-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v22.4.0-operator-evidence-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.8.0-operator-execution-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.7.0-operator-audit-bridge.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.2.0-operator-readiness-run-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack12/v23.5.0-operator-approval-check.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.8.0-dirty-bootstrap-capture-rule.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.3.0-compatibility-qa-checklist.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.6.0-timing-comparison-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.5.0-protocol-hardening-evidence-map.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.9.0-pack15-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.2.0-big-plotun-incident-review-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v30.0.0-after-action-protocol-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.6.0-after-action-report-generator.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.3.0-bash-3-2-compatibility-policy.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.0.0-mega-pack-rerun-guard-rule.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.9.0-finalization-patch-rule.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.1.0-after-action-review-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.8.0-protocol-hardening-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.4.0-mega-pack-safety-policy.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.4.0-tap-tap-learning-note-export.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.7.0-semafor-comparison-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.7.0-bridge-hub-aar-payload.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.2.0-narrow-repair-generator-spec.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v28.5.0-plotun-repair-pattern-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack15/v29.1.0-plotun-stop-point-policy.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.9.0-benchmark-tag-ledger.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.5.0-200-version-readiness-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.6.0-benchmark-timing-ledger.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.2.0-benchmark-repair-readiness-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.3.0-factory-certification-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.8.0-benchmark-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.9.0-pack23-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.1.0-benchmark-risk-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.7.0-benchmark-semafor-ledger.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.6.0-bridge-hub-certification-payload.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.0.0-benchmark-push-readiness-ledger.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.7.0-second-brain-certification-memory.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.4.0-tap-tap-certification-note.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.1.0-100-version-benchmark-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.8.0-benchmark-evidence-ledger.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.2.0-benchmark-run-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v46.0.0-100-version-factory-benchmark-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.3.0-factory-certification-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v45.4.0-100-version-cycle-template.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack23/v44.5.0-benchmark-runtime-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack24/EVIDENCE_FILE_SCANNER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack24/SCHEMA_FILE_SCANNER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack24/BRAIN_DOCTOR_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack24/REPORT_FILE_SCANNER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack24/JSON_PARSE_VALIDATOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack24/TAG_SNAPSHOT_COMMAND.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack24/PACK24_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack24/DOCTOR_CHECK_COMMAND.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack25/TIMING_SUMMARY_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack25/BRIDGE_FEED_RUNBOOK.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack25/PACK25_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack25/PACK_STATUS_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack25/EVIDENCE_SUMMARY_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack25/DOCTOR_REPORT_INGESTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack25/REPO_SUMMARY_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack25/SEMAFOR_SUMMARY_COLLECTOR.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/big-plotun-01/BIG_PLOTUN_01_CYCLE_CONTEXT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/big-plotun-01/BIG_PLOTUN_01_TOC.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.5.0-release-bundle-qa-gate.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.8.0-docs-bundle-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.1.0-evidence-export-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.1.0-exports-bundle-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.2.0-release-bundle-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.4.0-push-manifest-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.4.0-artifact-manifest-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.3.0-evidence-manifest-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.7.0-release-bundle-handoff.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.8.0-release-bundle-export.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.0.0-reports-bundle-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.9.0-pack22-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.3.0-tag-manifest-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.6.0-evidence-manifest-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.5.0-release-bundle-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.7.0-artifact-manifest-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v44.0.0-evidence-release-bundle-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.2.0-release-notes-bundle-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v43.6.0-evidence-export-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack22/v42.9.0-schemas-bundle-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v28.0.0-feedback-loop-learning-memory-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.7.0-future-pack-estimate-model.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.6.0-reusable-pack-template-stub.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.8.0-repair-pattern-memory-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.9.0-timing-pattern-memory-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.4.0-bridge-hub-learning-handoff.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.1.0-evidence-pattern-memory-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.0.0-operator-pattern-memory-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.4.0-reusable-operator-pattern-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.2.0-pack-learning-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.3.0-next-action-pattern-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.7.0-pack-failure-memory-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.3.0-repair-pattern-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.5.0-learning-runtime-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.2.0-semafor-pattern-memory-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.9.0-pack14-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.5.0-second-brain-learning-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v27.8.0-learning-export-bundle.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.1.0-feedback-loop-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack14/v26.6.0-pack-success-memory-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.8.0-dashboard-handoff-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.8.0-operator-status-card-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.1.0-bridge-hub-control-panel-scaffold.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.0.0-semafor-status-card-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.7.0-control-panel-qa-gate.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.1.0-evidence-navigator-stub.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.5.0-risk-boundary-panel.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.2.0-dashboard-payload-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.5.0-bridge-hub-dashboard-cli.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.9.0-pack13-qa-final.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.2.0-repair-history-panel.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.9.0-timing-status-card-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.6.0-repo-status-card-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.6.0-bridge-hub-dashboard-export.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v26.0.0-bridge-hub-control-panel-lock.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.3.0-next-action-panel.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v25.4.0-human-approval-panel.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.7.0-pack-status-card-writer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.4.0-pack-status-panel-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pack13/v24.3.0-operator-panel-schema.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pricing/PLANS_AND_PRICING.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/pricing/README_PRICING_SECTION.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/CLIENT_PORTAL_SITEMAP.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/HUMAN_APPROVAL_BADGE.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/OPERATOR_CLIENT_VIEW_SPLIT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/PROTECTED_ROUTE_BLUEPRINT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/CLIENT_SESSION_BOUNDARY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/CLIENT_REPORT_VISIBILITY_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/PRIVACY_BANNER.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/CLIENT_PORTAL_SCAFFOLD.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/EVIDENCE_LINK_POLICY.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/TENANT_MODEL_BLUEPRINT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "docs/client-portal/AUTH_PROVIDER_INTERFACE_DRAFT.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        }
+      ]
+    },
+    {
+      "ok": true,
+      "source": "public",
+      "channel": "audit",
+      "files_scanned": 21,
+      "findings_count": 0,
+      "reports": [
+        {
+          "ok": true,
+          "source": "public/index.html",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/README.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/manifest.json",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/robots.txt",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/artifacts/doctor/brain-doctor-report.json",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/artifacts/doctor/brain-doctor-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/artifacts/dashboard/bridge-hub-dashboard.html",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/artifacts/dashboard/bridge-hub-dashboard.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/artifacts/dashboard/bridge-hub-feed.json",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/artifacts/viewer/index.html",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/artifacts/viewer/artifact-index.json",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/artifacts/viewer/artifact-viewer.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/faq/index.html",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/health/index.html",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/status/status.json",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/trust/index.html",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/assets/andyai-static-export-note.txt",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/client/index.html",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/client/client-report.json",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/client/client-report.md",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        },
+        {
+          "ok": true,
+          "source": "public/client-portal/index.html",
+          "channel": "audit",
+          "trust_class": "informational",
+          "findings_count": 0,
+          "findings": []
+        }
+      ]
+    }
+  ]
+}\n
