@@ -4,8 +4,8 @@
   "range": "v60.1.0 -> v66.0.0",
   "base_tag": "v60.0.1",
   "final_tag": "v66.0.0",
-  "latest_known_tag": "v65.9.0",
-  "head_short": "ec215b2",
+  "latest_known_tag": "v66.0.0",
+  "head_short": "e560b78",
   "mode": "vercel-supabase-readiness",
   "capabilities": [
     "vercel operator",
@@ -16,6 +16,6 @@
     "tenant schema draft",
     "deployment decision matrix"
   ],
-  "semafor": {"green": 122, "yellow": 1, "red": 0},
-  "timing": {"started":"2026-05-17T01:30:13Z","finished":"2026-05-17T01:31:41Z","total_ms":88258,"versions_completed":59,"average_phase_ms":1495,"slowest_phase":{"version":"v61.6.0","title":"Vercel Operator Smoke Test","ms":3798},"fastest_phase":{"version":"v61.8.0","title":"Vercel Operator Runbook","ms":1211},"estimated_next_20_version_pack_ms":29900,"estimated_next_40_version_pack_ms":59800,"estimated_next_60_version_pack_ms":89700}
+  "semafor": {"green": 124, "yellow": 1, "red": 0},
+  "timing": {"started":"2026-05-17T01:30:13Z","finished":"2026-05-17T01:31:45Z","total_ms":92159,"versions_completed":60,"average_phase_ms":1535,"slowest_phase":{"version":"v61.6.0","title":"Vercel Operator Smoke Test","ms":3798},"fastest_phase":{"version":"v61.8.0","title":"Vercel Operator Runbook","ms":1211},"estimated_next_20_version_pack_ms":30700,"estimated_next_40_version_pack_ms":61400,"estimated_next_60_version_pack_ms":92100}
 }
