@@ -1,14 +1,14 @@
 {
   "kind": "andyai.bridge_hub.dashboard_feed",
   "version": "1.0",
-  "generated_at": "2026-05-17T00:17:07Z",
+  "generated_at": "2026-05-17T00:17:08Z",
   "repo": {
     "repo": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "1d43c3f",
-    "latest_tag": "v48.7.0",
+    "head": "5ada8c0",
+    "latest_tag": "v48.9.0",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
-    "generated_at": "2026-05-17T00:17:07Z"
+    "generated_at": "2026-05-17T00:17:08Z"
   },
   "cards": [
     {
@@ -18,10 +18,10 @@
       "data": {
         "repo": "andyai-second-brain",
         "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-        "head": "1d43c3f",
-        "latest_tag": "v48.7.0",
+        "head": "5ada8c0",
+        "latest_tag": "v48.9.0",
         "remote": "git@github.com:kolundzic/andyai-second-brain.git",
-        "generated_at": "2026-05-17T00:17:07Z"
+        "generated_at": "2026-05-17T00:17:08Z"
       }
     },
     {
@@ -120,7 +120,7 @@
       "status": "ok",
       "data": {
         "schemas": 49,
-        "docs": 369,
+        "docs": 370,
         "evidence": 186,
         "reports": 49,
         "exports": 14
