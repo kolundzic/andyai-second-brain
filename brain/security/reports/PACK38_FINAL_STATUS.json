@@ -1,0 +1,8 @@
+{
+  "kind": "andyai.second_brain.pack38_logic_layer_defense_status",
+  "generated_at": "2026-05-17T02:56:31Z",
+  "range": "v74.1.0 -> v76.0.0",
+  "final_tag": "v76.0.0",
+  "status": "logic-layer-defense-ready",
+  "canon": "Machine output is not automatically safe. Safe output is machine output that passed privacy, trust, logic-layer and human approval gates."
+}
