@@ -1,13 +1,14 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T01:30:43Z",
+  "generated_at": "2026-05-17T01:30:45Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "8307201",
+    "head": "f86c025",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
+      "v61.9.0",
       "v61.8.0",
       "v61.7.0",
       "v61.6.0",
@@ -26,8 +27,7 @@
       "v60.3.0",
       "v60.2.0",
       "v60.1.0",
-      "v60.0.1",
-      "v60.0.0"
+      "v60.0.1"
     ]
   },
   "sections": [
@@ -1714,6 +1714,12 @@
           "name": "evidence.md",
           "size": 23,
           "type": "md"
+        },
+        {
+          "path": "evidence/plotun-30-32/v62.0.0/evidence.md",
+          "name": "evidence.md",
+          "size": 23,
+          "type": "md"
         }
       ]
     },
@@ -1904,7 +1910,7 @@
         {
           "path": "brain/vercel-operator/exports/vercel-operator-readiness.zip",
           "name": "vercel-operator-readiness.zip",
-          "size": 2462,
+          "size": 2466,
           "type": "zip"
         },
         {
@@ -3537,6 +3543,12 @@
           "path": "release-notes/v61.9.0.md",
           "name": "v61.9.0.md",
           "size": 30,
+          "type": "md"
+        },
+        {
+          "path": "release-notes/v62.0.0.md",
+          "name": "v62.0.0.md",
+          "size": 35,
           "type": "md"
         }
       ]
