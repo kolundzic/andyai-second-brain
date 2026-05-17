@@ -1,0 +1,7 @@
+{
+  "kind": "andyai.second_brain.pack42_r3_authoritative_status",
+  "status": "complete",
+  "real_client_data_allowed": false,
+  "tag": "v84.0.3",
+  "finalizer_safe_rule": "authoritative repair reasserted all required files before verify/commit/tag"
+}

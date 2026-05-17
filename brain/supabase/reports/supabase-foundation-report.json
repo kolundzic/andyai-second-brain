@@ -1,0 +1,13 @@
+{
+  "kind": "andyai.second_brain.supabase_protected_data_foundation",
+  "status": "blueprint_ready",
+  "real_client_data_allowed": false,
+  "requires_before_real_data": [
+    "RLS review",
+    "storage privacy review",
+    "service role boundary review",
+    "privacy firewall",
+    "logic-layer firewall",
+    "human approval"
+  ]
+}

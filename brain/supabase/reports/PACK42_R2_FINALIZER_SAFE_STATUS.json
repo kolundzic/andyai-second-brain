@@ -1,0 +1,7 @@
+{
+  "kind": "andyai.second_brain.pack42_r2_finalizer_safe_status",
+  "status": "complete",
+  "real_client_data_allowed": false,
+  "finalizer_safe_rule": "run generators and verifiers before final git add/commit/tag",
+  "tag": "v84.0.2"
+}

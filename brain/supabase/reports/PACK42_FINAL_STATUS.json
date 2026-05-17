@@ -1,0 +1,8 @@
+{
+  "kind": "andyai.second_brain.pack42_final_status",
+  "range": "v82.1.0 -> v84.0.0",
+  "repair": "v84.0.3",
+  "status": "supabase_protected_data_foundation_ready",
+  "real_client_data_allowed": false,
+  "next_pack": "PACK43 Auth / Tenant Gate / Protected App Shell"
+}
