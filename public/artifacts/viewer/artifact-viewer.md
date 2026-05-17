@@ -1,11 +1,11 @@
 # AndyAI Artifact Viewer
 
-Generated: 2026-05-17T01:30:47Z
+Generated: 2026-05-17T01:30:48Z
 
 ## Repo
 
 - Name: andyai-second-brain
-- HEAD: 6a9af50
+- HEAD: f7da48d
 - Remote: git@github.com:kolundzic/andyai-second-brain.git
 
 ## Dashboard Artifacts
@@ -205,7 +205,7 @@ Generated: 2026-05-17T01:30:47Z
 - `brain/big-plotun-03/exports/big-plotun-03-export.zip` — 150068 bytes
 - `brain/bridge-hub/exports/pack10-bridge-hub-export.zip` — 9786 bytes
 - `brain/client/exports/client-report-delivery.zip` — 7572 bytes
-- `brain/client-portal/exports/client-portal-blueprint.zip` — 1223 bytes
+- `brain/client-portal/exports/client-portal-blueprint.zip` — 1224 bytes
 - `brain/dashboard/exports/bridge-hub-dashboard-feed.zip` — 4965 bytes
 - `brain/doctor/exports/brain-doctor-evidence.zip` — 1081 bytes
 - `brain/execution-exports/pack6-governed-execution-export.zip` — 4219 bytes
