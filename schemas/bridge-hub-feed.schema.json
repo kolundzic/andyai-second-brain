@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bridge Hub Dashboard Feed",
+  "type": "object",
+  "required": ["kind", "version", "generated_at", "repo", "cards"],
+  "properties": {
+    "kind": {"type": "string"},
+    "version": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "repo": {"type": "object"},
+    "cards": {"type": "array"}
+  }
+}
