@@ -1,0 +1,4 @@
+[REDACTED:client_confidential_marker] [REDACTED:client_confidential_marker] note
+email: [REDACTED:email]
+[REDACTED:api_key_assignment]
+[REDACTED:raw_conversation_marker]: this is a fake unsafe sample for scanner testing
