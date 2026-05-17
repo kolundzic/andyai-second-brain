@@ -1,13 +1,14 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T01:31:31Z",
+  "generated_at": "2026-05-17T01:31:32Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "4af2443",
+    "head": "0a152be",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
+      "v65.3.0",
       "v65.2.0",
       "v65.1.0",
       "v65.0.0",
@@ -26,8 +27,7 @@
       "v63.7.0",
       "v63.6.0",
       "v63.5.0",
-      "v63.4.0",
-      "v63.3.0"
+      "v63.4.0"
     ]
   },
   "sections": [
@@ -1918,6 +1918,12 @@
           "name": "evidence.md",
           "size": 23,
           "type": "md"
+        },
+        {
+          "path": "evidence/plotun-30-32/v65.4.0/evidence.md",
+          "name": "evidence.md",
+          "size": 23,
+          "type": "md"
         }
       ]
     },
@@ -2036,7 +2042,7 @@
         {
           "path": "brain/client-portal/exports/client-portal-blueprint.zip",
           "name": "client-portal-blueprint.zip",
-          "size": 1224,
+          "size": 1225,
           "type": "zip"
         },
         {
@@ -3945,6 +3951,12 @@
           "path": "release-notes/v65.3.0.md",
           "name": "v65.3.0.md",
           "size": 44,
+          "type": "md"
+        },
+        {
+          "path": "release-notes/v65.4.0.md",
+          "name": "v65.4.0.md",
+          "size": 34,
           "type": "md"
         }
       ]
