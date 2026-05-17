@@ -1,0 +1,66 @@
+{
+  "kind": "andyai.privacy_allowlist.git_remote_cleanup",
+  "version": "v66.0.2",
+  "generated_at": "2026-05-17T01:45:51Z",
+  "allowlisted_exact_matches": [
+    "git@github.com"
+  ],
+  "public_gate": {
+    "ok": true,
+    "scanned_at": "2026-05-17T01:45:50Z",
+    "paths": [
+      "public"
+    ],
+    "files_scanned": 16,
+    "findings_count": 0,
+    "findings": []
+  },
+  "vercel_readiness": {
+    "kind": "andyai.vercel_operator.readiness",
+    "generated_at": "2026-05-17T01:45:51Z",
+    "ok": true,
+    "privacy_gate_ok": true,
+    "note": "privacy_gate_ok may be false when findings exist; human review is required before production deploy.",
+    "checks": {
+      "public_index": true,
+      "public_manifest": true,
+      "vercel_json": true,
+      "client_page": true,
+      "privacy_firewall": true,
+      "privacy_gate_ok": true
+    },
+    "refresh": {
+      "artifact_viewer": {
+        "ok": true,
+        "code": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"json\": \"brain/viewer/index/artifact-index.json\",\n  \"markdown\": \"brain/viewer/reports/artifact-viewer.md\",\n  \"html\": \"brain/viewer/html/index.html\"\n}",
+        "stderr": ""
+      },
+      "vercel_export": {
+        "ok": true,
+        "code": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"index\": \"public/index.html\",\n  \"manifest\": \"public/manifest.json\",\n  \"files\": [\n    \"index.html\",\n    \"artifacts/viewer/index.html\",\n    \"artifacts/viewer/artifact-index.json\",\n    \"artifacts/viewer/artifact-viewer.md\",\n    \"artifacts/dashboard/bridge-hub-dashboard.html\",\n    \"artifacts/dashboard/bridge-hub-feed.json\",\n    \"artifacts/dashboard/bridge-hub-dashboard.md\",\n    \"artifacts/doctor/brain-doctor-report.json\",\n    \"artifacts/doctor/brain-doctor-report.md\"\n  ]\n}",
+        "stderr": ""
+      },
+      "vercel_readiness": {
+        "ok": true,
+        "code": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"checked_at\": \"2026-05-17T01:45:51Z\",\n  \"checks\": {\n    \"public_index\": true,\n    \"manifest\": true,\n    \"vercel_json\": true,\n    \"viewer\": true,\n    \"dashboard\": true\n  },\n  \"export\": {\n    \"ok\": true,\n    \"index\": \"public/index.html\",\n    \"manifest\": \"public/manifest.json\",\n    \"files\": [\n      \"index.html\",\n      \"artifacts/viewer/index.html\",\n      \"artifacts/viewer/artifact-index.json\",\n      \"artifacts/viewer/artifact-viewer.md\",\n      \"artifacts/dashboard/bridge-hub-dashboard.html\",\n      \"artifacts/dashboard/bridge-hub-feed.json\",\n      \"artifacts/dashboard/bridge-hub-dashboard.md\",\n      \"artifacts/doctor/brain-doctor-report.json\",\n      \"artifacts/doctor/brain-doctor-report.md\"\n    ]\n  }\n}",
+        "stderr": ""
+      },
+      "client_report": {
+        "ok": true,
+        "code": 0,
+        "stdout": "{\n  \"ok\": true,\n  \"public_html\": \"public/client/index.html\",\n  \"public_json\": \"public/client/client-report.json\",\n  \"public_md\": \"public/client/client-report.md\"\n}",
+        "stderr": ""
+      }
+    },
+    "privacy_gate": {
+      "ok": true,
+      "code": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"scanned_at\": \"2026-05-17T01:45:51Z\",\n  \"paths\": [\n    \"public\"\n  ],\n  \"files_scanned\": 16,\n  \"findings_count\": 0,\n  \"findings\": []\n}",
+      "stderr": ""
+    }
+  },
+  "rule": "git@github.com is allowed only as Git remote metadata; real emails remain detectable."
+}\n

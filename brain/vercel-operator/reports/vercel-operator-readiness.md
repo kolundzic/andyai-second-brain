@@ -5,6 +5,6 @@
 - vercel_json: True
 - client_page: True
 - privacy_firewall: True
-- privacy_gate_ok: False
+- privacy_gate_ok: True
 
 Human approval required before production deploy.

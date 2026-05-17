@@ -1,76 +1,19 @@
 {
   "kind": "andyai.privacy_audit",
-  "generated_at": "2026-05-17T01:18:18Z",
+  "generated_at": "2026-05-17T01:45:54Z",
   "public_gate": {
-    "ok": false,
-    "scanned_at": "2026-05-17T01:18:18Z",
+    "ok": true,
+    "scanned_at": "2026-05-17T01:45:54Z",
     "paths": [
       "public"
     ],
-    "files_scanned": 15,
-    "findings_count": 8,
-    "findings": [
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-dashboard.html",
-        "line": 24,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-dashboard.md",
-        "line": 10,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-dashboard.md",
-        "line": 21,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-feed.json",
-        "line": 10,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-feed.json",
-        "line": 23,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/viewer/artifact-index.json",
-        "line": 9,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/viewer/artifact-viewer.md",
-        "line": 9,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/manifest.json",
-        "line": 8,
-        "match_preview": "git@github.com"
-      }
-    ]
+    "files_scanned": 16,
+    "findings_count": 0,
+    "findings": []
   },
   "general_scan": {
     "ok": false,
-    "scanned_at": "2026-05-17T01:18:18Z",
+    "scanned_at": "2026-05-17T01:45:54Z",
     "paths": [
       "public",
       "brain/client",
@@ -78,8 +21,8 @@
       "docs",
       "examples"
     ],
-    "files_scanned": 460,
-    "findings_count": 23,
+    "files_scanned": 503,
+    "findings_count": 16,
     "findings": [
       {
         "group": "client_data",
@@ -145,6 +88,13 @@
         "match_preview": "confidential"
       },
       {
+        "group": "client_data",
+        "type": "client_confidential_marker",
+        "path": "docs/supabase/SUPABASE_STORAGE_BUCKET_POLICY.md",
+        "line": 1,
+        "match_preview": "confidential"
+      },
+      {
         "group": "secret",
         "type": "api_key_assignment",
         "path": "examples/privacy-unsafe/sample-unsafe-client-data.txt",
@@ -185,62 +135,6 @@
         "path": "examples/sample-decision-log.md",
         "line": 5,
         "match_preview": "2026-05-16"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-dashboard.html",
-        "line": 24,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-dashboard.md",
-        "line": 10,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-dashboard.md",
-        "line": 21,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-feed.json",
-        "line": 10,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/dashboard/bridge-hub-feed.json",
-        "line": 23,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/viewer/artifact-index.json",
-        "line": 9,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/artifacts/viewer/artifact-viewer.md",
-        "line": 9,
-        "match_preview": "git@github.com"
-      },
-      {
-        "group": "pii",
-        "type": "email",
-        "path": "public/manifest.json",
-        "line": 8,
-        "match_preview": "git@github.com"
       }
     ]
   },

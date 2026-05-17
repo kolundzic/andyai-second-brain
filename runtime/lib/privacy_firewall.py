@@ -28,6 +28,13 @@ CLIENT_MARKERS = [
     ("raw_conversation_marker", r"(?i)\b(raw conversation|chat transcript|unredacted prompt|private prompt)\b"),
 ]
 
+# Narrow false-positive allowlist.
+# This is Git SSH remote metadata, not a personal email.
+ALLOWLIST_EXACT_MATCHES = {
+    "git@github.com"
+}
+
+
 DEFAULT_SCAN_DIRS = ["public", "brain/client", "brain/vercel", "docs", "examples"]
 EXCLUDE_PARTS = {".git", "node_modules", "__pycache__", ".next", "dist", "build"}
 BINARY_SUFFIXES = {".zip", ".png", ".jpg", ".jpeg", ".gif", ".pdf", ".ico", ".webp"}
@@ -36,10 +43,19 @@ def utc_now():
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 def rel(path):
-    return str(Path(path).resolve().relative_to(ROOT))
+    resolved = Path(path).resolve()
+    try:
+        return str(resolved.relative_to(ROOT))
+    except ValueError:
+        return str(resolved)
 
 def read_text(path):
     return Path(path).read_text(errors="replace")
+
+def is_allowlisted_match(group, name, value):
+    if value in ALLOWLIST_EXACT_MATCHES:
+        return True
+    return False
 
 def should_skip(path):
     p = Path(path)
@@ -70,12 +86,15 @@ def scan_file(path):
     for group, patterns in [("secret", SECRET_PATTERNS), ("pii", PII_PATTERNS), ("client_data", CLIENT_MARKERS)]:
         for name, pattern in patterns:
             for m in re.finditer(pattern, text):
+                value = text[m.start():m.end()]
+                if is_allowlisted_match(group, name, value):
+                    continue
                 findings.append({
                     "group": group,
                     "type": name,
                     "path": rel(path),
                     "line": text.count("\n", 0, m.start()) + 1,
-                    "match_preview": text[m.start():m.end()][:80]
+                    "match_preview": value[:80]
                 })
     return findings
 

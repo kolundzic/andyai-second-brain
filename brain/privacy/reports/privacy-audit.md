@@ -1,9 +1,9 @@
 # Privacy Audit Report
 
-Generated: 2026-05-17T01:18:18Z
+Generated: 2026-05-17T01:45:54Z
 
-- Public gate findings: 8
-- General scan findings: 23
+- Public gate findings: 0
+- General scan findings: 16
 
 ## Trust Rules
 
