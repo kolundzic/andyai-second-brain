@@ -1,13 +1,14 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T00:22:20Z",
+  "generated_at": "2026-05-17T00:22:22Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "da732ea",
+    "head": "4a316a7",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
+      "v51.6.0",
       "v51.5.0",
       "v51.3.0",
       "v51.4.0",
@@ -26,8 +27,7 @@
       "v50.0.1",
       "v50.0.0",
       "v49.9.0",
-      "v49.8.0",
-      "v49.7.0"
+      "v49.8.0"
     ]
   },
   "sections": [
@@ -1652,7 +1652,7 @@
         {
           "path": "brain/viewer/exports/artifact-viewer-export.zip",
           "name": "artifact-viewer-export.zip",
-          "size": 15885,
+          "size": 15889,
           "type": "zip"
         }
       ]
