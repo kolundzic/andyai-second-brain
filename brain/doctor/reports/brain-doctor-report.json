@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "checked_at": "2026-05-17T00:13:09Z",
+  "checked_at": "2026-05-17T00:13:12Z",
   "schemas": {
     "count": 48,
     "valid": 48,
@@ -8,8 +8,9 @@
     "invalid_items": []
   },
   "reports": {
-    "count": 655,
+    "count": 657,
     "sample": [
+      "brain/reports/BATTLE_PACK24_REPORT.md",
       "brain/reports/BIG_PLOTUN_01_REPORT.md",
       "brain/reports/BIG_PLOTUN_02_REPORT.md",
       "brain/reports/BIG_PLOTUN_03_REPORT.md",
@@ -28,8 +29,7 @@
       "brain/reports/TIMING_DASHBOARD_STUB.md",
       "brain/reports/brain-report.md",
       "brain/reports/bridge-hub-status-report.md",
-      "brain/reports/memory-lifecycle-report.md",
-      "brain/reports/mission-context-report.md"
+      "brain/reports/memory-lifecycle-report.md"
     ]
   },
   "evidence": {
@@ -58,8 +58,9 @@
     ]
   },
   "tags": {
-    "count": 484,
+    "count": 485,
     "latest": [
+      "v47.9.0",
       "v47.8.0",
       "v47.7.0",
       "v47.6.0",
@@ -78,8 +79,7 @@
       "v46.2.0",
       "v46.3.0",
       "v46.1.0",
-      "v46.0.1",
-      "v45.9.0"
+      "v46.0.1"
     ]
   }
 }
