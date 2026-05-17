@@ -1,0 +1,22 @@
+{
+  "kind": "andyai.second_brain.launch_readiness",
+  "generated_at": "2026-05-17T01:56:22Z",
+  "domain": "https://brain.andyai.ai",
+  "ok": true,
+  "routes": [
+    "/",
+    "/client/",
+    "/client-portal/",
+    "/health/",
+    "/status/status.json",
+    "/trust/",
+    "/faq/"
+  ],
+  "notes": [
+    "Static public surface exists.",
+    "Trust page exists.",
+    "FAQ exists.",
+    "Health page exists.",
+    "Privacy gate remains mandatory for sensitive output."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "andyai.second_brain.public_status",
+  "generated_at": "2026-05-17T01:56:22Z",
+  "domain": "https://brain.andyai.ai",
+  "status": "public-launch-candidate",
+  "routes": [
+    "/",
+    "/client/",
+    "/client-portal/",
+    "/health/",
+    "/status/status.json",
+    "/trust/",
+    "/faq/"
+  ],
+  "privacy_gate": "required-before-public-output",
+  "human_approval": "required-before-client-delivery"
+}
