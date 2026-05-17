@@ -1,0 +1,30 @@
+{
+  "repo": "andyai-second-brain",
+  "pack": "BATTLE PACK 26",
+  "range": "v50.1.0 -> v52.0.0",
+  "base_tag": "v50.0.1",
+  "final_tag": "v52.0.0",
+  "latest_known_tag": "v51.9.0",
+  "head_short": "9c6ecfb",
+  "mode": "bojno-punjenje",
+  "capabilities": [
+    "real artifact-viewer CLI",
+    "real artifact index generation",
+    "real local HTML control panel generation",
+    "real Markdown artifact index generation",
+    "real local open command",
+    "real viewer export bundle",
+    "real smoke test"
+  ],
+  "semafor": {"green": 43, "yellow": 0, "red": 0},
+  "timing": {
+  "started": "2026-05-17T00:22:08Z",
+  "finished": "2026-05-17T00:22:30Z",
+  "total_ms": 21953,
+  "versions_completed": 19,
+  "average_phase_ms": 1155,
+  "slowest_phase": {"version": "v51.9.0", "title": "Pack26 QA Final", "ms": 3655},
+  "fastest_phase": {"version": "v50.3.0", "title": "Artifact Viewer CLI Wrapper", "ms": 296},
+  "estimated_next_20_version_pack_ms": 23100
+}
+}

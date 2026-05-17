@@ -1,13 +1,14 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T00:22:29Z",
+  "generated_at": "2026-05-17T00:22:32Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "a3158c0",
+    "head": "9c6ecfb",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
+      "v51.9.0",
       "v51.8.0",
       "v51.7.0",
       "v51.6.0",
@@ -26,8 +27,7 @@
       "v50.1.0",
       "v50.2.0",
       "v50.3.0",
-      "v50.0.1",
-      "v50.0.0"
+      "v50.0.1"
     ]
   },
   "sections": [
@@ -123,6 +123,12 @@
           "path": "brain/reports/BATTLE_PACK25_REPORT.md",
           "name": "BATTLE_PACK25_REPORT.md",
           "size": 453,
+          "type": "md"
+        },
+        {
+          "path": "brain/reports/BATTLE_PACK26_REPORT.md",
+          "name": "BATTLE_PACK26_REPORT.md",
+          "size": 474,
           "type": "md"
         },
         {
@@ -1664,7 +1670,7 @@
         {
           "path": "brain/viewer/exports/artifact-viewer-export.zip",
           "name": "artifact-viewer-export.zip",
-          "size": 15969,
+          "size": 16011,
           "type": "zip"
         }
       ]
@@ -3147,6 +3153,12 @@
           "path": "release-notes/v50.0.0.md",
           "name": "v50.0.0.md",
           "size": 216,
+          "type": "md"
+        },
+        {
+          "path": "release-notes/v52.0.0.md",
+          "name": "v52.0.0.md",
+          "size": 238,
           "type": "md"
         }
       ]
