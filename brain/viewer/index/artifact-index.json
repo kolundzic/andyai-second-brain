@@ -1,13 +1,14 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T01:30:41Z",
+  "generated_at": "2026-05-17T01:30:42Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "e3e44f7",
+    "head": "6e03c6d",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
+      "v61.7.0",
       "v61.6.0",
       "v61.5.0",
       "v61.4.0",
@@ -26,8 +27,7 @@
       "v60.1.0",
       "v60.0.1",
       "v60.0.0",
-      "v59.9.0",
-      "v59.8.0"
+      "v59.9.0"
     ]
   },
   "sections": [
@@ -1699,6 +1699,12 @@
         },
         {
           "path": "evidence/plotun-30-32/v61.7.0/evidence.md",
+          "name": "evidence.md",
+          "size": 23,
+          "type": "md"
+        },
+        {
+          "path": "evidence/plotun-30-32/v61.8.0/evidence.md",
           "name": "evidence.md",
           "size": 23,
           "type": "md"
@@ -3513,6 +3519,12 @@
           "path": "release-notes/v61.7.0.md",
           "name": "v61.7.0.md",
           "size": 51,
+          "type": "md"
+        },
+        {
+          "path": "release-notes/v61.8.0.md",
+          "name": "v61.8.0.md",
+          "size": 38,
           "type": "md"
         }
       ]
