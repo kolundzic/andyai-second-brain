@@ -1,0 +1,1 @@
+# Vercel Config Integrity Check
