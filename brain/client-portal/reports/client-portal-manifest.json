@@ -1,6 +1,6 @@
 {
   "kind": "andyai.client_portal.blueprint",
-  "generated_at": "2026-05-17T01:31:29Z",
+  "generated_at": "2026-05-17T01:31:30Z",
   "routes": [
     "/client/",
     "/client-portal/",
