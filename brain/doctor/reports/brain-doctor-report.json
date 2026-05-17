@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "checked_at": "2026-05-17T00:13:02Z",
+  "checked_at": "2026-05-17T00:13:04Z",
   "schemas": {
     "count": 48,
     "valid": 48,
@@ -8,7 +8,7 @@
     "invalid_items": []
   },
   "reports": {
-    "count": 654,
+    "count": 655,
     "sample": [
       "brain/reports/BIG_PLOTUN_01_REPORT.md",
       "brain/reports/BIG_PLOTUN_02_REPORT.md",
@@ -58,8 +58,9 @@
     ]
   },
   "tags": {
-    "count": 481,
+    "count": 482,
     "latest": [
+      "v47.6.0",
       "v47.5.0",
       "v47.3.0",
       "v47.4.0",
@@ -78,8 +79,7 @@
       "v46.0.1",
       "v45.9.0",
       "v46.0.0",
-      "v45.7.0",
-      "v45.8.0"
+      "v45.7.0"
     ]
   }
 }
