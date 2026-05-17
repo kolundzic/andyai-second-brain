@@ -1,0 +1,18 @@
+{
+  "kind": "andyai.second_brain.homepage_upload_nav_link_patch",
+  "generated_at": "2026-05-17T08:06:17Z",
+  "ok": true,
+  "checked": [
+    "public/index.html",
+    "runtime/lib/homepage_builder.py",
+    "runtime/lib/protected_app_shell.py",
+    "runtime/lib/upload_intake.py"
+  ],
+  "changed": [
+    "public/index.html",
+    "runtime/lib/homepage_builder.py",
+    "runtime/lib/protected_app_shell.py"
+  ],
+  "route": "/upload/",
+  "rule": "Homepage navigation must expose Upload after PACK44."
+}

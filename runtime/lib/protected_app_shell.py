@@ -15,7 +15,8 @@ def write(path, text):
     return str(p.relative_to(ROOT))
 
 def nav():
-    return '<a href="/">Home</a><a href="/help/">Help</a><a href="/knowledge/">Knowledge</a><a href="/login/">Login</a><a href="/app/">App</a>'
+    return '<a href="/">Home</a><a href="/help/">Help</a><a href="/knowledge/">Knowledge</a><a href="/login/">Login</a><a href="/app/">App</a>
+        <a href="/upload/">Upload</a>'
 
 def base_html(title, body):
     return f"""<!doctype html>

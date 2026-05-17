@@ -149,7 +149,7 @@ def build_homepage():
         <p class="lead">AndyAI Second Brain helps you talk with your data, organize project knowledge, ask better questions, create reports, protect privacy, and publish only what is approved.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#pricing">Choose a plan</a>
-          <a class="btn dark" href="/dialog/">Ask Your Brain</a>
+          <a class="btn dark" href="/dialog/">Ask Your Brain</a> <a class="btn" href="/upload/">Upload</a>
           <a class="btn" href="/trust/">See trust layer</a>
         </div>
         <div class="hero-grid">
