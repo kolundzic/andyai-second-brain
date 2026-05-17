@@ -1,6 +1,6 @@
 # Brain Doctor Report
 
-Generated: 2026-05-17T00:12:56Z
+Generated: 2026-05-17T00:13:00Z
 Status: PASS
 
 ## Counts
@@ -9,4 +9,4 @@ Status: PASS
 - Invalid schemas: 0
 - Reports/docs: 654
 - Evidence files: 185
-- Tags: 476
+- Tags: 480
