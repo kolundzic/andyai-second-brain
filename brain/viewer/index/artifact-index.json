@@ -1,13 +1,14 @@
 {
   "kind": "andyai.artifact_viewer.index",
   "version": "1.0",
-  "generated_at": "2026-05-17T00:22:22Z",
+  "generated_at": "2026-05-17T00:22:25Z",
   "repo": {
     "name": "andyai-second-brain",
     "path": "/Users/andrijakolundzic/Documents/Projects/andyai-second-brain",
-    "head": "4a316a7",
+    "head": "cbcf9fc",
     "remote": "git@github.com:kolundzic/andyai-second-brain.git",
     "latest_tags": [
+      "v51.7.0",
       "v51.6.0",
       "v51.5.0",
       "v51.3.0",
@@ -26,8 +27,7 @@
       "v50.3.0",
       "v50.0.1",
       "v50.0.0",
-      "v49.9.0",
-      "v49.8.0"
+      "v49.9.0"
     ]
   },
   "sections": [
@@ -1524,6 +1524,12 @@
           "type": "md"
         },
         {
+          "path": "evidence/pack26/BATTLE_PACK26_EVIDENCE.md",
+          "name": "BATTLE_PACK26_EVIDENCE.md",
+          "size": 123,
+          "type": "md"
+        },
+        {
           "path": "evidence/pack8/TIMING_AND_LEARNING_NOTE.md",
           "name": "TIMING_AND_LEARNING_NOTE.md",
           "size": 286,
@@ -1569,6 +1575,12 @@
           "path": "brain/battle-pack25/exports/battle-pack25-final-dashboard-feed.zip",
           "name": "battle-pack25-final-dashboard-feed.zip",
           "size": 4966,
+          "type": "zip"
+        },
+        {
+          "path": "brain/battle-pack26/exports/battle-pack26-artifact-viewer.zip",
+          "name": "battle-pack26-artifact-viewer.zip",
+          "size": 15890,
           "type": "zip"
         },
         {
@@ -1652,7 +1664,7 @@
         {
           "path": "brain/viewer/exports/artifact-viewer-export.zip",
           "name": "artifact-viewer-export.zip",
-          "size": 15889,
+          "size": 15971,
           "type": "zip"
         }
       ]
