@@ -1,0 +1,1 @@
+# Brain Dialog Report\n\n- Dialog page created.\n- Upload zone created.\n- Camera scan preview created.\n- Rich Help page created from README.\n- Menu Help link integrated.\n

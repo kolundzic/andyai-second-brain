@@ -1,0 +1,34 @@
+{
+  "kind": "andyai.second_brain.brain_dialog_upload_memory",
+  "generated_at": "2026-05-17T03:19:31Z",
+  "ok": true,
+  "pages": [
+    "public/dialog/index.html",
+    "public/help/index.html",
+    "public/capture/index.html"
+  ],
+  "supported_types": [
+    ".pdf",
+    ".doc",
+    ".docx",
+    ".xls",
+    ".xlsx",
+    ".csv",
+    ".txt",
+    ".md",
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".webp"
+  ],
+  "capabilities": [
+    "ask your second brain",
+    "upload zone prototype",
+    "memory intake model",
+    "mobile camera scan preview",
+    "pdf word excel processing spec",
+    "search sort compare print spec",
+    "rich help README HTML"
+  ],
+  "trust_boundary": "privacy, trust, logic-layer and human approval gates remain required"
+}\n
