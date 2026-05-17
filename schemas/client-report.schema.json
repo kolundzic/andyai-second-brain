@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AndyAI Client Report",
+  "type": "object",
+  "required": ["kind", "version", "generated_at", "client", "executive_summary", "recommendations", "evidence_trust_block", "next_actions"],
+  "properties": {
+    "kind": {"type": "string"},
+    "version": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "client": {"type": "object"},
+    "executive_summary": {"type": "object"},
+    "recommendations": {"type": "array"},
+    "evidence_trust_block": {"type": "object"},
+    "next_actions": {"type": "array"}
+  }
+}
