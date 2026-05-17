@@ -1,0 +1,169 @@
+{
+  "kind": "andyai.second_brain.memory_index",
+  "generated_at": "2026-05-17T09:05:20Z",
+  "ok": true,
+  "real_confidential_memory_allowed": false,
+  "records": [
+    {
+      "memory_id": "mem-demo-001",
+      "tenant_id": "demo-tenant",
+      "owner_id": "demo-user",
+      "title": "Upload intake pipeline",
+      "summary": "PACK44 introduced a controlled upload corridor with metadata, pre-scans, job queue and audit.",
+      "source_type": "upload_intake_report",
+      "source_id": "upload-demo-001",
+      "evidence_refs": [
+        "brain/upload/reports/upload-intake-pipeline.json"
+      ],
+      "tags": [
+        "pack44",
+        "upload",
+        "storage",
+        "safety"
+      ],
+      "classification": "public_demo",
+      "lifecycle": "prototype",
+      "confidence": 0.91,
+      "event_time": "2026-05-17T09:05:20Z",
+      "recall_allowed": true
+    },
+    {
+      "memory_id": "mem-demo-002",
+      "tenant_id": "demo-tenant",
+      "owner_id": "demo-user",
+      "title": "Protected app shell",
+      "summary": "PACK43 introduced login, app shell, access denied page and tenant boundary documentation.",
+      "source_type": "auth_tenant_gate_report",
+      "source_id": "auth-demo-001",
+      "evidence_refs": [
+        "brain/auth/reports/auth-tenant-gate.json"
+      ],
+      "tags": [
+        "pack43",
+        "auth",
+        "tenant",
+        "app-shell"
+      ],
+      "classification": "public_demo",
+      "lifecycle": "prototype",
+      "confidence": 0.9,
+      "event_time": "2026-05-17T09:05:20Z",
+      "recall_allowed": true
+    },
+    {
+      "memory_id": "mem-demo-003",
+      "tenant_id": "demo-tenant",
+      "owner_id": "demo-user",
+      "title": "Client confidential placeholder",
+      "summary": "Example of a memory that exists as a blocked placeholder and must not be recalled/exported.",
+      "source_type": "policy_demo",
+      "source_id": "blocked-demo-001",
+      "evidence_refs": [],
+      "tags": [
+        "blocked",
+        "privacy"
+      ],
+      "classification": "client_confidential",
+      "lifecycle": "blocked",
+      "confidence": 0.5,
+      "event_time": "2026-05-17T09:05:20Z",
+      "recall_allowed": false
+    }
+  ],
+  "search_demo": {
+    "query": "upload",
+    "results": [
+      {
+        "memory_id": "mem-demo-001",
+        "tenant_id": "demo-tenant",
+        "owner_id": "demo-user",
+        "title": "Upload intake pipeline",
+        "summary": "PACK44 introduced a controlled upload corridor with metadata, pre-scans, job queue and audit.",
+        "source_type": "upload_intake_report",
+        "source_id": "upload-demo-001",
+        "evidence_refs": [
+          "brain/upload/reports/upload-intake-pipeline.json"
+        ],
+        "tags": [
+          "pack44",
+          "upload",
+          "storage",
+          "safety"
+        ],
+        "classification": "public_demo",
+        "lifecycle": "prototype",
+        "confidence": 0.91,
+        "event_time": "2026-05-17T09:05:20Z",
+        "recall_allowed": true
+      }
+    ]
+  },
+  "timeline_demo": [
+    {
+      "memory_id": "mem-demo-001",
+      "tenant_id": "demo-tenant",
+      "owner_id": "demo-user",
+      "title": "Upload intake pipeline",
+      "summary": "PACK44 introduced a controlled upload corridor with metadata, pre-scans, job queue and audit.",
+      "source_type": "upload_intake_report",
+      "source_id": "upload-demo-001",
+      "evidence_refs": [
+        "brain/upload/reports/upload-intake-pipeline.json"
+      ],
+      "tags": [
+        "pack44",
+        "upload",
+        "storage",
+        "safety"
+      ],
+      "classification": "public_demo",
+      "lifecycle": "prototype",
+      "confidence": 0.91,
+      "event_time": "2026-05-17T09:05:20Z",
+      "recall_allowed": true
+    },
+    {
+      "memory_id": "mem-demo-002",
+      "tenant_id": "demo-tenant",
+      "owner_id": "demo-user",
+      "title": "Protected app shell",
+      "summary": "PACK43 introduced login, app shell, access denied page and tenant boundary documentation.",
+      "source_type": "auth_tenant_gate_report",
+      "source_id": "auth-demo-001",
+      "evidence_refs": [
+        "brain/auth/reports/auth-tenant-gate.json"
+      ],
+      "tags": [
+        "pack43",
+        "auth",
+        "tenant",
+        "app-shell"
+      ],
+      "classification": "public_demo",
+      "lifecycle": "prototype",
+      "confidence": 0.9,
+      "event_time": "2026-05-17T09:05:20Z",
+      "recall_allowed": true
+    },
+    {
+      "memory_id": "mem-demo-003",
+      "tenant_id": "demo-tenant",
+      "owner_id": "demo-user",
+      "title": "Client confidential placeholder",
+      "summary": "Example of a memory that exists as a blocked placeholder and must not be recalled/exported.",
+      "source_type": "policy_demo",
+      "source_id": "blocked-demo-001",
+      "evidence_refs": [],
+      "tags": [
+        "blocked",
+        "privacy"
+      ],
+      "classification": "client_confidential",
+      "lifecycle": "blocked",
+      "confidence": 0.5,
+      "event_time": "2026-05-17T09:05:20Z",
+      "recall_allowed": false
+    }
+  ],
+  "safe_recall_rule": "tenant + permission + privacy + logic + lifecycle + recall_allowed"
+}
