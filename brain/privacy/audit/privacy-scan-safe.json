@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "scanned_at": "2026-05-17T01:17:43Z",
+  "paths": [
+    "examples/privacy-safe"
+  ],
+  "files_scanned": 1,
+  "findings_count": 0,
+  "findings": []
+}
