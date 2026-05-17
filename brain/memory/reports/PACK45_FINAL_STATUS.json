@@ -1,0 +1,7 @@
+{
+  "kind": "andyai.second_brain.pack45_final_status",
+  "range": "v88.1.0 -> v90.0.0",
+  "status": "memory_index_search_timeline_ready",
+  "real_confidential_memory_allowed": false,
+  "next_pack": "PACK46 Approval / Audit / Export Gate Layer"
+}
