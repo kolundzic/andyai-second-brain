@@ -1,0 +1,5 @@
+{
+  "case": "valid",
+  "ok": true,
+  "purpose": "brain-doctor positive JSON parse case"
+}
