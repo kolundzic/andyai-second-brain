@@ -100,6 +100,17 @@ Includes unlimited internal projects, multi-client delivery, operator registry, 
 - [Plans and Pricing](./docs/pricing/PLANS_AND_PRICING.md)
 - [First Tutorial Scaffold](./docs/tutorials/FIRST_TUTORIAL_SCAFFOLD.md)
 - [Front Page Copy Deck](./docs/marketing/FRONT_PAGE_COPY_DECK.md)
+- [AOC — AndyAI Obsidian Cockpit](./modules/aoc/README.md)
+
+## AOC — AndyAI Obsidian Cockpit
+
+AOC is the human-facing Obsidian cockpit module for Second Brain and the wider AndyAI system.
+
+> **OBSIDIAN DISPLAYS AND PROPOSES. ANDYAI GOVERNS AND EXECUTES.**
+
+Current proof: `AOC–OBSIDIAN–READONLY–ADAPTER–01C` — PASS. The adapter uses a strict allow-list around the official Obsidian CLI and does not expose write/delete/eval/plugin-control surfaces.
+
+Start here: [`modules/aoc/`](./modules/aoc/README.md)
 
 ## Public demo routes
 
