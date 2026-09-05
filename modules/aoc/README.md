@@ -1,7 +1,7 @@
 # 🅰️ AOC — AndyAI Obsidian Cockpit
 
-**Version:** 0.3.0  
-**Status:** READ-ONLY OBSIDIAN + KORMILO VAULT PROOF  
+**Version:** 0.4.0  
+**Status:** HOST CHECK READY  
 **Home:** `kolundzic/andyai-second-brain/modules/aoc`
 
 ## Glavno pravilo
@@ -15,47 +15,52 @@ AOC je jednostavan ekran za rad sa AndyAI sistemom. Obsidian nije mesto koje sam
 - `AOC-RECON-01A` — proverili smo šta Obsidian može.
 - `AOC-KORMILO-PROOF-01B` — definisali smo šta KORMILO mora da pokaže.
 - `AOC-OBSIDIAN-READONLY-ADAPTER-01C` — napravili smo adapter koji samo čita.
-- `AOC-KORMILO-LIVE-VAULT-01D` — napravili smo mali Obsidian vault i iz njegovih beleški sastavili KORMILO pregled.
+- `AOC-KORMILO-LIVE-VAULT-01D` — mali Obsidian vault daje tačan KORMILO pregled. Testovi: **6/6 PASS**.
+- `AOC-OBSIDIAN-HOST-CHECK-01E` — skripta za proveru na pravom Mac/HP računaru je spremna. **Još nije PASS dok se tamo ne pokrene.**
 
-## 01D — rezultat
+## 01E — šta sada radimo
 
-KORMILO iz vaulta uspešno prikazuje:
+Na računaru na kome stvarno radi Obsidian:
 
-- trenutni projekat
-- trenutni repo
-- gde smo stali
-- poslednji kanon
-- otvorene teme
-- povezane projekte
-- sledeća 3 koraka
-- odluke koje čekaju Andyja
-- izvore iz kojih je podatak pročitan
+1. proverimo da li radi `obsidian` komanda
+2. prikažemo poznate vaultove
+3. izaberemo vault
+4. kroz read-only adapter pročitamo četiri AOC beleške
+5. proverimo da li dobijamo isti KORMILO rezultat
 
-Testovi: **6/6 PASS**.
+AOC i dalje ne menja beleške i nema pravo da izvršava akcije.
 
-U vault smo namerno ubacili staru belešku sa opasnom instrukcijom. Sistem je nije koristio.
+## Jednostavne komande
 
-## Gde su fajlovi
-
-- `vault-proof-01d/` — mali Obsidian vault za proveru
-- `scripts/build_kormilo.py` — čita beleške i pravi KORMILO pregled
-- `tests/test_build_kormilo.py` — testovi
-- `evidence/AOC-KORMILO-LIVE-VAULT-01D-PROOF.md` — rezultat testa
-- `canon/AOC-KORMILO-LIVE-VAULT-01D.md` — kratko objašnjenje proofa
-
-## Kako se proverava
+Iz foldera `modules/aoc`:
 
 ```bash
-python3 scripts/build_kormilo.py vault-proof-01d
-python3 -m unittest -v tests/test_build_kormilo.py
+python3 scripts/host_check.py --list
 ```
 
-## Važno ograničenje
+Zatim:
 
-Ovaj proof radi nad pravim Obsidian-kompatibilnim folderom, ali iz ovog okruženja nemamo pristup Obsidian aplikaciji koja trenutno radi na Andyjevom MacBook-u ili HP/Omarchy računaru.
+```bash
+python3 scripts/host_check.py --vault "VAULT NAME"
+```
 
-Zato je sledeći mali korak:
+## Fajlovi za 01E
 
-## `AOC–OBSIDIAN–HOST–CHECK–01E`
+- `canon/AOC-OBSIDIAN-HOST-CHECK-01E.md` — šta proveravamo
+- `scripts/host_check.py` — prava host provera preko Obsidian CLI-ja
+- `tests/test_host_check.py` — testovi skripte
+- `evidence/AOC-OBSIDIAN-HOST-CHECK-01E-PENDING.md` — status dok ne pokrenemo proveru na pravom računaru
 
-Na jednom stvarnom računaru povezaćemo read-only adapter sa lokalnim Obsidian vaultom i proveriti da dobijamo isti KORMILO rezultat.
+## PASS uslov za 01E
+
+Mora da pokaže:
+
+- Obsidian verziju
+- pravi vault
+- trenutni projekat i repo
+- tačno 3 sledeća koraka
+- izvore korišćenih beleški
+- `authority_state = HUMAN_REQUIRED`
+- `execution_allowed = false`
+
+Tek tada 01E zaključavamo kao PASS.
