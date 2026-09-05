@@ -71,7 +71,7 @@ AndyAI Second Brain separates private input, internal memory, trust gates, publi
 ## Plans & Pricing
 
 <p align="center">
-  <img src="./docs/visuals/plans-and-pricing.png" alt="Plans and pricing" width="100%">
+  <img src="./docs/visuals/plans-and-pricing.png" alt="Plans and Pricing" width="100%">
 </p>
 
 ### Starter — $19/mo
@@ -104,11 +104,13 @@ Includes unlimited internal projects, multi-client delivery, operator registry, 
 
 ## AOC — AndyAI Obsidian Cockpit
 
-AOC is the human-facing Obsidian cockpit module for Second Brain and the wider AndyAI system.
+AOC is the Obsidian screen for working with Second Brain and the wider AndyAI system.
 
-> **OBSIDIAN DISPLAYS AND PROPOSES. ANDYAI GOVERNS AND EXECUTES.**
+> **Obsidian prikazuje i predlaže. AndyAI kontroliše šta sme da se izvrši.**
 
-Current proof: `AOC–OBSIDIAN–READONLY–ADAPTER–01C` — PASS. The adapter uses a strict allow-list around the official Obsidian CLI and does not expose write/delete/eval/plugin-control surfaces.
+Current proof: `AOC–KORMILO–LIVE–VAULT–01D` — PASS. A small Obsidian-compatible vault is read without changing its notes, and AOC builds a KORMILO summary showing the project, repo, current status, open items, next steps, decisions and source files. A deliberately stale note with a dangerous instruction is ignored.
+
+Next: `AOC–OBSIDIAN–HOST–CHECK–01E` — run the same read-only path against a local vault on Andy's MacBook or HP/Omarchy machine.
 
 Start here: [`modules/aoc/`](./modules/aoc/README.md)
 
