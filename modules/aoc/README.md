@@ -1,70 +1,61 @@
 # 🅰️ AOC — AndyAI Obsidian Cockpit
 
-**Version:** 0.2.0  
-**Status:** RECON + KORMILO CONTRACT + READ-ONLY ADAPTER PROOF  
-**Initial home:** `kolundzic/andyai-second-brain` (module until a dedicated repo is justified)
+**Version:** 0.3.0  
+**Status:** READ-ONLY OBSIDIAN + KORMILO VAULT PROOF  
+**Home:** `kolundzic/andyai-second-brain/modules/aoc`
 
-## Canon
+## Glavno pravilo
 
-> **OBSIDIAN DISPLAYS AND PROPOSES. ANDYAI GOVERNS AND EXECUTES.**
+> **Obsidian prikazuje i predlaže. AndyAI kontroliše šta sme da se izvrši.**
 
-AOC is the human cockpit for AndyAI. Obsidian may show context, capture notes and surface proposals, but it is not the authoritative memory store, authority layer or execution engine.
+AOC je jednostavan ekran za rad sa AndyAI sistemom. Obsidian nije mesto koje samo odlučuje šta sme da se uradi.
 
-## System boundary
+## Šta je do sada provereno
 
-```text
-ANDY
-  |
-  v
-OBSIDIAN COCKPIT
-  | read / display / propose
-  v
-ANDYAI BRIDGE
-  +--> ALOG — continuous trace
-  +--> GOM — governed memory
-  +--> project repos / capsules
-  |
-  v
-AAA — approval / STOP / authority
-  |
-  v
-AGEG — governed execution
-  |
-  v
-ALM / APOA / adapters
-  |
-  v
-RECEIPT
-```
+- `AOC-RECON-01A` — proverili smo šta Obsidian može.
+- `AOC-KORMILO-PROOF-01B` — definisali smo šta KORMILO mora da pokaže.
+- `AOC-OBSIDIAN-READONLY-ADAPTER-01C` — napravili smo adapter koji samo čita.
+- `AOC-KORMILO-LIVE-VAULT-01D` — napravili smo mali Obsidian vault i iz njegovih beleški sastavili KORMILO pregled.
 
-## Proofs
+## 01D — rezultat
 
-- `canon/AOC-RECON-01A.md` — Obsidian capability + security reconnaissance.
-- `canon/AOC-KORMILO-PROOF-01B.md` — KORMILO cockpit contract.
-- `contracts/aoc-kormilo-contract-v0.1.json` — machine-readable contract.
-- `scripts/validate_kormilo.py` — deterministic validator.
-- `fixtures/kormilo-pass.json` — positive proof fixture.
-- `fixtures/kormilo-fail-authority.json` — adversarial fixture proving execution authority is rejected.
-- `canon/AOC-OBSIDIAN-READONLY-ADAPTER-01C.md` — strict Obsidian CLI read-only adapter proof.
-- `contracts/aoc-obsidian-readonly-contract-v0.1.json` — allowed commands/parameters and denied mutation surfaces.
-- `scripts/obsidian_readonly_adapter.py` — typed wrapper using `shell=False` and a fixed `obsidian` executable.
-- `tests/test_obsidian_readonly_adapter.py` — positive + adversarial enforcement tests.
-- `evidence/AOC-OBSIDIAN-READONLY-ADAPTER-01C-PROOF.md` — captured proof result.
+KORMILO iz vaulta uspešno prikazuje:
 
-## Run
+- trenutni projekat
+- trenutni repo
+- gde smo stali
+- poslednji kanon
+- otvorene teme
+- povezane projekte
+- sledeća 3 koraka
+- odluke koje čekaju Andyja
+- izvore iz kojih je podatak pročitan
+
+Testovi: **6/6 PASS**.
+
+U vault smo namerno ubacili staru belešku sa opasnom instrukcijom. Sistem je nije koristio.
+
+## Gde su fajlovi
+
+- `vault-proof-01d/` — mali Obsidian vault za proveru
+- `scripts/build_kormilo.py` — čita beleške i pravi KORMILO pregled
+- `tests/test_build_kormilo.py` — testovi
+- `evidence/AOC-KORMILO-LIVE-VAULT-01D-PROOF.md` — rezultat testa
+- `canon/AOC-KORMILO-LIVE-VAULT-01D.md` — kratko objašnjenje proofa
+
+## Kako se proverava
 
 ```bash
-python3 scripts/validate_kormilo.py fixtures/kormilo-pass.json
-python3 scripts/validate_kormilo.py fixtures/kormilo-fail-authority.json
-python3 -m unittest -v tests/test_obsidian_readonly_adapter.py
+python3 scripts/build_kormilo.py vault-proof-01d
+python3 -m unittest -v tests/test_build_kormilo.py
 ```
 
-Expected: positive KORMILO fixture PASS; adversarial KORMILO fixture FAIL; 01C adapter tests PASS.
+## Važno ograničenje
 
-## Current proof
+Ovaj proof radi nad pravim Obsidian-kompatibilnim folderom, ali iz ovog okruženja nemamo pristup Obsidian aplikaciji koja trenutno radi na Andyjevom MacBook-u ili HP/Omarchy računaru.
 
-`AOC–OBSIDIAN–READONLY–ADAPTER–01C` — PASS. The official Obsidian CLI is wrapped behind an explicit read-only command/parameter contract.
+Zato je sledeći mali korak:
 
-## Next proof
+## `AOC–OBSIDIAN–HOST–CHECK–01E`
 
-`AOC–KORMILO–LIVE–VAULT–01D` — run the read-only adapter against a real AndyAI vault and assemble the KORMILO contract from bounded sources.
+Na jednom stvarnom računaru povezaćemo read-only adapter sa lokalnim Obsidian vaultom i proveriti da dobijamo isti KORMILO rezultat.
