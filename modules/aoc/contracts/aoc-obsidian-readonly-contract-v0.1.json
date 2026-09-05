@@ -1,0 +1,42 @@
+{
+  "contract_id": "AOC_OBSIDIAN_READONLY_ADAPTER_01C",
+  "version": "0.1.0",
+  "binary": "obsidian",
+  "allowed_commands": {
+    "vault": ["info"],
+    "files": ["folder", "ext", "total"],
+    "folders": ["folder", "total"],
+    "file": ["file", "path"],
+    "read": ["file", "path"],
+    "search": ["query", "path", "limit", "format", "total", "case"],
+    "search:context": ["query", "path", "limit", "format", "case"],
+    "backlinks": ["file", "path", "counts", "total", "format"],
+    "links": ["file", "path", "total"],
+    "outline": ["file", "path", "format", "total"],
+    "properties": ["file", "path", "name", "count", "sort", "format", "total", "counts", "active"],
+    "property:read": ["name", "file", "path"],
+    "tags": ["file", "path", "sort", "total", "counts", "format", "active"],
+    "tag": ["name", "total", "verbose"],
+    "tasks": ["file", "path", "status", "total", "done", "todo", "verbose", "format", "active", "daily"]
+  },
+  "forbidden_commands": [
+    "append", "base:create", "bookmark", "command", "create", "daily:append", "daily:prepend",
+    "delete", "dev:cdp", "dev:debug", "dev:screenshot", "devtools", "eval", "history:restore",
+    "hotkey", "move", "plugin:disable", "plugin:enable", "plugin:install", "plugin:reload", "plugin:uninstall",
+    "plugins:restrict", "prepend", "property:remove", "property:set", "publish:add", "publish:remove",
+    "rename", "restart", "snippet:disable", "snippet:enable", "sync", "sync:restore", "task",
+    "template:insert", "theme:install", "theme:set", "theme:uninstall", "unique", "web", "workspace:delete",
+    "workspace:load", "workspace:save"
+  ],
+  "path_policy": {
+    "reject_absolute": true,
+    "reject_parent_traversal": true,
+    "reject_control_characters": true
+  },
+  "execution": {
+    "shell": false,
+    "timeout_seconds": 10,
+    "authority_state": "READ_ONLY",
+    "write_allowed": false
+  }
+}
