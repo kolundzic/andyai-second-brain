@@ -1,0 +1,24 @@
+{
+  "current_project": "AOC — AndyAI Obsidian Cockpit",
+  "current_repo": "kolundzic/andyai-second-brain",
+  "where_we_stopped": "AOC–RECON–01A complete; KORMILO output contract under proof.",
+  "last_canon": "OBSIDIAN DISPLAYS AND PROPOSES. ANDYAI GOVERNS AND EXECUTES.",
+  "open_threads": [
+    "Connect official Obsidian CLI read path",
+    "Define ALOG/GOM read adapter",
+    "Design Focus view from Attention Engine data"
+  ],
+  "related_projects": ["ALOG", "GOM", "AAA", "AGEG", "ALM", "APOA", "ASR"],
+  "next_3_actions": [
+    "Build read-only Obsidian CLI adapter fixture",
+    "Map KORMILO fields to ALOG/GOM sources",
+    "Add adversarial tests for unauthorized writes"
+  ],
+  "decisions_waiting_for_andy": [],
+  "authority_state": "HUMAN_REQUIRED",
+  "execution_allowed": false,
+  "provenance": [
+    "AOC–RECON–01A",
+    "AOC–KORMILO–PROOF–01B"
+  ]
+}

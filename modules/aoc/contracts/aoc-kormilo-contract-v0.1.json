@@ -1,0 +1,34 @@
+{
+  "contract_id": "AOC_KORMILO_CONTRACT_01B",
+  "version": "0.1.0",
+  "required_fields": [
+    "current_project",
+    "current_repo",
+    "where_we_stopped",
+    "last_canon",
+    "open_threads",
+    "related_projects",
+    "next_3_actions",
+    "decisions_waiting_for_andy",
+    "authority_state",
+    "execution_allowed",
+    "provenance"
+  ],
+  "constraints": {
+    "authority_state": "HUMAN_REQUIRED",
+    "execution_allowed": false,
+    "next_actions_max": 3,
+    "provenance_min": 1
+  },
+  "forbidden_keys": [
+    "shell",
+    "shell_command",
+    "command",
+    "exec",
+    "execute",
+    "delete",
+    "rm",
+    "sudo",
+    "write_without_approval"
+  ]
+}
